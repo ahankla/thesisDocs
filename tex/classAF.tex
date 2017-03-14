@@ -1,0 +1,43 @@
+\chapter{Classification and Basic Physics of Accretion Disks}
+Accretion disks occur in many different types, from those are protostars to those in binary star systems and those around black holes. Depending on their context, these accretion flows have different properties. While much of the physics of accretion disks involves magnetohydrodynamics (including the mechanism behind accretion itself) as will be discussed in subsequent chapters, the classification of accretion flows is possible even at a more basic level: for example, hot vs. cold accretion flows.\\
+\\
+This chapter clarifies some of the jargon in the extensive literature and characterizes the different types of accretion flows in Section~\ref{sec:typesAF}, focusing on hot accretion flows (the subject of the original research in Chapter~\ref{ch:duhRESEARCH}) and their properties in Section~\ref{sec:propertiesAF}. Some fundamental physics are presented in Sections~\ref{sec:radproc} and~\ref{sec:mechanics}: respectively radiation processes and mechanics. These sections provide background for more complex calculations such as those in Chapter~\ref{ch:plasmaTheory} as well as a connection back to observations. 
+
+\section{Types of Accretion Flows} \label{sec:typesAF}
+Accretion flows are generally characterized by their temperature, their radiative efficiency, and/or their thickness. These types and the relationships among them will be clarified and discussed soon enough: we first note that accretion does not have to lead to the formation of a disk. Indeed, some of the earliest studies on accretion concerned matter falling in radially and uniformly from all directions onto a compact object: spherical accretion~\cite{Bondi?}. However, such accretion flows are unlikely to occur in nature because matter will almost always be rotating with respect to the compact object and hence have angular momentum. \\
+\\
+Another general type of accretion flows
+
+
+\section{Properties of Hot Accretion Flows} \label{sec:propertiesAF}
+
+\section{Radiation Processes}
+observations...
+
+\section{Mechanics}
+This section presents a series of calculations pertaining to important elements of accretion disks.
+\subsection{Eddington Luminosity}
+Radiation from a compact object generates a radiation pressure that begins to counter the gravitational force from the central object. When the luminosity is high enough, the object's gravity is no longer enough to keep it together. When the radiation pressure and gravity exactly cancel, the system is in equilibrium. We can derive the value of the luminosity at this equilibrium, the ``Eddington luminosity'' or ``Eddington limit'' as follows (following~\cite{Spruit2009}xxxformatxx):\\
+\\
+Assume the radiation has a flux $F_{\textrm{rad}}$ and an opacity, or scattering cross-section times mass, of $\kappa$ (for ionized hydrogen, $\kappa=\sigma_T/m_p$ where $m_p$ is the mass of the proton and $\sigma_T$ is the Thomson scattering cross-section of the electron). Then the force balance is given by:
+\begin{equation}
+\nabla\Phi=\frac\kappa cF_{\textrm{rad}}
+\end{equation}
+The luminosity is defined as the total energy output per time, so we can get it from the flux (amount of light per area per time) by integrating over a surface, which we assume to be spherical:
+\begin{align}
+L&=\int_SF_{\mathrm{rad}}\cdot dS=\frac{c}\kappa \int_S \nabla\Phi\\
+&=\frac{c}\kappa \int_V \nabla^2\Phi=\frac{4\pi Gc}\kappa\int_V\rho dV\\
+&=\frac{4\pi GMc}\kappa
+\end{align}
+Note that the force balance equation does not include any forces other than pressure-gravity equilibrium and the radiation pressure; magnetic forces, for example, are excluded. \\
+\\
+Black holes can exceed the Eddington luminosity because the energy contained in the infalling matter does not have to be radiated; it can simply be swallowed by the black hole and increase its mass. At high accretion rates, radiation could become trapped by the flow and advect into the black hole. This would lead to low observed luminosity. 
+
+\subsection{Disk Scale Height}
+
+\subsection{Rayleigh Stability Criterion}
+Equations for disk...continuity, momentum balance (will add B fields later)
+Du/Dt=d2u/dt2+du/dx dx/dt
+\subsection{Keplerian vs. Shear Flow}
+
+\input{tex/angMomCons.tex} %but requires MHD eqn?

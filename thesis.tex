@@ -1,0 +1,34 @@
+\documentclass[11pt,notitlepage]{report}
+%\includeonly{abstract}
+
+\usepackage{thesisstyle}
+
+\title{Thesis}
+\author{Lia Hankla\\Advisor: James Stone. Co-advisor: Frans Pretorius}
+\begin{document}
+
+\maketitle
+\input{./tex/abstract}
+
+\tableofcontents
+
+\input{./tex/introduction.tex} %Introduction
+
+\input{./tex/classAF.tex} %Classification and Basic Physics of Accretion Disks
+
+\input{./tex/historySim.tex} %History and Simulation of Accretion Disks
+
+\input{./tex/plasmaTheory.tex} %Plasma Astrophysics Theory
+
+\input{./tex/compareKMHD.tex} % (original research)
+
+%Acknowledgments?
+
+\appendix
+\input{./tex/appendices.tex}
+
+%Bibliography
+\clearpage
+\input{./tex/thesisbib.tex}
+
+\end{document}

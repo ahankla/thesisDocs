@@ -1,0 +1,7 @@
+\section{Vector Identities}
+This section is just for useful identities. A good reference is the NRL Plasma Formulary~\cite{nrl}.
+
+\begin{align}
+  \nabla\left(f\vec A\right)&=\nabla\label{eq:nrl7}\\
+  \nabla
+\end{align}

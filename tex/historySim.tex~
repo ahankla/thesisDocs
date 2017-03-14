@@ -1,0 +1,51 @@
+\chapter{History and Simulation of Accretion Disks}
+This chapter examines the development of the theory behind accretion disks, with the ultimate goal of framing the past and current research on accretion disks. Due to the complexity of the equations involved (see Chapter~\ref{ch:plasmaTheory}), numerical simulations play an integral role in understanding accretion flows. However, said complexity also means that the power of numerical simulations to resolve interesting features has been and is limited by the computational ability and algorithms utilized. The theory and numerical simulations of accretion disks have thus evolved in step, with new insights coming from both sides. As such, it is difficult to disentangle the pure theory from the numerical simulations and the following chapter does not attempt to do so. It is instead an intertwined, mostly chronological account that showcases the thought processes and impetus behind new developments.\\
+\\
+We first trace back to some of the early ideas of accretion disks and how they were formed (Section~\ref{sec:early}), leading into Section~\ref{sec:sources}'s discussion of possible sources of turbulence and then Section~\ref{sec:current}'s modern hypotheses and what this means for the original research of this paper (e.g. Chapter~\ref{ch:duhRESEARCH}). 
+
+
+\section{Early Thoughts on Accretion}\label{sec:early}
+The study of accretion in the modern era emerged from simpler questions than that of AGN luminosity. In 1941, Kuiper~\cite{Kuiper1941} recognized the formation of a disk during mass transfer in a binary-star system, while Hoyle and Lyttleton~\cite{HoyleLyttleton1939} attributed the climatic variation on Earth to the accretion of interstellar matter around the sun. Once compact x-ray sources were actually observed, the role of disks in the production of radiation was explored more thoroughly. 
+
+SS1973
+
+****interesting relationship with CFD**************
+The standing idea at the time was that the angular momentum of the system was smoothed to roughly constant values by the molecular viscosity of the accreting fluids~\cite{PrendergastBurbridge1968}. 
+****Numerical sims showed this not true****
+So how does angular momentum transport occur? **********paper???******* proposed that an ``effective'' viscosity due to the interaction of eddies could be high enough to explain the observed rates. In other words, turbulence would be 
+\\
+\\The problem became to find the source of the turbulence that would lead to outward angular momentum transport. Some, influenced by laboratory fluid mechanics, believed that the sheer property of having a high Reynolds number (the product of a characteristic velocity and length scale divided by the viscosity; huge in astrophysical flows due to the large length scales involved) satisfactorily accounted for the needed turbulence. Others, however, suspected that, at least in accretion disks, the flow was fundamentally different than those shear flows explored in the aforementioned fluid mechanics labs, and indeed it turned out that Keplerian flows are stable against perturbations (i.e. no turbulence) where shear flows are not (see Section~\ref{ssec:mhdFlows}). The difference is due to epicycles in Keplerian flows, which sink the energy that would otherwise devolve into prominent disturbances. A high Reynolds number is not enough to explain the necessary turbulence.\\
+\\
+Convective instabilities were long considered as possibly leading to turbulence in accretion disks. 
+
+*****Do more here, papers, why not a thing*******\\
+\\
+Magnetic fields were thought to serve an amplifying role in turbulence transport. That is, with pre-existing turbulence, magnetic fields would tangle and speed along the transportation of magnetic fields~\cite{ShakuraSunyaev1973}. It was thought that the magnetic pressure and pressure due to turbulence were distinct, and that magnetic pressure would be insignificant in disk situations~\cite{LyndenBell1969}, or would require large magnetic fields on the order of $10^7-10^8$~G to balance the gravitational pressure of infalling gas~\cite{TrevesAl1988}. The magnetic field was mainly considered to be important due to consequences of cyclotron radiation as a cooling mechanism~\cite{Shapiro1973}. It was not until the early 1990s that the full significance of magnetic fields was appreciated.\\
+\\
+In 1991, Balbus and Hawley~\cite{BalbusHawley1991a,BalbusHawley1991b} closed the conceptual circle by showing that turbulence resulted directly from a weak magnetic field. Pre-existing turbulence was not needed; the entire sequence of generating turbulence and transporting turbulence and angular momentum could be derived as a result of a linear instability in the MHD equations (see Section~\ref{ssec:mriDeriv}). Numerous numerical simulations have since confirmed the important role of magnetic fields in accretion processes. The next section will give an overview of these numerical simulations and thereby place the simulations in section~\ref{sec:duhRESEARCH} in context. 
+
+\subsection{Past Numerical Simulations} \label{ssec:numsimhistory}
+
+shearing box
+artificial viscosity
+numerical viscosity/resistivity
+
+
+ALPHA-DISK:
+relevance: Penna et al 2013
+
+
+why reproduce stone pringle2001...
+
+
+
+**lead into accretion theory? then MRI?
+
+\subsection{Current Research}
+GR simulations Foucart et al 2016
+Still 2D!
+Including 2-temperature model, as discussed inXXx. Sadowski et al 2016
+Outflows and jets (Bu, Wu, Yuan 2016)
+still no 3d mti rotating? parrish  stone=nonrotating?
+
+
