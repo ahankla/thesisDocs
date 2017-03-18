@@ -1,0 +1,74 @@
+\subsection{Rayleigh Stability Criterion}
+In hydrodynamics, disks with a Keplerian velocity profile are stable against perturbations. To see this, simply consider perturbations about a circular orbit in an azimuthally symmetric potential $\Phi=\Phi(r,z)$. In cylindrical coordinates we have 
+\begin{align}
+\hat r&=\cos\theta\hat x+\sin\theta\hat y\\
+\hat\theta&=-\sin\theta\hat x+\cos\theta\hat y
+\end{align}
+Upon taking the time derivatives, we find that 
+\begin{align*}
+\ddot r&=\frac{d}{dt}\dot r=\frac{d}{dt} \left(\dot r\hat r+r\frac{d\hat r}{dt}+\dot z\hat z\right)\\
+&=\ddot r\hat r+2\dot r\frac{d\hat r}{dt}+r\frac{d^2\hat r}{dt^2}+\ddot{z}\hat z\\
+&=\ddot r\hat r+2\dot r\dot\theta\hat\theta +r\ddot\theta\hat\theta-r\dot\theta^2\hat r+\ddot z\hat z\\
+&=\left(\ddot r-r\dot\theta^2\right)\hat r+\left(\frac1r\frac{d}{dt}r^2\dot\theta\right)\hat\theta+\ddot z\hat z
+\end{align*}
+From Newton's laws we have
+\begin{align}
+F=-m\nabla\Phi=m\ddot r
+\end{align}
+leading to component-wise equilibrium equations:
+\begin{align}
+-\frac{\partial\Phi}{\partial r}&=\ddot r-r\dot\theta^2\label{eq:compwise1}\\
+-\frac1r\frac{\partial\Phi}{\partial\theta}=0&=\frac1r\frac{d}{dt}\left(r^2\dot\theta\right)\label{eq:ancons}\\
+-\frac{\partial\Phi}{\partial z}&=\ddot z\label{eq:compwise3}
+\end{align}
+Note that Eq.~\ref{eq:ancons} gives conservation of specific momentum $h_z$: i.e., $h_z=r^2\dot\theta$ is a constant. For a circular orbit, $\ddot r=0$ and we have $\frac1{r_0}\frac{\partial\Phi}{\partial r}=\dot\theta^2=\Omega_0^2$, where we define $\Omega_0^2\equiv\frac{1}{r_0}\frac{\partial\Phi}{\partial r}\vert_{r_0}$. Now perturbing this circular orbit, we have 
+\begin{align}
+r&=r_0+\delta r\\
+\theta&=\Omega_0t+\delta\theta\\
+z&=0+\delta z
+\end{align}
+We obtain equations of motion by linearizing Eqns.~\ref{eq:compwise1}-\ref{eq:compwise3} and using the perturbed variables:
+\begin{align}
+-\frac{\partial\Phi}{\partial r}&\approx -\left(\frac{\partial\Phi}{\partial r}\Big|_{r_0}+\delta r\frac{\partial^2\Phi}{\partial r^2}\Big|_{r_0}\right)=-\left(\Omega_0^2r_0+\delta r\frac{\partial^2\Phi}{\partial r^2}\Big|_{r_0}\right)\nonumber\\
+&\approx\ddot{\delta r}-r_0\Omega_0^2-2\Omega_0r_0\delta\dot\theta-\delta r\Omega_0^2\label{eq:pert1}\\
+h_z&\approx r_0^2\Omega+r_0^2\delta\dot\theta+2r_0\Omega_0\delta r\nonumber\\
+&= r_0^2\Omega_0\label{eq:pert2}\\
+-\frac{\partial\Phi}{\partial z}&\approx -\left(\delta z\frac{\partial\Phi}{\partial z}\Big|_{r_0,z_0}\right)\nonumber\\
+&\approx \delta\ddot z
+\end{align}
+From Eq.~\ref{eq:pert2}, we find that $r_0^2\delta\dot\theta=-2r_0\Omega_0\delta r$, and thus $\delta\dot\theta=-\frac2{r_0}\Omega_0\delta r=-\frac2{r_0^3}h_z\delta r$. Using this in the radial equation~\ref{eq:pert1} yields
+\begin{align}
+\ddot r&=2\Omega_0r_0\left(-\frac2{r_0^3}h_z\delta r\right)+\delta r\left(\Omega_0^2-\frac{\partial^2\Phi}{\partial r^2}\Big|_{r_0}\right)\\
+&=-\left(3\Omega_0^2 +\frac{\partial^2\Phi}{\partial r^2}\Big|_{r_0}\right)\delta r\\
+&=-\kappa_0^2 \delta r
+\end{align}
+where $\kappa_0^2\equiv3\Omega_0^2+\frac{\partial^2\Phi}{\partial r^2}\rvert_{r_0}$ is the epicyclic frequency. The physical significance of this becomes clear upon writing the $\theta$-equation of motion as a coupled harmonic oscillator with the radial equation: a particle will simply execute small circular orbits about its zeroth-order circular path as it travels. This will become an important mechanism distinguishing disk flow from shear flow, as energy can go into epicycles instead of turbulence. Section~\ref{sec:SHEARvsKEPLER} illustrates this point in the context of accretion. \\
+\\
+The epicyclic frequency appears often in astrophysical situations, although under many different guises. For example, remember that $\Omega^2=\frac1r\frac{\partial\Phi}{\partial r}$. Then we have
+\begin{align*}
+\frac{d\Omega^2}{dr}&=-\frac1{r^2}\frac{\partial\Phi}{\partial r}+\frac1r\frac{\partial^2\Phi}{\partial r}
+\end{align*}
+such that
+\begin{equation*}
+\frac{\partial^2\Phi}{\partial r^2}=r\frac{d\Omega^2}{dr}+\frac1r\frac{\partial\Phi}{\partial r}=r\frac{d\Omega^2}{dr}+\Omega^2
+\end{equation*}
+With this the epicyclic frequency becomes
+\begin{align}
+\kappa^2&=3\Omega^2+\frac{\partial^2\Phi}{\partial r^2}\\
+&=4\Omega^2\left(1+\frac A\Omega\right)
+\end{align}
+where $A\equiv \frac r{4\Omega^2}\frac{d\Omega^2}{dr}$ is the Oort A-value, also expressed $A=-\frac12 d\Omega/d\ln r$. This can be further re-written:
+\begin{align*}
+\kappa^2&=4\Omega^2\left(1+\frac{r}{4\Omega^2}\frac{d\Omega^2}{dr}\right)\\
+&=\frac1{r^2}\left(4\Omega^2r^3+r^4\frac{d\Omega^2}{dr}\right)\\
+&=\frac1{r^3}\frac{d}{dr}\left(\Omega^2r^4\right)
+\end{align*}
+which is how it is written in, for example,~\cite{BH1998}. For Keplerian rotation profiles, $A=-\frac34\Omega$, and $\kappa^2=\Omega^2$.\\
+\\
+The stability of hydrodynamical disks can be done in multiple ways. Here, an intuitive argument is first presented showing that angular momentum must decrease outward for stability. This condition is put on firmer theoretical ground in the second method, which also introduces tools that will be used later in performing linear analysis of the magnetohydrodynamic equations (see Section~\ref{sec:IDEALMHDXXXX}).  \\
+\\
+First, we look at a physically intuitive argument. 
+
+
+Equations for disk...continuity, momentum balance (will add B fields later)
+Du/Dt=d2u/dt2+du/dx dx/dt

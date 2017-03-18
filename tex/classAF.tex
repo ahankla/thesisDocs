@@ -34,10 +34,28 @@ Note that the force balance equation does not include any forces other than pres
 Black holes can exceed the Eddington luminosity because the energy contained in the infalling matter does not have to be radiated; it can simply be swallowed by the black hole and increase its mass. At high accretion rates, radiation could become trapped by the flow and advect into the black hole. This would lead to low observed luminosity. 
 
 \subsection{Disk Scale Height}
+The scale height of a disk is a useful scale for defining distances. It comes from considering a stratified disk; that is, one that has a component of gravity in the vertical direction. As Figure~\ref{fig:stratDisk} illustrates, the gravitational force in the vertical direction is proportional to the force along the purely horizontal (``$R$'') direction and the ratio of the distances:
+\begin{equation}
+\frac{F_{gR}}{F_{gz}}=\frac{R}{z}
+\end{equation}
+Introducing the Keplerian rotation speed $\Omega^2=GM/R^3$, we have  
+\begin{align*}
+F_{gz}=F_{gR}\frac z R&=\frac{GM}{R^2}\frac zR
+&=\Omega^2 z
+\end{align*}
+Now relate $F_{gz}$ to the disk density by considering the force balance equation for equilibrium in the vertical direction:
+\begin{equation*}
+-\frac1\rho\frac{dP}{dz}=F_{gz}
+\end{equation*}
+Assuming an isothermal equation of state $P=\rho c^2$, this equation can be integrated:
+\begin{align*}
+-\frac1\rho c^2\frac{d\rho}{dz}&=F_{gz}=\Omega^2z\\
+\rho(z)&=\rho_0 e^{-\frac{\Omega^2}{c^2}\frac{z^2}2}
+&=\rho_0e^{-\frac{z^2}{2H^2}}
+\end{align*}
+where $H^2\equiv\frac{c^2}{\Omega^2}$. $H$ can thus be interpreted as the distance a sound wave travels in a shear time (i.e., one rotation). Generally the thickness of a disk is taken to be $2H$. As will be discussed in Section~\ref{sec:numericalXXXXX}, it is often convenient to choose units such that $H=1$, resulting in numerical domains with dimensions of $(H,4H,H)$. 
 
-\subsection{Rayleigh Stability Criterion}
-Equations for disk...continuity, momentum balance (will add B fields later)
-Du/Dt=d2u/dt2+du/dx dx/dt
+\input{tex/rayleighStability.tex}
 \subsection{Keplerian vs. Shear Flow}
 
 \input{tex/angMomCons.tex} %but requires MHD eqn?
