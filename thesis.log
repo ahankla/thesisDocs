@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2016.8.31)  5 MAR 2017 16:14
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2016.8.31)  15 MAR 2017 16:12
 entering extended mode
  %&-line parsing enabled.
 **thesis.tex
@@ -419,22 +419,22 @@ LaTeX Info: Redefining \pageref on input line 8.
 
  (./tex/abstract.tex) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./thesis.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./thesis.toc [2
+
+])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- (./tex/introduction.tex [2
-
-]
+ (./tex/introduction.tex [3]
 Chapter 1.
 
-LaTeX Warning: Reference `sec:AFs' on page 3 undefined on input line 4.
+LaTeX Warning: Reference `sec:AFs' on page 4 undefined on input line 4.
 
 
-LaTeX Warning: Reference `sec:mhd' on page 3 undefined on input line 4.
+LaTeX Warning: Reference `sec:mhd' on page 4 undefined on input line 4.
 
 
-LaTeX Warning: Citation `Blandford1999' on page 3 undefined on input line 4.
+LaTeX Warning: Citation `Blandford1999' on page 4 undefined on input line 4.
 
 
 Overfull \hbox (1.10416pt too wide) in paragraph at lines 6--7
@@ -442,50 +442,22 @@ Overfull \hbox (1.10416pt too wide) in paragraph at lines 6--7
 s-cusssed through-
  []
 
-) (./tex/classAF.tex [3
+) (./tex/classAF.tex [4
 
 ]
 Chapter 2.
-(./tex/angMomCons.tex
-Overfull \hbox (15.3063pt too wide) in paragraph at lines 1--1
-[]\OT1/cmr/bx/n/14.4 Angular Mo-men-tum Con-ser-va-tion in Ideal MHD 
- []
+
+LaTeX Warning: Reference `ch:duhRESEARCH' on page 5 undefined on input line 4.
 
 
-LaTeX Warning: Citation `BalbusHawley1998' on page 4 undefined on input line 11
-.
+LaTeX Warning: Reference `sec:radproc' on page 5 undefined on input line 4.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--18
-
- []
-
-[4
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 31--37
-
- []
+LaTeX Warning: Reference `sec:mechanics' on page 5 undefined on input line 4.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--37
+LaTeX Warning: Reference `ch:plasmaTheory' on page 5 undefined on input line 4.
 
- []
-
-[5] [6])) (./tex/historySim.tex [7]
-Chapter 3.
-
-LaTeX Warning: Reference `ch:plasmaTheory' on page 8 undefined on input line 2.
-
-
-
-LaTeX Warning: Reference `sec:sources' on page 8 undefined on input line 4.
-
-
-LaTeX Warning: Reference `sec:current' on page 8 undefined on input line 4.
-
-
-LaTeX Warning: Reference `ch:duhRESEARCH' on page 8 undefined on input line 4.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--5
@@ -493,38 +465,134 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--5
  []
 
 
-LaTeX Warning: Citation `Kuiper1941' on page 8 undefined on input line 8.
+LaTeX Warning: Citation `Bondi?' on page 5 undefined on input line 7.
 
 
-LaTeX Warning: Citation `HoyleLyttleton1939' on page 8 undefined on input line 
-8.
+Underfull \hbox (badness 10000) in paragraph at lines 7--10
+
+ []
+
+[5
+
+]
+
+LaTeX Warning: Citation `Spruit2009' on page 6 undefined on input line 20.
 
 
-LaTeX Warning: Citation `PrendergastBurbidge1968' on page 8 undefined on input 
-line 8.
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
+
+ []
 
 
-LaTeX Warning: Reference `sec:XXXXXXXXXXXXXX' on page 8 undefined on input line
- 10.
+LaTeX Warning: Reference `fig:stratDisk' on page 7 undefined on input line 37.
+
+[7]
+
+LaTeX Warning: Reference `sec:numericalXXXXX' on page 8 undefined on input line
+ 56.
+
+(./tex/rayleighStability.tex [8]
+
+LaTeX Warning: Reference `sec:SHEARvsKEPLER' on page 9 undefined on input line 
+45.
 
 
-LaTeX Warning: Reference `sec:XXmechanics?XX' on page 8 undefined on input line
- 10.
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
+
+ []
+
+[9]
+
+LaTeX Warning: Citation `BH1998' on page 10 undefined on input line 66.
 
 
-LaTeX Warning: Citation `Spitzer1962' on page 8 undefined on input line 10.
+LaTeX Warning: Reference `sec:IDEALMHDXXXX' on page 10 undefined on input line 
+68.
 
 
-LaTeX Warning: Citation `SS1973' on page 8 undefined on input line 12.
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
+
+ []
+
+) (./tex/angMomCons.tex [10]
+
+LaTeX Warning: Citation `BalbusHawley1998' on page 11 undefined on input line 9
+.
 
 
-LaTeX Warning: Citation `SS1973' on page 8 undefined on input line 12.
+Underfull \hbox (badness 10000) in paragraph at lines 12--16
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 29--35
+
+ []
 
 
-LaTeX Warning: Citation `PennaEA2013' on page 8 undefined on input line 12.
+Underfull \hbox (badness 10000) in paragraph at lines 29--35
+
+ []
+
+[12])) (./tex/historySim.tex [13]
+Chapter 3.
+
+LaTeX Warning: Reference `ch:plasmaTheory' on page 14 undefined on input line 2
+.
 
 
-LaTeX Warning: Citation `XXXXXX' on page 8 undefined on input line 14.
+LaTeX Warning: Reference `sec:sources' on page 14 undefined on input line 4.
+
+
+LaTeX Warning: Reference `sec:current' on page 14 undefined on input line 4.
+
+
+LaTeX Warning: Reference `ch:duhRESEARCH' on page 14 undefined on input line 4.
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+
+LaTeX Warning: Citation `Kuiper1941' on page 14 undefined on input line 8.
+
+
+LaTeX Warning: Citation `HoyleLyttleton1939' on page 14 undefined on input line
+ 8.
+
+
+LaTeX Warning: Citation `PrendergastBurbidge1968' on page 14 undefined on input
+ line 8.
+
+
+LaTeX Warning: Reference `sec:XXXXXXXXXXXXXX' on page 14 undefined on input lin
+e 10.
+
+
+LaTeX Warning: Reference `sec:XXmechanics?XX' on page 14 undefined on input lin
+e 10.
+
+
+LaTeX Warning: Citation `Spitzer1962' on page 14 undefined on input line 10.
+
+
+LaTeX Warning: Citation `SS1973' on page 14 undefined on input line 12.
+
+
+LaTeX Warning: Citation `SS1973' on page 14 undefined on input line 12.
+
+
+LaTeX Warning: Citation `PennaEA2013' on page 14 undefined on input line 12.
+
+
+LaTeX Warning: Citation `XXXXXX' on page 14 undefined on input line 14.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--15
@@ -541,18 +609,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--15
 
  []
 
-[8
+[14
 
-] [9]
+] [15]
 
-LaTeX Warning: Citation `BH1998' on page 10 undefined on input line 19.
+LaTeX Warning: Citation `BH1998' on page 16 undefined on input line 19.
 
 
-LaTeX Warning: Citation `BH1998:SectionIII.c.1' on page 10 undefined on input l
+LaTeX Warning: Citation `BH1998:SectionIII.c.1' on page 16 undefined on input l
 ine 21.
 
 
-LaTeX Warning: Reference `sec:MECHANICSkeplerianvsshearflow' on page 10 undefin
+LaTeX Warning: Reference `sec:MECHANICSkeplerianvsshearflow' on page 16 undefin
 ed on input line 21.
 
 
@@ -561,72 +629,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--22
  []
 
 
-LaTeX Warning: Citation `Spruit2009' on page 10 undefined on input line 26.
+LaTeX Warning: Citation `Paczynski1978' on page 16 undefined on input line 23.
 
 
-LaTeX Warning: Citation `Blandford1976' on page 10 undefined on input line 26.
+LaTeX Warning: Citation `Spruit2009' on page 16 undefined on input line 23.
 
 
-LaTeX Warning: Citation `Koenigl1989' on page 10 undefined on input line 26.
-
-[10]
-
-LaTeX Warning: Citation `ShakuraSunyaev1973' on page 11 undefined on input line
- 29.
-
-
-LaTeX Warning: Citation `LyndenBell1969' on page 11 undefined on input line 29.
-
-
-
-LaTeX Warning: Citation `TrevesAl1988' on page 11 undefined on input line 29.
-
-
-LaTeX Warning: Citation `Shapiro1973' on page 11 undefined on input line 29.
-
-
-LaTeX Warning: Citation `BalbusHawley1991a' on page 11 undefined on input line 
-31.
-
-
-LaTeX Warning: Citation `BalbusHawley1991b' on page 11 undefined on input line 
-31.
-
-
-LaTeX Warning: Reference `ssec:mriDeriv' on page 11 undefined on input line 31.
-
-
-
-LaTeX Warning: Reference `sec:duhRESEARCH' on page 11 undefined on input line 3
-1.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
  []
 
-[11]) (./tex/plasmaTheory.tex [12]
+[16]
+
+LaTeX Warning: Citation `Spruit2009' on page 17 undefined on input line 28.
+
+
+LaTeX Warning: Citation `Blandford1976' on page 17 undefined on input line 28.
+
+
+LaTeX Warning: Citation `Koenigl1989' on page 17 undefined on input line 28.
+
+
+LaTeX Warning: Citation `ShakuraSunyaev1973' on page 17 undefined on input line
+ 31.
+
+
+LaTeX Warning: Citation `LyndenBell1969' on page 17 undefined on input line 31.
+
+
+
+LaTeX Warning: Citation `TrevesAl1988' on page 17 undefined on input line 31.
+
+
+LaTeX Warning: Citation `Shapiro1973' on page 17 undefined on input line 31.
+
+
+LaTeX Warning: Citation `BalbusHawley1991a' on page 17 undefined on input line 
+33.
+
+
+LaTeX Warning: Citation `BalbusHawley1991b' on page 17 undefined on input line 
+33.
+
+
+LaTeX Warning: Reference `sec:duhRESEARCH' on page 17 undefined on input line 3
+3.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+
+ []
+
+[17]) (./tex/plasmaTheory.tex [18]
 Chapter 4.
 (./tex/MRI.tex
 
-LaTeX Warning: Reference `ssec:mriDeriv' on page 13 undefined on input line 2.
+LaTeX Warning: Reference `ssec:mhdDeriv' on page 19 undefined on input line 6.
 
+))
 
-LaTeX Warning: Reference `ssec:mriSpring' on page 13 undefined on input line 2.
+! LaTeX Error: File `./tex/compareKMHD.tex' not found.
 
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
 
-
-LaTeX Warning: Reference `ssec:mhdDeriv' on page 13 undefined on input line 6.
-
-)) (./tex/appendices.tex [13
+Enter file name: 
+(./tex/appendices.tex [19
 
 ]
 Appendix A.
 (./tex/vectorIDs.tex
 
-LaTeX Warning: Citation `nrl' on page 14 undefined on input line 2.
+LaTeX Warning: Citation `nrl' on page 20 undefined on input line 2.
 
-)) [14
+)) [20
 
 ] (./tex/thesisbib.tex
 No file thesis.bbl.
@@ -634,28 +710,27 @@ No file thesis.bbl.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 3241 strings out of 256214
- 42433 string characters out of 1917000
- 105207 words of memory out of 1500000
- 6433 multiletter control sequences out of 10000+200000
+ 3304 strings out of 256214
+ 43306 string characters out of 1917000
+ 105216 words of memory out of 1500000
+ 6458 multiletter control sequences out of 10000+200000
  11229 words of font info for 40 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 34i,12n,36p,1464b,338s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 34i,13n,36p,1464b,340s stack positions out of 5000i,500n,6000p,200000b,15000s
 </usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/t
 ype1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb>
 </usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/typ
-e1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></us
-r/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bl
-uesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/shar
-e/texmf/fonts/type1/bluesky/cm/cmsy10.pfb>
-Output written on thesis.pdf (14 pages, 116405 bytes).
+e1/bluesky/cm/cmmi6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></us
+r/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bl
+uesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/sha
+re/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/fonts/type1/bluesky/
+cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/tex
+mf/fonts/type1/bluesky/cm/cmsy8.pfb>
+Output written on thesis.pdf (20 pages, 161546 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 131072)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 373 PDF objects out of 1000 (max. 8388607)
+ 89 named destinations out of 1000 (max. 131072)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

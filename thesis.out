@@ -1,8 +1,15 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}
 \BOOKMARK [1][-]{section.1.1}{AGN and Accretion Disk Observations}{chapter.1}
 \BOOKMARK [0][-]{chapter.2}{Classification and Basic Physics of Accretion Disks}{}
-\BOOKMARK [1][-]{section.2.1}{Mechanics}{chapter.2}
-\BOOKMARK [1][-]{section.2.2}{Angular Momentum Conservation in Ideal MHD}{chapter.2}
+\BOOKMARK [1][-]{section.2.1}{Types of Accretion Flows}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Properties of Hot Accretion Flows}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{Radiation Processes}{chapter.2}
+\BOOKMARK [1][-]{section.2.4}{Mechanics}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.4.1}{Eddington Luminosity}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.2}{Disk Scale Height}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.3}{Rayleigh Stability Criterion}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.4}{Keplerian vs. Shear Flow}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.5}{Angular Momentum Conservation in Ideal MHD}{section.2.4}
 \BOOKMARK [0][-]{chapter.3}{History and Simulation of Accretion Disks}{}
 \BOOKMARK [1][-]{section.3.1}{Early Thoughts on Accretion}{chapter.3}
 \BOOKMARK [1][-]{section.3.2}{Potential Sources of Turbulence}{chapter.3}
@@ -11,8 +18,7 @@
 \BOOKMARK [2][-]{subsection.3.2.3}{Nonlocal Effects}{section.3.2}
 \BOOKMARK [2][-]{subsection.3.2.4}{Magnetic Fields}{section.3.2}
 \BOOKMARK [1][-]{section.3.3}{Post-MRI Discovery Developments}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.3.1}{Past Numerical Simulations}{section.3.3}
-\BOOKMARK [1][-]{section.3.4}{Current Research}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Current Research}{section.3.3}
 \BOOKMARK [0][-]{chapter.4}{Plasma Astrophysics Theory}{}
 \BOOKMARK [1][-]{section.4.1}{MRI Basics}{chapter.4}
 \BOOKMARK [2][-]{subsection.4.1.1}{MRI Derivation}{section.4.1}
