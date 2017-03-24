@@ -1,9 +1,35 @@
 \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
 \contentsline {section}{\numberline {1.1}AGN and Accretion Disk Observations}{4}{section.1.1}
-\contentsline {chapter}{\numberline {2}Classification and Basic Physics of Accretion Disks}{5}{chapter.2}
+\contentsline {chapter}{\numberline {2}Accretion Flow Mechanics}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Types of Accretion Flows}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Properties of Hot Accretion Flows}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}Radiation Processes}{6}{section.2.3}
 \contentsline {section}{\numberline {2.4}Mechanics}{6}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Eddington Luminosity}{6}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Disk Scale Height}{7}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Rayleigh Stability Criterion}{8}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Keplerian vs. Shear Flow}{11}{subsection.2.4.4}
+\contentsline {chapter}{\numberline {3}Ideal MHD: Theory and Simulations}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Properties of a Plasma}{12}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Debye Length and Shielding}{13}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Ideal MHD Equations}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}The MRI in Ideal MHD: Theory}{17}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}MRI Spring Analogy}{17}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Simulating the MRI: the Shearing-Box Method}{17}{section.3.4}
+\contentsline {section}{\numberline {3.5}The MRI in Ideal MHD: Simulations}{18}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Athena 4.2: An MHD Code....}{18}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Parameters}{18}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Results}{18}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Non-ideal MHD: Theory and Simulations}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Non-ideal MHD: Theory}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Non-ideal MHD: Simulations}{19}{section.4.2}
+\contentsline {chapter}{\numberline {5}Kinetic Theory and Braginskii MHD}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Kinetic Theory}{20}{section.5.1}
+\contentsline {section}{\numberline {5.2}Braginskii MHD: Theory}{20}{section.5.2}
+\contentsline {section}{\numberline {5.3}Kinetic Simulations of the MRI}{20}{section.5.3}
+\contentsline {section}{\numberline {5.4}Braginskii MHD Simulations of the MRI}{20}{section.5.4}
+\contentsline {chapter}{\numberline {A}Identities and Derivations?}{21}{appendix.A}
+\contentsline {subsection}{\numberline {A.0.1}Angular Momentum Conservation in Ideal MHD}{21}{subsection.A.0.1}
+\contentsline {subsection}{\numberline {A.0.2}Alfv'en's Theorem (Flux Freezing)}{24}{subsection.A.0.2}
+\contentsline {section}{\numberline {A.1}Vector Identities}{24}{section.A.1}
+\contentsline {section}{\numberline {A.2}Cylindrical Coordinates}{24}{section.A.2}

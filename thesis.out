@@ -1,0 +1,35 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{AGN and Accretion Disk Observations}{chapter.1}% 2
+\BOOKMARK [0][-]{chapter.2}{Accretion Flow Mechanics}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Types of Accretion Flows}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Properties of Hot Accretion Flows}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Radiation Processes}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.4}{Mechanics}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.4.1}{Eddington Luminosity}{section.2.4}% 8
+\BOOKMARK [2][-]{subsection.2.4.2}{Disk Scale Height}{section.2.4}% 9
+\BOOKMARK [2][-]{subsection.2.4.3}{Rayleigh Stability Criterion}{section.2.4}% 10
+\BOOKMARK [2][-]{subsection.2.4.4}{Keplerian vs. Shear Flow}{section.2.4}% 11
+\BOOKMARK [0][-]{chapter.3}{Ideal MHD: Theory and Simulations}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Properties of a Plasma}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.1.1}{Debye Length and Shielding}{section.3.1}% 14
+\BOOKMARK [1][-]{section.3.2}{Ideal MHD Equations}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{The MRI in Ideal MHD: Theory}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.1}{MRI Spring Analogy}{section.3.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Simulating the MRI: the Shearing-Box Method}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.5}{The MRI in Ideal MHD: Simulations}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.5.1}{Athena 4.2: An MHD Code....}{section.3.5}% 20
+\BOOKMARK [2][-]{subsection.3.5.2}{Parameters}{section.3.5}% 21
+\BOOKMARK [2][-]{subsection.3.5.3}{Results}{section.3.5}% 22
+\BOOKMARK [0][-]{chapter.4}{Non-ideal MHD: Theory and Simulations}{}% 23
+\BOOKMARK [1][-]{section.4.1}{Non-ideal MHD: Theory}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.2}{Non-ideal MHD: Simulations}{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{Kinetic Theory and Braginskii MHD}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Kinetic Theory}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Braginskii MHD: Theory}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.3}{Kinetic Simulations of the MRI}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.4}{Braginskii MHD Simulations of the MRI}{chapter.5}% 30
+\BOOKMARK [0][-]{appendix.A}{Identities and Derivations?}{}% 31
+\BOOKMARK [1][-]{subsection.A.0.1}{Angular Momentum Conservation in Ideal MHD}{appendix.A}% 32
+\BOOKMARK [2][-]{subsection.A.0.2}{Alfv'en's Theorem \(Flux Freezing\)}{subsection.A.0.1}% 33
+\BOOKMARK [1][-]{section.A.1}{Vector Identities}{appendix.A}% 34
+\BOOKMARK [1][-]{section.A.2}{Cylindrical Coordinates}{appendix.A}% 35

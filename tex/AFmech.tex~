@@ -1,0 +1,61 @@
+\chapter{Accretion Flow Mechanics}
+Accretion disks occur in many different types, from those are protostars to those in binary star systems and those around black holes. Depending on their context, these accretion flows have different properties. While much of the physics of accretion disks involves magnetohydrodynamics (including the mechanism behind accretion itself) as will be discussed in subsequent chapters, the classification of accretion flows is possible even at a more basic level: for example, hot vs. cold accretion flows.\\
+\\
+This chapter clarifies some of the jargon in the extensive literature and characterizes the different types of accretion flows in Section~\ref{sec:typesAF}, focusing on hot accretion flows (the subject of the original research in Chapter~\ref{ch:duhRESEARCH}) and their properties in Section~\ref{sec:propertiesAF}. Some fundamental physics are presented in Sections~\ref{sec:radproc} and~\ref{sec:mechanics}: respectively radiation processes and mechanics. These sections provide background for more complex calculations such as those in Chapter~\ref{ch:plasmaTheory} as well as a connection back to observations. 
+
+\section{Types of Accretion Flows} \label{sec:typesAF}
+Accretion flows are generally characterized by their temperature, their radiative efficiency, and/or their thickness. These types and the relationships among them will be clarified and discussed soon enough: we first note that accretion does not have to lead to the formation of a disk. Indeed, some of the earliest studies on accretion concerned matter falling in radially and uniformly from all directions onto a compact object: spherical accretion~\cite{Bondi?}. However, such accretion flows are unlikely to occur in nature because matter will almost always be rotating with respect to the compact object and hence have angular momentum. \\
+\\
+Another general type of accretion flows
+
+
+\section{Properties of Hot Accretion Flows} \label{sec:propertiesAF}
+
+\section{Radiation Processes}
+observations...
+
+\section{Mechanics}
+This section presents a series of calculations pertaining to important elements of accretion disks.
+\subsection{Eddington Luminosity}
+Radiation from a compact object generates a radiation pressure that begins to counter the gravitational force from the central object. When the luminosity is high enough, the object's gravity is no longer enough to keep it together. When the radiation pressure and gravity exactly cancel, the system is in equilibrium. We can derive the value of the luminosity at this equilibrium, the ``Eddington luminosity'' or ``Eddington limit'' as follows (following~\cite{Spruit2009}xxxformatxx):\\
+\\
+Assume the radiation has a flux $F_{\textrm{rad}}$ and an opacity, or scattering cross-section times mass, of $\kappa$ (for ionized hydrogen, $\kappa=\sigma_T/m_p$ where $m_p$ is the mass of the proton and $\sigma_T$ is the Thomson scattering cross-section of the electron). Then the force balance is given by:
+\begin{equation}
+\nabla\Phi=\frac\kappa cF_{\textrm{rad}}
+\end{equation}
+The luminosity is defined as the total energy output per time, so we can get it from the flux (amount of light per area per time) by integrating over a surface, which we assume to be spherical:
+\begin{align}
+L&=\int_SF_{\mathrm{rad}}\cdot dS=\frac{c}\kappa \int_S \nabla\Phi\\
+&=\frac{c}\kappa \int_V \nabla^2\Phi=\frac{4\pi Gc}\kappa\int_V\rho dV\\
+&=\frac{4\pi GMc}\kappa
+\end{align}
+Note that the force balance equation does not include any forces other than pressure-gravity equilibrium and the radiation pressure; magnetic forces, for example, are excluded. \\
+\\
+Black holes can exceed the Eddington luminosity because the energy contained in the infalling matter does not have to be radiated; it can simply be swallowed by the black hole and increase its mass. At high accretion rates, radiation could become trapped by the flow and advect into the black hole. This would lead to low observed luminosity. 
+
+\subsection{Disk Scale Height}
+The scale height of a disk is a useful scale for defining distances. It comes from considering a stratified disk; that is, one that has a component of gravity in the vertical direction. As Figure~\ref{fig:stratDisk} illustrates, the gravitational force in the vertical direction is proportional to the force along the purely horizontal (``$R$'') direction and the ratio of the distances:
+\begin{equation}
+\frac{F_{gR}}{F_{gz}}=\frac{R}{z}
+\end{equation}
+Introducing the Keplerian rotation speed $\Omega^2=GM/R^3$, we have  
+\begin{align*}
+F_{gz}=F_{gR}\frac z R&=\frac{GM}{R^2}\frac zR
+&=\Omega^2 z
+\end{align*}
+Now relate $F_{gz}$ to the disk density by considering the force balance equation for equilibrium in the vertical direction:
+\begin{equation*}
+-\frac1\rho\frac{dP}{dz}=F_{gz}
+\end{equation*}
+Assuming an isothermal equation of state $P=\rho c^2$, this equation can be integrated:
+\begin{align*}
+-\frac1\rho c^2\frac{d\rho}{dz}&=F_{gz}=\Omega^2z\\
+\rho(z)&=\rho_0 e^{-\frac{\Omega^2}{c^2}\frac{z^2}2}
+&=\rho_0e^{-\frac{z^2}{2H^2}}
+\end{align*}
+where $H^2\equiv\frac{c^2}{\Omega^2}$. $H$ can thus be interpreted as the distance a sound wave travels in a shear time (i.e., one rotation). Generally the thickness of a disk is taken to be $2H$. As will be discussed in Section~\ref{sec:numericalXXXXX}, it is often convenient to choose units such that $H=1$, resulting in numerical domains with dimensions of $(H,4H,H)$. 
+
+\input{tex/rayleighStability.tex}
+\subsection{Keplerian vs. Shear Flow}
+
+\input{tex/angMomCons.tex} %but requires MHD eqn?
