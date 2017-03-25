@@ -49,22 +49,22 @@ We now proceed to motivate the equations of ideal MHD by a combination of conser
 \end{equation}
 The change in the density $\rho$ at any given point is due to the fluid flowing into or out of that region, with velocity $\vec V$. \\
 \\
-We achieve a similar momentum conservation equation by considering a force balance: $\rho \dot V(\vec x,t)=F(\vec x,t)$, where $\rho$ is the mass density. $V$ is the velocity of a fluid element at position $\vec x$ at time $t$; $F$ is the net force per unit volume acting on the fluid element at position $\vec x$ at time $t$.\\
+We achieve a similar momentum conservation equation by considering a force balance: $\rho \dot{\vec V}(\vec x,t)=F(\vec x,t)$, where $\rho$ is the mass density. $V$ is the velocity of a fluid element at position $\vec x$ at time $t$; $F$ is the net force per unit volume acting on the fluid element at position $\vec x$ at time $t$.\\
   \\
-  It is important to note that $\dot V$ is not simply the partial derivative of the velocity with respect to time; the fluid velocity is not only changing in time but also spatially. The chain rule then gives
+  It is important to note that $\dot{\vec V}$ is not simply the partial derivative of the velocity with respect to time; the fluid velocity is not only changing in time but also spatially. The chain rule then gives
   \begin{align}
-    \dot \vec V(\vec x,t)&=\frac{\partial \vec V}{\partial t}+\frac{dx_i}{dt}\frac{\partial \vec V}{dx_i}\\
+    \dot{ \vec V}(\vec x,t)&=\frac{\partial \vec V}{\partial t}+\frac{dx_i}{dt}\frac{\partial \vec V}{dx_i}\\
     &=\frac{\partial\vec V}{\partial t}+\left(\vec V\cdot\nabla\right)\vec V
   \end{align}
   This total derivative is often represented as
   \begin{equation}
     \frac{D}{Dt}=\frac\partial{\partial t}+\vec V\cdot\nabla
   \end{equation}
-  where $\vec V$ is the background flow of the fluid.
+  where $\vec V$ is the background flow of the fluid.\\
 \\
-  The forces acting on the system will be the Lorentz force law $\vec J\times\vec B/c$ and the pressure gradient force $-\nabla P$, leading to a force per unit volume of:
+  The forces acting on the system will be the Lorentz force law $\vec J\times\vec B/c$ (note the Gaussian units) and the pressure gradient force $-\nabla P$, leading to a force per unit volume of:
 \begin{equation}
-  F(\vec x,t)=\frac1c\vec J(\vec x,t)\times B(\vec x,t)-\nabla P(\vec x,t)
+  \vec F(\vec x,t)=\frac1c\vec J(\vec x,t)\times \vec B(\vec x,t)-\nabla P(\vec x,t)
 \end{equation}
 Altogether then, we have our equation of momentum conservation:
 \begin{equation}
@@ -80,44 +80,115 @@ The current can thus be written as
 \begin{equation}
   \vec J=\frac{c}{4\pi}\nabla\times\vec B \label{eq:current}
 \end{equation}
-Using Eq.~\ref{eq:nrl11}, we can re-write the first term on the right hand side of Eq.~\ref{eq:momcons1} as
+Using Eq.~\ref{eq:nrl12}, we can re-write the first term on the right hand side of Eq.~\ref{eq:momcons1} as
 \begin{align}
-  \frac1{4\pi}\left((\nabla\times\vec B)\times\vec B\right)&=\frac1{4\pi}\left((\vec B\cdot)\nabla\vec B+(\nabla\vec B)\cdot\vec B\right)\\
-  &=\frac1{4\pi}\left(\frac12\nabla B^2+(\vec B\cdot\nabla)\vec B\right)
+  \frac1{4\pi}\left[(\nabla\times\vec B)\times\vec B\right]&=\frac1{4\pi}\left[(\vec B\cdot\nabla)\vec B-\frac12\nabla(B^2)\right]\\
 \end{align}
-where $B^2=\vec B\cdot\vec B$. These two terms can be interpreted as magnetic pressure and magnetic tension: magnetic pressure, which pushes field lines apart, is $\frac1{8\pi}\nabla B^2$ and the magnetic tension, which tries to uncurl magnetic field lines, is $(\frac{\vec B}{4\pi}\cdot\nabla)\vec B$. It is common to see the momentum equation in the form
+where $B^2=\vec B\cdot\vec B$. These two terms can be interpreted as magnetic pressure and magnetic tension: magnetic pressure, which pushes field lines apart, is $\frac1{8\pi} B^2$ and the magnetic tension, which tries to uncurl magnetic field lines, is $(\frac{\vec B}{4\pi}\cdot\nabla)\vec B$. It is common to see the momentum equation in the form
 \begin{equation}
-  \rho\frac{D\vec V}{Dt}=-\nabla\left(P+\frac{B^2}{8\pi}\right)=\left(\frac{\vec B}{4\pi}\cdot\nabla\right)\vec B
+  \rho\frac{D\vec V}{Dt}=-\nabla\left(P+\frac{B^2}{8\pi}\right)+\left(\frac{\vec B}{4\pi}\cdot\nabla\right)\vec B \label{eq:momcons2}
 \end{equation}
-
-We can put the continuity equation~\ref{eq:continuity} in a similar (conservative) form:
+We can put the continuity equation~\ref{eq:continuity} in a similar (non-conservative) form:
 \begin{align}
-  \frac{\partial\rho}{\partial t}&=-\nabla\cdot\left(\rho\vec V\right)\\
-  &=\frac{\partial\rho}{\partial t}+\vec V\cdot\nabla\rho-\vec V\cdot\nabla\rho\\
-  &=\frac{D\rho}{Dt}-\vec V\cdot\nabla\rho\\
-  &=\frac{D\rho}{Dt}-\nabla\left(\rho\vec V\right)+\rho\nabla\cdot\vec V
+  \frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec V\right)&=0\\
+  &=\frac{\partial\rho}{\partial t}+\vec V\cdot\nabla\rho+\rho\nabla\cdot\vec V\\
+  &=\frac{D\rho}{Dt}+\rho\nabla\cdot\vec V\\
 \end{align}
-whereby we have
-\begin{equation}
-  \frac{D\rho}{Dt}+\rho\nabla\cdot\vec V=0
-\end{equation}
 For the last ideal MHD equation, we consider Ohm's law:
 \begin{equation}
-  0=\vec E+\frac1c\vec v\times\vec B)
+  0=\vec E+\frac1c(\vec v\times\vec B)
 \end{equation}
-XXXXxwhy
-Using Faraday's law, we have
+XXXXxwhy\\
+\\Using Faraday's law, we have
 \begin{align}
   \frac{\partial\vec B}{\partial t}&=-c\nabla\times\vec E\\
-  &=\nabla\left(\vec v\times\vec B\right)
+  &=\nabla\times\left(\vec v\times\vec B\right)
 \end{align}
-
+which is known as the ideal induction equation.\\
+\\
 energy/entropy equation? 
 
 \section{The MRI in Ideal MHD: Theory}
-As discussed in Chapter~\ref{chap:history}, the source of turbulence in accretion disks remained a puzzle until linear analysis by Balbus and Hawley in 1991~\cite{BH1991}. This section outlines the derivation of the MRI: its dispersion relation, maximally growing mode, and other important features. The method of choice in this paper to simulate the MRI will be discussed in the next section (Section~\ref{sec:mrisbideal}), with the actual simulation results and their interpretation coming in the section after that (Section~\ref{sec:mrisimideal}).
+As discussed in Chapter~\ref{chap:history}, the source of turbulence in accretion disks remained a puzzle until linear analysis by Balbus and Hawley in 1991~\cite{BH1991}. This section outlines the derivation of the MRI: its dispersion relation, maximally growing mode, and other important features. The method used in this paper to simulate the MRI will be discussed in the next section (Section~\ref{sec:mrisbideal}), with the actual simulation results and their interpretation coming in the section after that (Section~\ref{sec:mrisimideal}).
 
 \subsection{MRI Spring Analogy}
+First, it is useful to have a bit of physical intuition for the MRI. Following~\cite{Kunz2016HW2,Kunz2016HW3}, this section will look at the equations for a local frame: local in the sense that they describe small deviations from a circular orbit. Typical perturbations that might be considered are Eulerian perturbations: those deviations about a point in space. Now we consider Lagrangian deviations: deviations about a background state that follows a fluid element on its path in the background flow. \\
+\\
+The Eulerian perturbations in density $\delta\rho$ are
+\begin{equation*}
+\delta\rho=\rho_1(\vec r,t)-\rho_0(\vec r)
+\end{equation*}
+where $\rho_0$ is the equilibrium density and $\rho_1$ is the new density at some later time. In contrast, the Lagrangian perturbations in density $\Delta\rho$ are
+\begin{align*}
+\Delta\rho&=\rho_1(\vec r,t)+\vec\xi\cdot\nabla\rho(\vec r)-\rho(\vec r)\\
+&=\delta\rho+\vec\xi\cdot\nabla\rho(\vec r)
+\end{align*}
+The two are different due to the background flow that carries fluid elements along in time (i.e. even in equilibrium their position would change. The lagrangian formalism takes that into account). Here, $\vec\xi$ is the displacement that the fluid element undergoes in time $t$. \\
+\\
+We take a background flow $\vec u=R\Omega(R)\hat\phi$ and consider small radial and azimuthal deviations $\vec\xi=\xi_R\hat R+\xi_\phi\hat\phi$ in a shear flow. The Lagrangian velocity perturbation is
+\begin{equation*}
+\Delta\vec u=\delta\vec u+\vec\xi\cdot\nabla\vec u
+\end{equation*}
+Expanding in polar coordinates, we have
+\begin{align}
+\delta\vec u&=\frac{D\vec\xi}{Dt}-\vec\xi\cdot\nabla\vec u\nonumber\\
+&=\hat R\left(\frac{\partial\xi_R}{\partial t}+\Omega\frac{\partial\xi_R}{\partial\phi}\right)+\hat\phi\left(\frac{\partial\xi_\phi}{\partial t}+\Omega\frac{\partial\xi_\phi}{\partial\phi}-\xi_RR\frac{\partial\Omega}{\partial R}\right) \label{eq:du1}
+\end{align}
+We note that 
+\begin{equation*}
+(\vec u\cdot\nabla)\xi_R=\frac{u_\phi}{R}\frac{\partial\xi_R}{\partial \phi}=\Omega\frac{\partial\xi_R}{\partial \phi}
+\end{equation*}
+and
+\begin{equation*}
+(\vec u\cdot\nabla)\xi_\phi=\frac{u_\phi}{R}\frac{\partial\xi_\phi}{\partial \phi}=\Omega\frac{\partial\xi_\phi}{\partial\phi}
+\end{equation*}
+Equation~\ref{eq:du1} can then be written as
+\begin{align*}
+\delta\vec u&=\delta u_R\hat R+\delta u_\phi\hat \phi\\
+&=\hat R \frac{D\xi_R}{Dt}+\hat\phi\left(\frac{D\xi_\phi}{Dt}-\xi_R\frac{d\Omega}{d\ln R}\right)
+\end{align*}
+and we identify
+\begin{align}
+\frac{D\xi_R}{Dt}&=\delta u_R\nonumber\\
+\frac{D\xi_\phi}{Dt}&=\delta u_\phi+\xi_R \frac{d\Omega}{d\ln R} \label{eq:duxi}
+\end{align}
+Looking back to Eq.~\ref{eq:momcons2}, we can write the radial component of the momentum equation with perturbed velocity $\vec u+\delta\vec u$ as
+\begin{equation*}
+\rho\frac{D}{Dt}\delta\vec u=\frac D{Dt}\delta u_R-2\Omega\delta u_\phi=f_R
+\end{equation*}
+where now $D/Dt=\partial/\partial t+\vec u\cdot\nabla -\Omega\partial/\partial\phi$ to account for the system rotation. This is equal to the perturbed magnetic and pressure forces $f_R$.\\
+\\
+Similarly, the azimuthal component
+\begin{equation*}
+\rho\frac{D}{Dt}\delta u_\phi+\rho\left(\frac{d\Omega}{d\ln R}+2\Omega\right)\delta u_R=f_\phi
+\end{equation*}
+where here the perturbed magnetic and pressure forces are $f_\phi$. Calling $\frac{D\xi_R}{Dt}=\dot\xi_R$ and $\frac{D\xi_\phi}{Dt}=\dot\xi_\phi$ and plugging in Eqns.~\ref{eq:duxi}, we have the so-called ``Hill equations'':
+\begin{align}
+\ddot\xi_R-2\Omega\dot\xi_\phi +\xi_R\frac{d\Omega^2}{d\ln R}&=f_R\label{eq:hill1}\\
+\ddot\xi_\phi+2\Omega\dot\xi_R &=f_\phi \label{eq:hill2}
+\end{align}
+This set of equations may look familiar. Indeed, setting $f_R=Kx$ and $f_\phi=Ky$, they are the equations for two masses coupled together by a spring in circular orbits. Therefore, the MRI can be understood by analogy to point masses.\\
+\\
+Let us explore this further. The situation is illustrated in Figure~\ref{fig:mriSpring}: two masses orbit and are connected by a spring with spring constant $K$. Both masses follow a Keplerian rotation profile, meaning that the inner mass, $m_i$, rotates slightly faster than the outer mass $m_o$. The spring resists the masses' pulling apart by exerting forces on them to bring them closer together. In pulling the inner mass backwards, the spring causes the inner mass to lose angular momentum and fall to a closer orbit in accordance with Keplerian rotation. At the time, however, the outer mass is pulled forward and travels faster, meaning that it drifts outwards. As a result, the masses get even further apart, the spring pulls more, and the gap widens more. The process runs away as angular momentum is transported outward. \\
+\\
+This analogy also demonstrates the importance of a \textit{weak} magnetic field: if the spring is too strong, the masses will not be able to overcome the restoring force. The Hill equations~\ref{eq:hill1} and~\ref{eq:hill2} also provide an easy way to get the MRI stability condition: if the radial equation has $\frac{d\Omega^2}{d\ln R}-K>0$, then the system is stable. The stability criterion is thus
+\begin{equation*}
+-K>-\frac{d\Omega^2}{d\ln R}
+\end{equation*}
+Where does this restoring force come from in the actual MRI? It is the result of the magnetic field lines curling and the magnetic tension trying to unfurl them (see Figure~\ref{fig:mriTension}). In Fourier space, given perturbations of the form $\delta\vec u\propto e^{i\vec k\cdot\vec x}$, the tension $(\vec B\cdot\nabla)\vec B\propto (\vec u_A\cdot \vec k)\vec B$ is proportional to $-(\vec k\cdot\vec u_A)^2$ where $\vec u_A=\vec B/(4\pi\rho)^{1/2}$ is the Alfven velocity. This leads to the stability condition
+\begin{equation}
+(\vec k\cdot\vec u_A)^2 >-\frac{d\Omega^2}{d\ln R} \label{eq:mriStable}
+\end{equation}
+This schematic derivation is done more rigorously in the next section (\ref{ssec:mriLinear}). For now, it is interesting to note that it is always possible to find a wavenumber $k$ such that the system is unstable unless $\frac{d\Omega^2}{d\ln R}>0$, which would be very uncommon in astrophysical disks. Also note that if the magnetic field $B=0$, then the Alfven velocity is also zero and Eq.~\ref{eq:mriStable} would have us believe that the hydrodynamic criterion for disk stability is $\frac{d\Omega^2}{d\ln R}>0$. We know from, for example, Eq.~\ref{eq:KStability} in Section~\ref{ssec:rayleighStability} that hydrodynamic disks are stable if $\frac1{r^2}\frac{d}{dr}(\Omega^2r^4)=4\Omega^2+\frac{d\Omega^2}{d\ln r}>0$. The disagreement is due to the assumptions made in using the MHD equations, namely, that the mean free path of particles was much less than the length scales of interest. As $k$ increases, we get down to such small scales that the scales of interest become comparable to the mean free path and thus this assumption is no longer valid. The conflict must be resolved through kinetic theory. This is another incentive to see if we can get the MHD equations to somehow approximate kinetic theory in Chapter~\ref{ch:kinBrag}.
+
+\subsection{Linear Theory with the Boussinesq Approximation}\label{ssec:mriLinear}
+The full general dispersion relation for the MRI can be derived straightfowardly by crunching the algebra and linearizing the MHD equations in Fourier space (see, for example,~\cite{BH1991a}). It is, however, more instructive to make an approximation that filters out the magnetosonic waves that are irrelevant in the regime of the MRI. This approximation, termed the ``Boussinesq Approximation'', effectively takes the sound speed to infinity. It manifests in the MHD equations by allowing us to drop pressure perturbations everywhere except the momentum equation, where they make sure the fluid is incompressible, and dropping density perturbations in the continuity equation, where they give buoyancy effects~\cite{KunzBoussNotes}.\\
+\\
+Our equations are then:
+
+Entropy? 
+
+\subsection{Max growth rate}
 
 \section{Simulating the MRI: the Shearing-Box Method} \label{sec:mrisbideal}
 In simulating accretion disks, it is much more computationally expensive to describe the disk as a whole, including pressure gradients and the overall global structure. A smaller-scale, local simulation is also effective at demonstrating the physics involved. As noted in Chapter~\ref{sec:introXXXXX}, the series of simulations in this chapter and the next zoom in to a typical region of the accretion disk and consider the MHD equations in that blown-up portion. We now explore exactly how such local simulations work and the relevant quantities.\\
