@@ -20,21 +20,24 @@
 \contentsline {subsection}{\numberline {3.3.3}Max growth rate}{22}{subsection.3.3.3}
 \contentsline {section}{\numberline {3.4}Simulating the MRI: the Shearing-Box Method}{22}{section.3.4}
 \contentsline {section}{\numberline {3.5}The MRI in Ideal MHD: Simulations}{22}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Athena 4.2: An MHD Code....}{22}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Parameters}{22}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Results}{22}{subsection.3.5.3}
-\contentsline {chapter}{\numberline {4}Non-ideal MHD: Theory and Simulations}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Non-ideal MHD: Theory}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Resistivity: Physical Intuition}{23}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Viscosity: Physical Intuition}{23}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Non-ideal MHD: Simulations}{23}{section.4.2}
-\contentsline {chapter}{\numberline {5}Kinetic Theory and Braginskii MHD}{24}{chapter.5}
-\contentsline {section}{\numberline {5.1}Kinetic Theory}{24}{section.5.1}
-\contentsline {section}{\numberline {5.2}Braginskii MHD: Theory}{24}{section.5.2}
-\contentsline {section}{\numberline {5.3}Kinetic Simulations of the MRI}{24}{section.5.3}
-\contentsline {section}{\numberline {5.4}Braginskii MHD Simulations of the MRI}{24}{section.5.4}
-\contentsline {chapter}{\numberline {A}Identities and Derivations?}{25}{appendix.A}
-\contentsline {subsection}{\numberline {A.0.1}Angular Momentum Conservation in Ideal MHD}{25}{subsection.A.0.1}
-\contentsline {subsection}{\numberline {A.0.2}Alfv'en's Theorem (Flux Freezing)}{28}{subsection.A.0.2}
-\contentsline {section}{\numberline {A.1}Vector Identities}{28}{section.A.1}
-\contentsline {section}{\numberline {A.2}Cylindrical Coordinates}{28}{section.A.2}
+\contentsline {subsection}{\numberline {3.5.1}Athena 4.2: An MHD Code....}{23}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Parameters}{23}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Results}{23}{subsection.3.5.3}
+\contentsline {chapter}{\numberline {4}Non-ideal MHD: Theory and Simulations}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}Non-ideal MHD: Theory}{24}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Resistivity: Physical Intuition}{24}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Viscosity: Physical Intuition}{24}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Non-ideal MHD: Simulations}{24}{section.4.2}
+\contentsline {chapter}{\numberline {5}Kinetic Theory and Braginskii MHD}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Kinetic Theory}{25}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}The MHD Equations from Kinetic Theory}{28}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Braginskii MHD: Theory}{28}{section.5.2}
+\contentsline {section}{\numberline {5.3}Kinetic Simulations of the MRI}{28}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Pegasus: A Particle-in-Cell Code}{28}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Braginskii MHD Simulations of the MRI}{28}{section.5.4}
+\contentsline {chapter}{\numberline {6}Acknowledgements}{29}{chapter.6}
+\contentsline {chapter}{\numberline {A}Identities and Derivations?}{30}{appendix.A}
+\contentsline {subsection}{\numberline {A.0.1}Angular Momentum Conservation in Ideal MHD}{30}{subsection.A.0.1}
+\contentsline {subsection}{\numberline {A.0.2}Alfv'en's Theorem (Flux Freezing)}{33}{subsection.A.0.2}
+\contentsline {section}{\numberline {A.1}Vector Identities}{33}{section.A.1}
+\contentsline {section}{\numberline {A.2}Cylindrical Coordinates}{33}{section.A.2}

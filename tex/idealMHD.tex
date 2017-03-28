@@ -33,16 +33,20 @@ This means that, in a plasma, there are many particles in a cube of the Debye le
 \\
 Other important quantities include the mean free path $\lambda_{mfp}$ of a plasma particle, that is, how far it travels on average before it collides with another particle. This is related to the thermal velocity $v_T$ and collision frequency $\nu$ by $\lambda_{mfp}=v_T/\nu$. \\
 \\
-We can also define the gyrofrequency of a species $\Omega_s$ by looking at the equation of motion of a particle in a magnetic field, resulting in $\Omega_s=q_sB/m_sc$. Note that this is half of the Larmor frequency (XXXXXXXXXXX). From the gyrofrequency we define the mean gyroradius $\rho_s$ as the radius of the circle of a particle traveling at the thermal velocity: $\rho_s\equiv v_{T_s}/\Omega_s$. This quantity in particular will prove important in later chapters (i.e. Chapter~\ref{chap:kinBragXXXXX}), where ordering such that the gyroradius is much less than the mean free path will lead to anisotropic viscosity along the magnetic field lines.\\
+We can also define the gyrofrequency of a species $\Omega_s$ by looking at the equation of motion of a particle in a magnetic field, resulting in $\Omega_s=q_sB/m_sc$. Note that this is half of the Larmor frequency (XXXXXXXXXXX). From the gyrofrequency we define the mean gyroradius $\rho_s$ as the radius of the circle of a particle traveling at the thermal velocity: $\rho_s\equiv v_{T_s}/\Omega_s$. This quantity in particular will prove important in later chapters (i.e. Chapter~\ref{chap:kinBragXXXXX}), where ordering such that the gyroradius is XXX comparable toXXXXmuch less than the mean free path will lead to anisotropic viscosity along the magnetic field lines.\\
 \\
 With the basic quantities of $\lambda_{mfp}$ and $\rho_s$ in mind, we can now turn to the assumptions behind ideal MHD.
 
 \section{Ideal MHD Equations}
-Ideal MHD treats the different species of electrons and ions as fluids. In the broader MHD context, each species is at a different temperature, has a different gyroradius, and so on. However, single-fluid MHD, where each species has the same temperature, is still often a useful framework. In these cases the density adds linearly and other quantities are redefined as such. XXXXxx
-rho and mfp\\
+Ideal MHD treats the different species of electrons and ions as fluids. In the broader MHD context, each species is at a different temperature, has a different gyroradius, and so on. However, single-fluid MHD, where each species has the same temperature, is still often a useful framework. In these cases the number density adds linearly and other quantities such as velocity are redefined in center-of-mass coordinates.\\
 \\
-Magnetohydrodynamics is a fluid formalism; this means that the individual particles' positions and velocities can be averaged out and the important quantities are bulk variables, like the mean flow of the fluid, density, and pressure. Treating each individual particle with a velocity distribution is characteristic of kinetic theory and the distribution function, as discussed in Chapter~\ref{chap:kinBragXXX}. We are considering a continuous source rather than discrete particles that would manifest as delta functions. \\
+Magnetohydrodynamics is a fluid formalism; this means that the individual particles' positions and velocities can be averaged out and the important quantities are bulk variables, like the mean flow of the fluid, density, and pressure. Treating each individual particle with a velocity distribution is characteristic of kinetic theory and the distribution function, as discussed in Chapter~\ref{chap:kinBragXXX}. We are considering a continuous source rather than discrete particles that would manifest as delta functions. Formally, this is valid when the mean free path of the plasma particles is much less than the length scales of interest:
+\begin{equation}
+  \lambda_{mfp}<<L
+\end{equation}
+Other assumptions include quasi-neutrality (that is, $\sum_s m_s n_s=0$), 
 \\
+XXXXXXXXX
 We now proceed to motivate the equations of ideal MHD by a combination of conservation arguments and Maxwell's equations. We consider for now a single species. First note that the standard continuity equation, saying that the fluid elements cannot be created or destroyed, leads to the first equation:
 \begin{equation}
   \frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec V\right)=0\label{eq:continuity}
@@ -198,6 +202,7 @@ The so-called ``shearing-box'' approximation has been in use since XXXXXX in stu
 
 \section{The MRI in Ideal MHD: Simulations} \label{sec:mrisimideal}
 The simulations in this section were modelled after~\cite{XXXXXXBH1991c}, hereafter called HB3. Although the techniques used in that paper were slightly different (periodic radial conditions, for example, instead of periodic plus shear), it is instructive to replicate the results with the code that will be used
+**briefly 2D (just show dynamo decay), then HGB
 
 \subsection{Athena 4.2: An MHD Code....}
 The code in use for the simulations in this section and Chapter~\ref{chap:nonIdealXXXXXXX} and the MHD simulations of Chapter~\ref{chap:kinBragXXXX} is Athena4.2. XXXXXXXXXXXX

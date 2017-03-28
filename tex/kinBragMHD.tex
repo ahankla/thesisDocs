@@ -1,12 +1,108 @@
 \chapter{Kinetic Theory and Braginskii MHD}
 \section{Kinetic Theory}
+Kinetic theory generalizes the brute-force method of applying Maxwell's equations (and the Lorentz Force Law) to many particles. Following~\cite{Nicholson}, we consider first a single particle. Its density in phase space $N(\vec x,\vec v,t)$ is given by
+\begin{equation*}
+  N(\vec x,\vec v,t)=\delta(\vec x-\vec x_1(t))\delta(\vec v-\vec v_1(t))
+\end{equation*}
+Here, $\vec x$ and $\vec v$ are the coordinates themselves, while $\vec x_1$ and $\vec v_1$ are the locations of the particle (particle 1) at time $t$. It is straightforward to generalize this to many particles:
+\begin{equation*}
+  N(\vec x,\vec v,t)=\sum_{i=1}^{N_0} \left[\delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i(t)\right]
+\end{equation*}
+where $N_0$ is the total number of particles (of one species, or summing over species if there is more than one). Remembering the chain rule, the time derivative of this phase density is given by
+\begin{align}
+  \frac{\partial N(\vec x,\vec v,t)}{\partial t}&=-\sum_{i=1}^{N_0} \dot{\vec x}_{ik} \frac{\partial}{\partial x_k}\delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i(t)\nonumber\\
+  &-\sum_{i=1}^{N_0} \dot{\vec v}_{ik}\frac{\partial}{\partial v_k}\delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i(t))\label{eq:Neq}
+\end{align}
+with the sum over the index $k$ for the three spatial directions. However, we know that
+\begin{equation*}
+  \dot{\vec x}_i(t)=\vec v_i(t)
+\end{equation*}
+and, from the Lorentz force law, that
+\begin{equation*}
+  m_i\dot{\vec v}_i=q_i \vec{\mathrm{E}}_i(\vec x(t),t)+\frac{q_i}{c}\vec v_i(t)\times\vec{\mathrm{B}}(\vec x_i(t),t)
+\end{equation*}
+where $\mathrm{E}$ and $\mathrm{B}$ are the electric charges produced by the other point particles that is acting on the particle of mass $m_i$ and charge $q_i$. The phase density~\ref{eq:Neq} becomes
+\begin{align*}
+  \frac{\partial N(\vec x,\vec v,t)}{\partial t}&=-\sum_{i=1}^{N_0} \vec v_{ik}\frac{\partial}{\partial x_k} \delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i)\\
+  &-\sum_{i=1}^{N_0} \left[\frac{q_i}{m_i}\vec{\mathrm{E}}_{ik}+\frac{q_i}{m_i c}(\vec v_i\times\vec{\mathrm{B}})_k\right]\frac{\partial}{\partial v_k}\delta(\vec x-\vec x_i)\delta(\vec v-\vec v_i)
+\end{align*}
+However, due to the delta function property $a\delta(a-b)=b\delta(a-b)$, we can replace the $\vec v_{ik}$ in the first term of the sum with $\vec v_k$, which is independent of the sum. The $\mathrm{E}$ and $\mathrm{B}$ in the second term similarly simplify. We then notice that the sum is just the phase density again:
+\begin{align}
+  \frac{\partial N(\vec x,\vec v,t)}{\partial t}&=-\vec v_k\frac{\partial}{\partial x_k}\sum_{i=1}^{N_0} \delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i)\nonumber\\
+  &- \left[\frac{q}{m}\vec{\mathrm{E}_k}+\frac{q}{m c}(\vec v\times\vec{\mathrm{B}})_k\right]\frac{\partial}{\partial v_k}\sum_{i=1}^{N_0}\delta(\vec x-\vec x_i)\delta(\vec v-\vec v_i)\nonumber\\
+  &=-\vec v_k\frac{\partial N(\vec x,\vec v,t)}{\partial x_k}-\frac qm\left(\vec{\mathrm{ E}}+\frac{\vec v}c\times\vec B\right)_k\frac{\partial N(\vec x,\vec v,t)}{\partial v_k}\label{eq:klimontovich}
+\end{align}
+here the mass $m$ and charge $q$ are the mass and charge of each particle in a certain species; for multiple species just sum over the species. Equation~\ref{eq:klimontovich} is known as the Klimontovich equation. It is completely deterministic, given appropriate initial conditions and sufficient computing power. \\
+\\
+Again, we are interested in the average properties of the plasma and not so much the orbits of each individual particle. Therefore we write the distribution function of a species $s$ as $f_S=<N>$, where the brackets denote an ensemble average over position and velocity space. This is equivalent to averaging over a length scale $l$ such that the separation between particles is much less than $l$, but $l$ is much less than the Debye length (Eq.~\ref{eq:debye}). We then have that the phase density is the distribution function plus some fluctuations $\delta N$ whose average is zero. Similarly breaking up the electric field and magnetic field into their average and fluctuating pieces, we have
+\begin{align*}
+  N(\vec x,\vec v,t)&=f(\vec x,\vec v,t)+\delta N\\
+  \mathrm{\vec E}(\vec x,\vec v,t)&=\vec E(\vec x,\vec v,t)+\delta E\\
+  \mathrm{\vec B}(\vec x,\vec v,t)&=\vec B(\vec x,\vec v,t)+\delta B
+\end{align*}
+With these definitions, the Klimontovich equation~\ref{eq:klimontovich} becomes:
+\begin{align}
+  \frac{\partial f_s(\vec x,\vec v,t)}{\partial t}+\vec v_k\frac{\partial f_s}{\partial x_k}+\frac qm (\vec E+\frac{\vec v}{c}\times\vec B)_k\frac{\partial f_s}{\partial v_k}&=-\frac qm<(\delta E+\frac{\vec v}{c}\times\delta B)_k\frac{\partial \delta N}{\partial v_k}>\nonumber\\
+  &=C[f_s] \label{eq:vlasov}
+\end{align}
+This is the Vlasov equation. The left side depends only smoothly-varying terms, whereas the right is spiky, being the average of products of delta functions. The righthand side represents the interactions between individuals particles, and we can lump all these effects into the so-called ``collision operator'' $C[f]$. Entire graduate courses can be taught on the collision operator so we will not delve too much into it here.\\
+\\
+Important properties of the collision operator can be found in introductory plasma physics texts such asXX~\cite{Nicholson} orXX~\cite{KunzLecture1}. We note, for example, that conservation of particles is given by
+\begin{equation}
+  \int d^3\vec v\frac{\partial f_s}{\partial t}=0,
+\end{equation}
+conservation of total momentum by
+\begin{equation}
+  \int\sum_sd^3\vec vm_s\vec v\frac{\partial f_s}{\partial t}=0,
+\end{equation} and conservation of total energy by
+\begin{equation}
+  \int\sum_s d^3\vec v\frac{m_s\vec v^2}2 \frac{\partial f_s}{\partial t}=0.
+\end{equation}
+This suggests a way to get the MHD equations discussed in Chapter~\ref{ch:idealMHD}, and indeed they can be derived from Eq.~\ref{eq:vlasov}, as described in the next section (\ref{ssec:mhdKin}). \\
+\\
 
-\section{Braginskii MHD: Theory}
+
+Note that it is usually collisions that facilitate exchange of energy between particles. Without collisions, the distribution function will move away from a Maxwellian more freely. This is an important idea in Braginskii MHD, explained in Section~\ref{bragMHDtheory}.
+   
+\subsection{The MHD Equations from Kinetic Theory} \label{ssec:mhdKin}
+The MHD equations can be derived by taking moments of the Vlasov equation~\ref{eq:vlasov}. First, however, it is easier to go to the frame of the plasma, writing the velocity peculiar to the mean flow $\vec w$ as $\vec w\equiv\vec v-\vec u_s(\vec x,t)$. This way, $m_s\int\vec w\vec w f_sd^3\vec v\equiv\overset{\leftrightarrow}{P}_s$.\\
+\\
+Using transformations
+\begin{align*}
+  \frac{\partial}{\partial t}\vert_{\vec v}&=\frac{\partial}{\partial t}\vert_{\vec w}\cdot\frac{\partial}{\partial \vec w}=\frac{\partial}{\partial t}\vert_{\vec w}-\frac{\partial\vec u_s}{\partial t}\cdot\frac\partial{\partial\vec w}\\
+  \vec\nabla_x\vert_{\vec v}&=\vec\nabla_x\vert_{\vec w}+(\nabla\vec w)_{\vec v}\cdot\frac{\partial}{\partial\vec w}=\vec\nabla\vert_{\vec w}-(\nabla\vec u_s)\cdot\frac{\partial}{\partial\vec w}
+\end{align*}
+Writing the derivative $\frac{D}{Dt_s}=\frac{\partial}{\partial t}+\vec u_s\cdot\vec\nabla$, the electric field in the moving frame $\vec E'=\vec E+\frac1c\vec u_s\times\vec B$, and $\vec w$-independent acceleration $\vec a_s=\frac{q_s}{m_s}\vec E'+\vec g-\frac{D\vec u_s}{Dt_s}$, we have the Vlasov equation:
+\begin{equation}
+  \frac{Df_s}{Dt_s}+\vec w\cdot\vec\nabla f_s+\left[\vec a_s+\frac{q_s}{m_sc}\vec w\times\vec B-\vec w\cdot\vec\nabla\vec u_s\right]\cdot\frac{\partial f_s}{\partial\vec w}=C[f_s]\label{eq:vlasov2}
+\end{equation}
+We can now take moments of this equation by integrating over velocity space. The zeroth moment is accordingly
+\begin{align*}
+  \frac{D}{Dt_s}\int d^3wf_s+\frac{\partial}{\partial x_i}\int d^3ww_if_s+\int d^3w\vec a_s\cdot\frac{\partial f_s}{\partial\vec w}+\int d^3w\frac{q_s}{m_sc}\vec u\times\vec B\cdot\frac{\partial f_s}{\partial\vec w}-\int d^3w(\vec w\cdot\vec\nabla\vec u_s)\cdot\frac{\partial f_s}{\partial\vec w}=\int d^3w C[f_s]
+\end{align*}
+The second term is zero by definition, the third and fourth by integration by parts, and the right hand side because collisions don't destroy particles. Noting that/defining $n_s(t,\vec x)=\int d^3w f_s$, we have
+\begin{align*}
+  \frac{Du_s}{Dt_s}&=\int d^3w(\vec w\cdot\vec\nabla\vec u_s)\cdot\frac{\partial f_s}{\partial\vec w}=-n_s\vec\nabla\cdot\vec u_s\\
+  \frac{\partial u_s}{\partial t}+\nabla\cdot(n_s\vec u_s)&=0
+\end{align*}
+which is the continuity equation as in Chapter~\ref{ch:idealMHD} Eq.~\ref{eq:continuity}.\\
+\\
+Note that this pattern of always involving higher moments of the Vlasov equation does not simply disappear. Rather, it is a central problem of plasma physics known as the BBGKY hierarchy. It is various choices to ``close'' this loop of higher moments that defines different theories
+(Kunz Lecture 1)
+Hierarchy problem, closure. 
+\section{Braginskii MHD: Theory}\label{sec:bragMHDtheory}
+If we assume a different ordering, namely that the Larmor radius is not zero, we come to anisotropic viscosity. 
+(Kunz Braginskii MHD)
+Adiabatic Invariants
+
+In general, collisions push the distribution function back to a Maxwellian. When these collisions are weak or the plasma is collisionless, the distribution function deviates more substantially from a Maxwellian, influencing the pressure in different ways along the magnetic field lines and in the plane perpendicular to the field lines.
 
 \section{Kinetic Simulations of the MRI}
+\subsection{Pegasus: A Particle-in-Cell Code}
+hybrid-kinetic MHD 
 
 \section{Braginskii MHD Simulations of the MRI}
-yo
+yo. My research. 
 
 
 
