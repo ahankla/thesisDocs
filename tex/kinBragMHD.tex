@@ -34,7 +34,7 @@ However, due to the delta function property $a\delta(a-b)=b\delta(a-b)$, we can 
 \end{align}
 here the mass $m$ and charge $q$ are the mass and charge of each particle in a certain species; for multiple species just sum over the species. Equation~\ref{eq:klimontovich} is known as the Klimontovich equation. It is completely deterministic, given appropriate initial conditions and sufficient computing power. \\
 \\
-Again, we are interested in the average properties of the plasma and not so much the orbits of each individual particle. Therefore we write the distribution function of a species $s$ as $f_S=<N>$, where the brackets denote an ensemble average over position and velocity space. This is equivalent to averaging over a length scale $l$ such that the separation between particles is much less than $l$, but $l$ is much less than the Debye length (Eq.~\ref{eq:debye}). We then have that the phase density is the distribution function plus some fluctuations $\delta N$ whose average is zero. Similarly breaking up the electric field and magnetic field into their average and fluctuating pieces, we have
+Again, we are interested in the average properties of the plasma and not so much the orbits of each individual particle. Therefore we write the distribution function of a species $s$ as $f_S=<N>$, where the brackets denote an ensemble average over position and velocity space. This is equivalent to averaging over a length scale $L$ such that the separation between particles is much less than $L$, but $L$ is much less than the Debye length (Eq.~\ref{eq:debye}). We then have that the phase density is the distribution function plus some fluctuations $\delta N$ whose average is zero. Similarly breaking up the electric field and magnetic field into their average and fluctuating pieces, we have
 \begin{align*}
   N(\vec x,\vec v,t)&=f(\vec x,\vec v,t)+\delta N\\
   \mathrm{\vec E}(\vec x,\vec v,t)&=\vec E(\vec x,\vec v,t)+\delta E\\
@@ -47,7 +47,25 @@ With these definitions, the Klimontovich equation~\ref{eq:klimontovich} becomes:
 \end{align}
 This is the Vlasov equation. The left side depends only smoothly-varying terms, whereas the right is spiky, being the average of products of delta functions. The righthand side represents the interactions between individuals particles, and we can lump all these effects into the so-called ``collision operator'' $C[f]$. Entire graduate courses can be taught on the collision operator so we will not delve too much into it here.\\
 \\
-Important properties of the collision operator can be found in introductory plasma physics texts such asXX~\cite{Nicholson} orXX~\cite{KunzLecture1}. We note, for example, that conservation of particles is given by
+Important properties of the collision operator can be found in introductory plasma physics texts such asXX~\cite{Nicholson},~\cite{Hazeltine}, orXX~\cite{KunzLecture1}. Considering only collisions between two particles, the collision operator for a species $s$ can be written as the sum of collisions between particles of two species $s$ and $s'$. It then takes the form
+\begin{equation}
+  C_s(f)=\sum_{s'}C_{ss'}(f_s,f_{s'})
+\end{equation}
+The distribution function is normalized such that:
+\begin{equation}
+  n_s(\vec x,t)=\int d^3\vec v f_s(\vec x,\vec v, t)\label{eq:nnorm}
+\end{equation}
+Conservation laws emerge by taking different moments of the Vlasov equation and the collision operator. The $k$-th moment is defined as taking the integral $\int d^3v \vec v^k f_s$. Particle conservation arises from taking the zeroth-moment and using Eq.~\ref{eq:vlasov} and the normalization equation~\ref{eq:nnorm}:
+\begin{align}
+  \int d^3v \left[\frac{\partial f_s}{\partial t}+\nabla\cdot(\vec vf_s)+\frac{\partial}{\partial v_i}(a_i f_s)\right] &=\int d^3v C_s=0\\
+  &=\frac{\partial}{\partial t}n_s+\nabla\cdot\int d^3v \vec vf_s+
+\end{align}
+XXXXXXXXXX
+
+ 
+
+Important 
+We note, for example, that conservation of particles is given by
 \begin{equation}
   \int d^3\vec v\frac{\partial f_s}{\partial t}=0,
 \end{equation}
@@ -60,8 +78,6 @@ conservation of total momentum by
 \end{equation}
 This suggests a way to get the MHD equations discussed in Chapter~\ref{ch:idealMHD}, and indeed they can be derived from Eq.~\ref{eq:vlasov}, as described in the next section (\ref{ssec:mhdKin}). \\
 \\
-
-
 Note that it is usually collisions that facilitate exchange of energy between particles. Without collisions, the distribution function will move away from a Maxwellian more freely. This is an important idea in Braginskii MHD, explained in Section~\ref{bragMHDtheory}.
    
 \subsection{The MHD Equations from Kinetic Theory} \label{ssec:mhdKin}

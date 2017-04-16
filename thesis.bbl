@@ -1,0 +1,140 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Foucart et~al.(2015)Foucart, Chandra, Gammie, and
+  Quataert]{Foucart2015}
+Francois Foucart, Mani Chandra, Charles~F. Gammie, and Eliot Quataert.
+\newblock {Evolution of accretion discs around a kerr black hole using extended
+  magnetohydrodynamics}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  456\penalty0 (2):\penalty0 1332--1345, 2015.
+\newblock ISSN 13652966.
+\newblock \doi{10.1093/mnras/stv2687}.
+
+\bibitem[Hawley et~al.(2001)Hawley, Balbus, and Stone]{Hawley2001}
+John~F Hawley, Steven~A Balbus, and James~M Stone.
+\newblock {A Magnetohydrodynamic Nonradiative Accretion Flow in Three
+  Dimensions}.
+\newblock \emph{The Astrophysical Journal Letters}, 554\penalty0 (1):\penalty0
+  49--52, 2001.
+\newblock ISSN 0004637X.
+\newblock \doi{10.1086/320931}.
+\newblock URL
+  \url{http://iopscience.iop.org/1538-4357/554/1/L49{\%}5Cnpapers2://publication/uuid/2C3A60D4-41E8-4DE1-B690-3CB8AF0B7406{\%}5Cnhttp://stacks.iop.org/1538-4357/554/i=1/a=L49}.
+
+\bibitem[Jiang et~al.(2014)Jiang, Stone, and Davis]{Jiang2014}
+Yan-Fei Jiang, James~M. Stone, and Shane~W. Davis.
+\newblock {a Global Three-Dimensional Radiation Magneto-Hydrodynamic Simulation
+  of Super-Eddington Accretion Disks}.
+\newblock \emph{The Astrophysical Journal}, 796\penalty0 (2):\penalty0 106,
+  2014.
+\newblock ISSN 1538-4357.
+\newblock \doi{10.1088/0004-637X/796/2/106}.
+\newblock URL
+  \url{http://stacks.iop.org/0004-637X/796/i=2/a=106?key=crossref.3345a0b680e6eb3d7be5065544be0d95}.
+
+\bibitem[Nixon and Salvesen(2014)]{Nixon2014}
+Chris Nixon and Greg Salvesen.
+\newblock {A physical model for state transitions in black hole X-ray
+  binaries}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  437\penalty0 (4):\penalty0 3994--3999, 2014.
+\newblock ISSN 00358711.
+\newblock \doi{10.1093/mnras/stt2215}.
+
+\bibitem[Parrish and Stone(2005)]{Parrish2005}
+Ian~J. Parrish and James~M. Stone.
+\newblock {Nonlinear Evolution of the Magnetothermal Instability in Two
+  Dimensions}.
+\newblock \emph{The Astrophysical Journal}, 633:\penalty0 334--348, 2005.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1086/518881}.
+\newblock URL \url{http://arxiv.org/abs/astro-ph/0612195}.
+
+\bibitem[Parrish and Stone(2007)]{Parrish2007}
+Ian~J. Parrish and James~M. Stone.
+\newblock {Simulation of the magnetothermal instability}.
+\newblock \emph{Astrophysics and Space Science}, 307\penalty0 (1-3):\penalty0
+  77--82, 2007.
+\newblock ISSN 0004640X.
+\newblock \doi{10.1007/s10509-006-9243-4}.
+
+\bibitem[Sadowski et~al.(2016)Sadowski, Lasota, Abramowicz, and
+  Narayan]{Sadowski2016}
+Aleksander Sadowski, Jean-Pierre Lasota, Marek~A. Abramowicz, and Ramesh
+  Narayan.
+\newblock {Energy flows in thick accretion discs and their consequences for
+  black hole feedback}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  456\penalty0 (4):\penalty0 3915--3928, 2016.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stv2854}.
+\newblock URL
+  \url{http://mnras.oxfordjournals.org/lookup/doi/10.1093/mnras/stv2854}.
+
+\bibitem[Sano et~al.(2004)Sano, Inutsuka, Turner, and Stone]{Sano2004}
+T~Sano, S-I. Inutsuka, N~J Turner, and J~M Stone.
+\newblock {Angular momentum transport by MHD turbulence in accretiondisks: Gas
+  pressure dependence of the saturation level of the magnetorotational
+  instability}.
+\newblock \emph{Astrophys. J.}, 605:\penalty0 321--339, 2004.
+
+\bibitem[Sharma et~al.(2003)Sharma, Hammett, and Quataert]{Sharma2003}
+P.~Sharma, G.~Hammett, and E.~Quataert.
+\newblock {Transition from Collisionless to collisional magnetorotational
+  instability}.
+\newblock \emph{The Astrophysical Journal}, 596:\penalty0 1121--1130, 2003.
+\newblock URL \url{http://iopscience.iop.org/article/10.1086/378234/pdf}.
+
+\bibitem[Shiokawa(2013)]{Shiokawa2013}
+Hotaka Shiokawa.
+\newblock {General Relativistic MHD Simulations of Black Hole Accretion Disks:
+  Dynamics and Radiative Properties}.
+\newblock 2013.
+
+\bibitem[Stone et~al.(2008)Stone, Gardiner, Teuben, Hawley, and
+  Simon]{Stone2008}
+J.~M. Stone, T.~a. Gardiner, P.~Teuben, J.~F. Hawley, and J.~B. Simon.
+\newblock {Athena: A New Code for Astrophysical MHD}.
+\newblock \emph{The Astrophysical Journal Supplement Series}, 178:\penalty0
+  137--177, 2008.
+\newblock ISSN 0067-0049.
+\newblock \doi{10.1086/588755}.
+\newblock URL \url{http://arxiv.org/abs/0804.0402}.
+
+\bibitem[Stone et~al.(1996)Stone, Hawley, Gammie, and Balbus]{Stone1996}
+James~M. Stone, John~F. Hawley, Charles~F. Gammie, and Steven~A. Balbus.
+\newblock {Three-dimensional Magnetohydrodynamical Simulations of Vertically
+  Stratified Accretion Disks}.
+\newblock \emph{The Astrophysical Journal}, 463\penalty0 (2):\penalty0 656,
+  1996.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1086/177280}.
+\newblock URL
+  \url{http://adsabs.harvard.edu/cgi-bin/nph-data{\_}query?bibcode=1996ApJ...463..656S{\&}link{\_}type=ABSTRACT{\%}5Cnpapers2://publication/doi/10.1086/177280{\%}5Cnhttp://adsabs.harvard.edu/doi/10.1086/177280}.
+
+\bibitem[Turner et~al.(2002)Turner, Stone, and Sano]{Turner2002}
+N~J Turner, J~M Stone, and T~Sano.
+\newblock {Local Axisymmetric Simulations of Magnetorotational Instability in
+  Radiation‐dominated Accretion Disks}.
+\newblock \emph{The Astrophysical Journal}, 566\penalty0 (1):\penalty0
+  148--163, 2002.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1086/338081}.
+\newblock URL
+  \url{http://adsabs.harvard.edu/cgi-bin/nph-data{\_}query?bibcode=2002ApJ...566..148T{\&}link{\_}type=ABSTRACT{\%}5Cnpapers2://publication/doi/10.1086/338081{\%}5Cnhttp://stacks.iop.org/0004-637X/566/i=1/a=148}.
+
+\bibitem[Veledina et~al.(2013)Veledina, Poutanen, and Vurm]{Veledina2013}
+Alexandra Veledina, Juri Poutanen, and Indrek Vurm.
+\newblock {Hot accretion flow in black hole binaries: A link connecting X-rays
+  to the infrared}.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society},
+  430\penalty0 (4):\penalty0 3196--3212, 2013.
+\newblock ISSN 00358711.
+\newblock \doi{10.1093/mnras/stt124}.
+
+\end{thebibliography}

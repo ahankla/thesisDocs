@@ -1,36 +1,34 @@
 \documentclass[11pt,notitlepage]{report}
-\includeonly{classAF}
 
 \usepackage{thesisstyle}
 
-\title{Thesis}
+\title{Thesis} %Fluid Closure of Collisionless Systems: Anisotropic Viscosity in Radiatively-Inefficient Accretion Flows
 \author{Lia Hankla\\Advisor: James Stone. Co-advisor: Frans Pretorius}
 \begin{document}
 
 \maketitle
-\input{./tex/abstract}
+%\input{./tex/abstract}
 
 \tableofcontents
 
-\input{./tex/introduction.tex} %Introduction
+%\input{./tex/introduction.tex} %Introduction
 
-\input{./tex/AFmech.tex} %Accretion Flow Mechanics
+\input{./tex/plasmaphysics.tex} %Plasma Physics: Context and Background
 
-%\input{./tex/historySim.tex} %History and Simulation of Accretion Disks
+%\input{./tex/astrophysics.tex} %Astrophysics: Context and Background
 
-\input{./tex/idealMHD.tex} %Ideal MHD: Theory and Simulations
+%\input{./tex/compMRI.tex} %Computational Context through the MRI
 
-\input{./tex/nonIdealMHD.tex} %Non-ideal MHD: Theory and Simulations
+%\input{./tex/kinBrag.tex} %Fluid Closure of a Collisionless System
 
-\input{./tex/kinBragMHD.tex} %Kinetic Theory and Braginskii MHD
-
-\input{./tex/acknowledgements.tex}
+%\input{./tex/acknowledgements.tex}
 
 \appendix
-\input{./tex/appendices.tex}
+%\input{./tex/appendices.tex}
 
 %Bibliography
 \clearpage
-\input{./tex/ThesisLiterature.bib}
+\bibliographystyle{plainnat}
+\bibliography{./tex/ThesisLiterature}
 
 \end{document}
