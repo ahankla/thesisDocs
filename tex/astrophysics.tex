@@ -4,74 +4,23 @@ The accretion disks around supermassive black holes are often (but not always) w
 The chapter will begin by motivating the selection of accretion disks (specifically, radiatively-inefficient accretion flows, RIAFs) in Section~\ref{sec:obsmotive}, which also explains some of the observational difficulties involved in seeing accretion disks. An overview of properties of these RIAFs is given in the next section (\ref{sec:propertiesAF}), followed by important mechanics of accretion disks (Section~\ref{sec:mechanics}) and a brief history of the puzzle that accretion has historically posed (Section~\ref{sec:early}). This section leads into the next chapter, whose focus will be to explain the mechanism behind accretion itself both analytically and through numerical simulations, hence introducing important concepts for Chapter~\ref{chap:kinBrag}.  
 
 \section{Observations of Accretion Disks} \label{sec:obsmotive}
-With the advent of increasingly high-resolution telescopes and interferometry networks, it is possible to probe structures on the order of the event horizons of supermassive black holes~\cite{EHT}. This is exciting for a number of reasons, the foremost related to this thesis being that the shape and properties of disks around black holes are steadily coming into focus. Direct observational evidence for models is important for understanding the disk radiation processes. An interesting application of these observations is as a test of general relativity through comparisons of the black hole ``shadow'' measurements and theoretical predictions~\cite{Psaltis2015}. However, evaluation of black hole shadow measurements requires simulating the disk around the black hole in order to understand where all the radiation is coming from; currently, GRMHD simulations are used~\cite{Psaltis2015}. As mentioned in the Introduction, such models assume the validity of a fluid closure. However, as we will see below, evidence for the low luminosity of certain black holes is strong, suggesting a weakly collisional origin and hence a kinetic model. Thus the main goal of this thesis to evaluate the validity of such simulations has applications even to tests of general relativity.\\
+With the advent of increasingly high-resolution telescopes and interferometry networks, it is possible to probe structures on the order of the event horizons of supermassive black holes~\cite{EHT}. This is exciting for a number of reasons, the foremost related to this thesis being that direct observations allows for different models to be tested.\\
 \\
-Although theory has motivated existence
-
-
-BH1998
-Direct observation difficult.XX
-Theoretically compelling reasons, also spectral signs. Young, Schneider, Schechtman 1981 detected only one rotation peak.
-
+An interesting application of these observations is as a test of general relativity through comparisons of the black hole ``shadow'' measurements and theoretical predictions~\cite{Psaltis2015,Moscibrodzka2014}. However, evaluation of black hole shadow measurements requires simulating the disk around the black hole in order to understand where all the radiation is coming from; currently, GRMHD simulations are used~\cite{Psaltis2015}. As mentioned in the Introduction, such models assume the validity of a fluid closure. However, as we will see below, evidence for the low luminosity of certain black holes is strong, suggesting a weakly collisional origin and hence a kinetic model. Thus the main goal of this thesis to evaluate the validity of such simulations has applications even to tests of general relativity.\\
+\\
+Direct observations of accretion disks have long been difficult, in part due to technology but also the nature of having a thin accretion disk who emission spectra are not exactly known theoretically. Using both the Event Horizon Telescope and Chandra, we see both radio and millimeter emission from the black hole at the center of our galaxy, Sagittarius A*, which implies both synchrotron radiation (radio) and bremsstrahlung (X-ray). There might also be some anti-Comptonization~\cite{Oezel2001}. However, the Milky way also produces radio emission that obscures Sagittarius A*'s signature. There are also potentially other unknowns, such as jets~\cite{Moscibrodzka2014}, and the fact that electrons dominate the spectra and whose acceleration and heat transport are precisely what we do not know how to model also presents issues~\cite{Chan2015}. Progress has been made with GRMHD simulations, like assuming simplified emission models and ruling out a strong funnel emission model~\cite{Chan2015}. Others have assumed a model (that Sagittarius A* is a RIAF) and come up with parameters such as its spin orientation and magnitude and aspect ratio~\cite{Broderick2009,Broderick2011,Dexter2013}. However, these fits have massive uncertainties. Other black holes such as M87 and GX 339-4 are also being studied but suffer from poor resolution~\cite{Plant2014,Mccourt2016}. 
 
 XXX explain buckets of energy.
+XX why riafs (also bh xray binaries: quiescent RIAF to cold black-body when mass accretion rate increase: Das2013), 
 
-Look at BH1998 again.
-
-why riafs (also bh xray binaries: quiescent RIAF to cold black-body when mass accretion rate increase: Das2013), 
-
-Moscibrodzka2014:
-Sgr A*: M=4 million solar masses
-radio/millimeter source: synchrotron origin, emitted by plasma
-In radio: less radiation at shorter wavelengths, from disk.
-Millimeter and shorter come from black hole inner region, not disk?
-Average size is measured, comparable to ``shadow'': direct evidence~
-lambda>1mm, Milky way electron radio signature obscures source, so might not be from Sgr A*.
-Could be from disk or jets. 
-hard to compare with observations because don't know electron distribution function. Can't compare GRMHD simulations! VLBI should be able to tell.
-Chandra: inner AF x-rays are only 10\% of total, which rules out high-inclination of disk models.
-
-Plant2014
-Black Hole X-ray binaries: usually quiescent, have outbursts. Outbursts due to disk instabilities: emit hard X-rays in power-law (due to inverse Copmton scattering). What happens during the transition? Accretion rate increases, except see broadened Fe lines at ISCO suggest disk truncation. Use black hole Gx 339-4. XMM-Newton (European Space Agency), Suzaka (NASA x-ray satellite).
-
-Chan2015
-GRMHD can't capture low-density electron thermodynamics-> can't predict accretion flows and spectra because dominated by electrons. Use simplified emission models instead. But these all fit the spectra equally well! BUT EHT measurements rule out strong funnel emission.
-Why don't know electron distribution? HEating not understood (very anisotropic), electron acceleration?
-Explore lots of models, but still MHD!
-
-Oezel2000
-X-ray from bremsstrahlung. ADAF=low mass accretion: optically thin, bremsstrahlung at outer region, synchrotron at inner. Inverse compton scattering becomes important at higher mass accretion rates.
-Hot flow=overall low luminosity, synchrotron peak in radio, X-ray from bremsstrahlung, Comptonization is negligible compared to bremsstrahlung. Two-temperature model, but electrons maxwellian.
-
-Broderick2009
-IF Sgr A* is RIAF, then fit orientation/magnitude of spin. Uses mm-VLBI observations.ab initio ``well beyond reach''
-
-Broderick2011
-Still have massive uncertainties (spin 0, 64-.86 1sigma 2sigma). BUT favour length-to-width of 2.4:1 (so fat, not thin). ``ab initio calculations are beyond our present capability''. Also have gravitational lensing in the horizon vicinity. Compare physical and phenomenological models...applicability of MHD unclear (Sharma 2006,2007). PROBLEM: do not model non-thermal equilibrium electrons, which is what we see! (power law)
-
-
-Dexter2013
-Black hole spin tilt with respect to disk means more undefined parameters, but can explain time-dependent Sgr A* luminosity. Magnetic field ad hoc assumptions.
-
-Mccourt2016
-Use gas clouds to measure accretion rate? G2 cloud is highly eccentric, might trigger Sgr A* outburst. Watch with EHT.
 %------------------------------------------------------%
 
 \section{Properties of Hot Accretion Flows} \label{sec:propertiesAF}
 Accretion flows are generally characterized by their temperature, their radiative efficiency, and/or their thickness. These types and the relationships among them will be clarified and discussed soon enough: we first note briefly that accretion does not have to lead to the formation of a disk. Indeed, some of the earliest studies on accretion concerned matter falling in radially and uniformly from all directions onto a compact object: spherical accretion~\cite{Bondi?XX}. However, such accretion flows are unlikely to occur in nature because matter will almost always be rotating with respect to the compact object and hence have angular momentum. \\
 \\
-AFs...
-
-Virial: half radiated, half kinetic energy~\cite{BH1998}.
-Temperature estimates complicated by not knowing how radiation is vertically transported~\cite{BH1998}. 
-
-%------------------------------------------------------%
-
-
-\section{Radiation Processes}
-In order to match models with observations, we need to know what kind of light will be detected. This issue requires knowing how particles are accelerated, an active subject of research~\cite{XXXXXXX}. BH1998 gives review. 
-
-observations...
+Hot accretion flows have been discussed in numerous reviews. Here, we draw from~\citet{Yuan2014}. \\
+\\
+The term ``hot accretion flow'' immediately implies a key feature of hot accretion flows and thereby RIAFs: they are hot. Although temperature estimates are complicated by not knowing how radiation is vertically transported~\cite{BH1998}, we generally know that their temperatures are close to the virial temperature of the gas. High temperatures produce pressure that counterbalances gravity and produces a thick disk: RIAFs usually have a ratio of radius to disk height of about two. These flows also tend to have a much lower accretion rate than thin disks, leading to a short optical depth and a non-blackbody spectrum. As mentioned before, the emission of these objects tends to be due to bremsstrahlung and synchrotron radiation. 
 
 
 %------------------------------------------------------%
@@ -80,9 +29,16 @@ observations...
 \section{Mechanics of Accretion Disks}\label{sec:mechanics}
 This section presents a series of calculations pertaining to important elements of accretion disks. The issue of the mechanism behind accretion itself is actually somewhat thorny and was under discussion for a long time, so we begin by assuming that the disk already exists and look at how such a disk functions. Accretion itself will be discussed in Section~\ref{sec:history} and explained more thoroughly in Chapter~\ref{chap:compMRI}. 
 
-
 \subsection{Differential Rotation} \label{ssec:difrot}
--not always good approximation (Magnetic disks a la begelman)
+Accretion disks are almost always taken to be rotationally-supported. This means that the centrifugal acceleration balances out gravity and we can write
+\begin{align*}
+  \frac{GMm}{R^2}&=m\Omega^2R
+\end{align*}
+where $M$ is the mass of the black hole, $m$ is the mass of a particle at radius $R$, and $\Omega$ is the rotation speed at radius $R$. This leads to a Keplerian rotation profile
+\begin{equation}
+  \Omega=\left(\frac{GM}{R^3}\right)^{1/2}
+\end{equation}
+This equation clearly neglects all other forces except for gravity. This assumption is not always a good one, however. Magnetic fields can quickly grow in these accretion disks, leading to non-Keplerian rotation profiles~\cite{Salvesen2016}. For our purposes however, the approximation will hold well enough. 
 
 \subsection{Eddington Luminosity}
 Radiation from a compact object generates a radiation pressure that begins to counter the gravitational force from the central object. When the luminosity is high enough, the object's gravity is no longer enough to keep it together. When the radiation pressure and gravity exactly cancel, the system is in equilibrium. We can derive the value of the luminosity at this equilibrium, the ``Eddington luminosity'' or ``Eddington limit'' as follows (following~\citet{Spruit2009}):\\
@@ -128,37 +84,34 @@ Assuming an isothermal equation of state $P=\rho c^2$, this equation can be inte
 -\frac1\rho c^2\frac{d\rho}{dz}&=F_{gz}=\Omega^2z\\
 \rho(z)&=\rho_0 e^{-\frac{\Omega^2}{c^2}\frac{z^2}2}=\rho_0e^{-\frac{z^2}{2H^2}}
 \end{align*}
-where $H^2\equiv\frac{c^2}{\Omega^2}$. $H$ can thus be interpreted as the distance a sound wave travels in a shear time (i.e., one rotation). Generally the thickness of a disk is taken to be $2H$. As will be discussed in Section~\ref{chap:compMRI,sec:XXXX}, it is often convenient to choose units such that $H=1$, resulting in numerical domains with dimensions of $(H,4H,H)$. 
+where $H^2\equiv\frac{c^2}{\Omega^2}$. $H$ can thus be interpreted as the distance a sound wave travels in a shear time (i.e., one rotation). Generally the thickness of a disk is taken to be $2H$. As will be discussed in Section~\ref{chap:compMRI}, it is often convenient to choose units such that $H=1$, resulting in numerical domains with dimensions of $(H,4H,H)$. 
 
-\input{tex/rayleighStability.tex}
-XXX put in appendix?
-\subsection{Keplerian vs. Shear Flow}
-XXX put this in appendix? 
-
-%--------------------------------------------%
-
-XX reynolds number, magnetic prandtl, etc.? XX
-
+\subsection{Rayleigh Stability Criterion} \label{ssec:rayleighStability}
+In hydrodynamics, disks with a Keplerian velocity profile are stable against perturbations. This is intuitively obvious by noting that the Earth does not fall into the sun; that is, circular orbits are stable. Section~\ref{sec:rayleighext} explores this idea more rigorously, leading to the result that disks with a rotation profile such that
+\begin{equation}
+  \kappa^2=\frac{1}{R^3}\frac{d(R^4\Omega^2)}{dR}\ge0
+\end{equation}
+are stable. This means that specific angular momentum should increase outward for linear stability~\cite{BH1998}. 
 
 %------------------------------------------------------%
 
 \section{Early Problems in Accretion}\label{sec:early}
 The above sections have not addressed how accretion actually works on a fundamental level. So what exactly is accretion? \\
 \\
-Accretion is the outward transport of angular momentum, which means that particles that lose angular momentum drop closer to the central accreting object (in the case of this thesis, a black hole) in accordance with differential rotation (Section~\ref{ssec:difrot}). The cause of this angular moment transport is the real issue. It seems natural to explain this slowing down via friction; in an accretion disk (or torus), the matter at different radii are not moving at the same velocity (i.e. there is a shear) and hence one might think that there is a sort of coefficient of kinetic friction between particles that slows down their movement and causes them to accrete. The idea that this ``molecular'' or ``shear'' viscosity could explain accretion rates is tempting, but in reality is not supported by simulations (XX or observations?).\\
+Accretion is the outward transport of angular momentum, which means that particles that lose angular momentum drop closer to the central accreting object (in the case of this thesis, a black hole) in accordance with differential rotation (Section~\ref{ssec:difrot}). The cause of this angular moment transport is the real issue. It seems natural to explain this slowing down via friction; in an accretion disk (or torus), the matter at different radii are not moving at the same velocity (i.e. there is a shear) and hence one might think that there is a sort of coefficient of kinetic friction between particles that slows down their movement and causes them to accrete. The idea that this ``molecular'' or ``shear'' viscosity could explain accretion rates is tempting, but in reality is not supported by simulations or observations.\\
 \\
-Early simulations solving the MHD equations for a disk showed accretion rates on the order of XXXXXXXXXX (CITE: XXXXXXXSTILL need some simulations showing molecular rates!!XXXXXXXXXxx), XXXXXXxalso observations!XXXXXXx; however, according to the standard values of molecular viscosity (in, for example,~\citet{Spitzer1962}, the standard values of molecular viscosity are around XXXXXXXx). This fantastic difference between theory and simulations resulted in several new ideas for explaining the transport of angular momentum and led to the formulation of one of the most well-known models for thin disks--the $\alpha$-disk.\\
+Early simulations solving the MHD equations for a disk as well as observations showed accretion rates on the order of $10^{15}cm^2/s$; however, the standard values of molecular viscosity are in the tens of $cm^2/s$, somewhere around 14 orders of magnitude too small~\cite{Spruit2009}. This fantastic difference between theory and simulations resulted in several new ideas for explaining the transport of angular momentum and led to the formulation of one of the most well-known models for thin disks--the $\alpha$-disk.\\
 \\
-The seminal paper of ~\citet{SS1973} explores accretion disks in the context of a binary star system. It essentially characterizes ignorance in the accretion rate via the parameter $\alpha$, defining the tangential stress $w_{r\phi}=\alpha\rho v_s^2$, where $v_s$ is the sound speed such that $\rho v_s^2/2$ is the disk matter's thermal energy density, although definitions vary to order unity across sources~\cite{SS1973}. This formulation temporarily removed the need to explain the source of the viscosity and provides a parameter that is easy to tweak in numerical simulations. Although the original paper takes $\alpha$ as a constant for simplicity, it is generally a function of radius. The relevance of the $\alpha$ parameter is apparent even today, as it is a simple way to gain intuition in accretion problems despite its debated value~\cite{PennaEA2013}. \\
+The seminal paper of ~\citet{SS1973} explores accretion disks in the context of a binary star system. It essentially characterizes ignorance in the accretion rate via the parameter $\alpha$, defining the tangential stress $w_{r\phi}=\alpha\rho v_s^2$, where $v_s$ is the sound speed such that $\rho v_s^2/2$ is the disk matter's thermal energy density, although definitions vary to order unity across sources~\cite{SS1973}. This formulation temporarily removed the need to explain the source of the viscosity and provides a parameter that is easy to tweak in numerical simulations. Although the original paper takes $\alpha$ as a constant for simplicity, it is generally a function of radius. The relevance of the $\alpha$ parameter is apparent even today, as it is a simple way to gain intuition in accretion problems despite its debated value~\cite{Penna2013}. \\
 \\
-Despite its intuitive usefulness, the $\alpha$ prescription offers no mechanism for the transport of angular momentum. XXXXXXXXX proposed that, while pure molecular viscosity could not explain the observed accretion rates, an ``effective'' viscosity due to eddy interaction could do the job~\cite{XXXXXX}. In other words, turbulence would generate eddies whose interactions would manifest similar to a viscosity. The problem became to find the source of the turbulence that would lead to outward angular momentum transport. This question is the subject of the next section.
+Despite its intuitive usefulness, the $\alpha$ prescription offers no mechanism for the transport of angular momentum. It was proposed that, while pure molecular viscosity could not explain the observed accretion rates, an ``effective'' viscosity due to eddy interaction could do the job~\cite{BH1998}. In other words, turbulence would generate eddies whose interactions would manifest similar to a viscosity. The problem became to find the source of the turbulence that would lead to outward angular momentum transport. This question is the subject of the next section.
 
 \subsection{Potential Sources of Turbulence}
 Supposing that an effective viscosity generated by turbulence can explain observed and simulated accretion rates, the question becomes: what causes this turbulence? \\
 \\
 Some, influenced by laboratory fluid mechanics, believed that the sheer property of having a high Reynolds number (the product of a characteristic velocity and length scale divided by the viscosity; huge in astrophysical flows due to the large length scales involved) satisfactorily accounted for the needed turbulence. The mechanism at hand is called ``vortex stretching'': due to vortex conservation, the stretching of vortices in a shear flow increases the circulation velocity around the vortex tube. This allows for free energy to be extracted from the shear flow~\cite{BH1998}.\\
 \\
-Others, however, suspected that, at least in accretion disks, the flow was fundamentally different than those shear flows explored in the aforementioned fluid mechanics labs. Indeed, as demonstrated nicely in~\cite{BH1998:SectionIII.c.1} and reproduced in Section~\ref{sec:MECHANICSkeplerianvsshearflow}, Keplerian flows are stable against perturbations (i.e. experience no turbulence) where shear flows are not (given the Rayleigh stability criterion of Section~\ref{sec:rayleightcrit} is satisfied). The difference is due to epicycles in Keplerian flows, which sink the energy that would otherwise devolve into prominent disturbances. A high Reynolds number is not enough to explain the necessary turbulence.\\
+Others, however, suspected that, at least in accretion disks, the flow was fundamentally different than those shear flows explored in the aforementioned fluid mechanics labs. Indeed, as demonstrated nicely in~\cite{BH1998:SectionIII.c.1} and mentioned in Section~\ref{ssec:rayleighstability}, Keplerian flows are stable against perturbations (i.e. experience no turbulence) where shear flows are not (given the Rayleigh stability criterion of Section~\ref{sec:rayleighstability} is satisfied). The difference is due to epicycles in Keplerian flows, which sink the energy that would otherwise devolve into prominent disturbances. A high Reynolds number is not enough to explain the necessary turbulence.\\
 \\
 It was long thought (and indeed, is still under discussion) that hydrodynamic instabilities could lead to turbulence in accretion disks. One such idea proposed by~\citet{Paczynski1978} in very flat disks was that gravitational instabilities similar to the Jeans instability could lead to internal heating which would in turn limit the development of the instability, maintaining a somewhat unstable state. While the paper raised important questions concerning heat transport, the effect of the instability is small in hot disks~\cite{Spruit2009}.\\
 \\

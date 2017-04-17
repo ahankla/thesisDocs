@@ -1,0 +1,47 @@
+\subsection{Derivation of the Vlasov Equation}
+Following~\citet{Nicholson1983}, we consider first a single particle. Its density in phase space $N(\vec x,\vec v,t)$ is given by
+\begin{equation*}
+  N(\vec x,\vec v,t)=\delta(\vec x-\vec x_1(t))\delta(\vec v-\vec v_1(t))
+\end{equation*}
+Here, $\vec x$ and $\vec v$ are the coordinates themselves, while $\vec x_1$ and $\vec v_1$ are the locations of the particle (particle 1) at time $t$. It is straightforward to generalize this to many particles:
+\begin{equation*}
+  N(\vec x,\vec v,t)=\sum_{i=1}^{N_0} \left[\delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i(t)\right]
+\end{equation*}
+where $N_0$ is the total number of particles (of one species, or summing over species if there is more than one). Remembering the chain rule, the time derivative of this phase density is given by
+\begin{align}
+  \frac{\partial N(\vec x,\vec v,t)}{\partial t}&=-\sum_{i=1}^{N_0} \dot{\vec x}_{ik} \frac{\partial}{\partial x_k}\delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i(t)\nonumber\\
+  &-\sum_{i=1}^{N_0} \dot{\vec v}_{ik}\frac{\partial}{\partial v_k}\delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i(t))\label{eq:Neq}
+\end{align}
+with the sum over the index $k$ for the three spatial directions. This equation shows that the plasma is not only changing in time but also spatially. Since we know that
+\begin{equation*}
+  \dot{\vec x}_i(t)=\vec v_i(t)
+\end{equation*}
+and, from the Lorentz force law, that
+\begin{equation*}
+  m_i\dot{\vec v}_i=q_i \vec{\mathrm{E}}_i(\vec x(t),t)+\frac{q_i}{c}\vec v_i(t)\times\vec{\mathrm{B}}(\vec x_i(t),t)
+\end{equation*}
+where $\mathrm{E}$ and $\mathrm{B}$ are the electric charges produced by the other point particles that is acting on the particle of mass $m_i$ and charge $q_i$, the phase density~\ref{eq:Neq} becomes
+\begin{align*}
+  \frac{\partial N(\vec x,\vec v,t)}{\partial t}&=-\sum_{i=1}^{N_0} \vec v_{ik}\frac{\partial}{\partial x_k} \delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i)\\
+  &-\sum_{i=1}^{N_0} \left[\frac{q_i}{m_i}\vec{\mathrm{E}}_{ik}+\frac{q_i}{m_i c}(\vec v_i\times\vec{\mathrm{B}})_k\right]\frac{\partial}{\partial v_k}\delta(\vec x-\vec x_i)\delta(\vec v-\vec v_i)
+\end{align*}
+However, due to the delta function property $a\delta(a-b)=b\delta(a-b)$, we can replace the $\vec v_{ik}$ in the first term of the sum with $\vec v_k$, which is independent of the sum. The $\mathrm{E}$ and $\mathrm{B}$ in the second term similarly simplify. We then notice that the sum is just the phase density again:
+\begin{align}
+  \frac{\partial N(\vec x,\vec v,t)}{\partial t}&=-\vec v_k\frac{\partial}{\partial x_k}\sum_{i=1}^{N_0} \delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i)\nonumber\\
+  &- \left[\frac{q}{m}\vec{\mathrm{E}_k}+\frac{q}{m c}(\vec v\times\vec{\mathrm{B}})_k\right]\frac{\partial}{\partial v_k}\sum_{i=1}^{N_0}\delta(\vec x-\vec x_i)\delta(\vec v-\vec v_i)\nonumber\\
+  &=-\vec v_k\frac{\partial N(\vec x,\vec v,t)}{\partial x_k}-\frac qm\left(\vec{\mathrm{ E}}+\frac{\vec v}c\times\vec B\right)_k\frac{\partial N(\vec x,\vec v,t)}{\partial v_k}\label{eq:klimontovich}
+\end{align}
+Here the mass $m$ and charge $q$ are the mass and charge of each particle in a certain species; for multiple species just sum over the species. Equation~\ref{eq:klimontovich} is known as the Klimontovich equation. It is completely deterministic, given appropriate initial conditions and sufficient computing power. \\
+\\
+Again, we are interested in the average properties of the plasma and not so much the orbits of each individual particle. Therefore we write the distribution function of a species $s$ as $f_S=<N>$, where the brackets denote an ensemble average over position and velocity space. This is equivalent to averaging over a length scale $L$ such that the separation between particles is much less than $L$, but $L$ is much less than the Debye length (Eq.~\ref{eq:debye}). We then have that the phase density is the distribution function plus some fluctuations $\delta N$ whose average is zero. Similarly breaking up the electric field and magnetic field into their average and fluctuating pieces, we have
+\begin{align*}
+  N(\vec x,\vec v,t)&=f(\vec x,\vec v,t)+\delta N\\
+  \mathrm{\vec E}(\vec x,\vec v,t)&=\vec E(\vec x,\vec v,t)+\delta E\\
+  \mathrm{\vec B}(\vec x,\vec v,t)&=\vec B(\vec x,\vec v,t)+\delta B
+\end{align*}
+With these definitions, the Klimontovich equation~\ref{eq:klimontovich} becomes:
+\begin{align}
+  \frac{\partial f_s(\vec x,\vec v,t)}{\partial t}+\vec v_k\frac{\partial f_s}{\partial x_k}+\frac qm (\vec E+\frac{\vec v}{c}\times\vec B)_k\frac{\partial f_s}{\partial v_k}&=-\frac qm<(\delta E+\frac{\vec v}{c}\times\delta B)_k\frac{\partial \delta N}{\partial v_k}>\nonumber\\
+  &=C[f_s] \label{eq:vlasov}
+\end{align}
+This is the Vlasov equation.

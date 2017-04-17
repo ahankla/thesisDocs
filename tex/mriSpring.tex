@@ -1,0 +1,68 @@
+\subsection{MRI Spring Analogy} \label{sec:mrispring}
+First, it is useful to have a bit of physical intuition for the MRI. Following~\cite{Kunz2016HW2,Kunz2016HW3}, this section will look at the equations for a local frame: local in the sense that they describe small deviations from a circular orbit. Typical perturbations that might be considered are Eulerian perturbations: those deviations about a point in space. Now we consider Lagrangian deviations: deviations about a background state that follows a fluid element on its path in the background flow. \\
+\\
+The Eulerian perturbations in density $\delta\rho$ are
+\begin{equation*}
+\delta\rho=\rho_1(\vec r,t)-\rho_0(\vec r)
+\end{equation*}
+where $\rho_0$ is the equilibrium density and $\rho_1$ is the new density at some later time. In contrast, the Lagrangian perturbations in density $\Delta\rho$ are
+\begin{align*}
+\Delta\rho&=\rho_1(\vec r,t)+\vec\xi\cdot\nabla\rho(\vec r)-\rho(\vec r)\\
+&=\delta\rho+\vec\xi\cdot\nabla\rho(\vec r)
+\end{align*}
+The two are different due to the background flow that carries fluid elements along in time (i.e. even in equilibrium their position would change. The lagrangian formalism takes that into account). Here, $\vec\xi$ is the displacement that the fluid element undergoes in time $t$. \\
+\\
+We take a background flow $\vec u=R\Omega(R)\hat\phi$ and consider small radial and azimuthal deviations $\vec\xi=\xi_R\hat R+\xi_\phi\hat\phi$ in a shear flow. The Lagrangian velocity perturbation is
+\begin{equation*}
+\Delta\vec u=\delta\vec u+\vec\xi\cdot\nabla\vec u
+\end{equation*}
+Expanding in polar coordinates, we have
+\begin{align}
+\delta\vec u&=\frac{D\vec\xi}{Dt}-\vec\xi\cdot\nabla\vec u\nonumber\\
+&=\hat R\left(\frac{\partial\xi_R}{\partial t}+\Omega\frac{\partial\xi_R}{\partial\phi}\right)+\hat\phi\left(\frac{\partial\xi_\phi}{\partial t}+\Omega\frac{\partial\xi_\phi}{\partial\phi}-\xi_RR\frac{\partial\Omega}{\partial R}\right) \label{eq:du1}
+\end{align}
+We note that 
+\begin{equation*}
+(\vec u\cdot\nabla)\xi_R=\frac{u_\phi}{R}\frac{\partial\xi_R}{\partial \phi}=\Omega\frac{\partial\xi_R}{\partial \phi}
+\end{equation*}
+and
+\begin{equation*}
+(\vec u\cdot\nabla)\xi_\phi=\frac{u_\phi}{R}\frac{\partial\xi_\phi}{\partial \phi}=\Omega\frac{\partial\xi_\phi}{\partial\phi}
+\end{equation*}
+Equation~\ref{eq:du1} can then be written as
+\begin{align*}
+\delta\vec u&=\delta u_R\hat R+\delta u_\phi\hat \phi\\
+&=\hat R \frac{D\xi_R}{Dt}+\hat\phi\left(\frac{D\xi_\phi}{Dt}-\xi_R\frac{d\Omega}{d\ln R}\right)
+\end{align*}
+and we identify
+\begin{align}
+\frac{D\xi_R}{Dt}&=\delta u_R\nonumber\\
+\frac{D\xi_\phi}{Dt}&=\delta u_\phi+\xi_R \frac{d\Omega}{d\ln R} \label{eq:duxi}
+\end{align}
+Looking back to Eq.~\ref{eq:momcons2}, we can write the radial component of the momentum equation with perturbed velocity $\vec u+\delta\vec u$ as
+\begin{equation*}
+\rho\frac{D}{Dt}\delta\vec u=\frac D{Dt}\delta u_R-2\Omega\delta u_\phi=f_R
+\end{equation*}
+where now $D/Dt=\partial/\partial t+\vec u\cdot\nabla -\Omega\partial/\partial\phi$ to account for the system rotation. This is equal to the perturbed magnetic and pressure forces $f_R$.\\
+\\
+Similarly, the azimuthal component
+\begin{equation*}
+\rho\frac{D}{Dt}\delta u_\phi+\rho\left(\frac{d\Omega}{d\ln R}+2\Omega\right)\delta u_R=f_\phi
+\end{equation*}
+where here the perturbed magnetic and pressure forces are $f_\phi$. Calling $\frac{D\xi_R}{Dt}=\dot\xi_R$ and $\frac{D\xi_\phi}{Dt}=\dot\xi_\phi$ and plugging in Eqns.~\ref{eq:duxi}, we have the so-called ``Hill equations'':
+\begin{align}
+\ddot\xi_R-2\Omega\dot\xi_\phi +\xi_R\frac{d\Omega^2}{d\ln R}&=f_R\label{eq:hill1}\\
+\ddot\xi_\phi+2\Omega\dot\xi_R &=f_\phi \label{eq:hill2}
+\end{align}
+This set of equations may look familiar. Indeed, setting $f_R=Kx$ and $f_\phi=Ky$, they are the equations for two masses coupled together by a spring in circular orbits. Therefore, the MRI can be understood by analogy to point masses.\\
+\\
+Let us explore this further. The situation is illustrated in Figure~\ref{fig:mriSpring}: two masses orbit and are connected by a spring with spring constant $K$. Both masses follow a Keplerian rotation profile, meaning that the inner mass, $m_i$, rotates slightly faster than the outer mass $m_o$. The spring resists the masses' pulling apart by exerting forces on them to bring them closer together. In pulling the inner mass backwards, the spring causes the inner mass to lose angular momentum and fall to a closer orbit in accordance with Keplerian rotation. At the time, however, the outer mass is pulled forward and travels faster, meaning that it drifts outwards. As a result, the masses get even further apart, the spring pulls more, and the gap widens more. The process runs away as angular momentum is transported outward. \\
+\\
+This analogy also demonstrates the importance of a \textit{weak} magnetic field: if the spring is too strong, the masses will not be able to overcome the restoring force. There will thus be no turbulence, although angular momentum will still be outwardly transported. The Hill equations~\ref{eq:hill1} and~\ref{eq:hill2} also provide an easy way to get the MRI stability condition: if the radial equation has $\frac{d\Omega^2}{d\ln R}-K>0$, then the system is stable. The stability criterion is thus
+\begin{equation*}
+-K>-\frac{d\Omega^2}{d\ln R}
+\end{equation*}
+Where does this restoring force come from in the actual MRI? It is the result of the magnetic field lines curling and the magnetic tension trying to unfurl them (see Figure~\ref{fig:mriTension}). In Fourier space, given perturbations of the form $\delta\vec u\propto e^{i\vec k\cdot\vec x}$, the tension $(\vec B\cdot\nabla)\vec B\propto (\vec u_A\cdot \vec k)\vec B$ is proportional to $-(\vec k\cdot\vec u_A)^2$ where $\vec u_A=\vec B/(4\pi\rho)^{1/2}$ is the Alfven velocity. This leads to the stability condition
+\begin{equation}
+(\vec k\cdot\vec u_A)^2 >-\frac{d\Omega^2}{d\ln R} \label{eq:mriStable}
+\end{equation}

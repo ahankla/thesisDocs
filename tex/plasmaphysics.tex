@@ -5,7 +5,7 @@
 %Closure options
 %MHD Eqns (ideal and non-ideal)
 %---------------------------------%
-Understanding plasma physics is a topic worthy of a semester-long graduate class at least. This chapter briefly presents some basic plasma physics parameters and principles in Section~\ref{sec:plasmaproperties}, then examines the equations of motion and assumptions leading to the kinetic Vlasov equation and the so-called ``hierarchy problem'' in Section~\ref{sec:vlasov}. The next sections look at different methods of dealing with the hierarchy problem (overview in Section~\ref{sec:closures}), including more detailed examination of ideal MHD in Section~\ref{sec:idealMHD}, Braginskii MHD in Section~\ref{sec:bragMHD}, and the hybrid-kinetic equations of PEGASUS in Section~\ref{sec:hkineq}. \\
+Understanding plasma physics is a topic worthy of a semester-long graduate class at least. This chapter briefly presents some basic plasma physics parameters and principles in Section~\ref{sec:plasmaproperties}, then examines the equations of motion and assumptions leading to the kinetic Vlasov equation and the so-called ``hierarchy problem'' in Section~\ref{sec:vlasov}. The next sections look at different methods of dealing with the hierarchy problem (overview in Section~\ref{sec:closures}), including more detailed examination of ideal MHD in Section~\ref{sec:idealMHD} and Braginskii MHD in Section~\ref{sec:bragMHD}. \\
 \\
 Remember, however, that the ultimate goal of this thesis is to study a particular phenomenon (the MagnetoRotational Instability, MRI) in a particular regime (anisotropic viscosity) of plasma physics. The link between the plasma physics discussed here and the astrophysics discussed in Chapter~\ref{chap:astrophysics} comes in Chapters~\ref{chap:compMRI} and~\ref{chap:kinBrag}.
 
@@ -26,7 +26,7 @@ where each species Debye length $\lambda_j$ is given by
 \begin{equation}
   \lambda_j=\sqrt{\frac{T_j}{4\pi n_0 e^2}}
 \end{equation}
-where $T_j$ is the species equilibrium temperature in units of energy (Boltzmann's constant $k_b=1$), $n_0$ is the density of each species far away from the test charge, and $e$ is the charge on an electron. The exponential decay comes from the Boltzmann distribution since the system is at equilibrium. Detailed derivations can be found in any standard plasma physics introduction~\cite{Nicholson, Hazeltine, GurnettBhatt}. Magnetized plasmas are more important than, say, electric plasmas due to this shielding effect, since electric fields are shielded whereas magnetic fields will penetrate the plasma.\\
+where $T_j$ is the species equilibrium temperature in units of energy (Boltzmann's constant $k_b=1$), $n_0$ is the density of each species far away from the test charge, and $e$ is the charge on an electron. The exponential decay comes from the Boltzmann distribution since the system is at equilibrium. Detailed derivations can be found in any standard plasma physics introduction~\cite{Nicholson1983, Hazeltine2004, GurnettBhatt}. Magnetized plasmas are more important than, say, electric plasmas due to this shielding effect, since electric fields are shielded whereas magnetic fields will penetrate the plasma.\\
 \\
 Going back to our definition of a plasma, requiring that the potential energy of a particle is much less than its kinetic energy leads to the fact that the plasma parameter $\Lambda_s\equiv n_0\lambda_s^3$ of each species is
 \begin{equation}
@@ -45,7 +45,7 @@ The collision frequency $\nu$ can be found to depend on the temperature and dens
 \begin{equation}
   \nu\sim nT^{-3/2}
 \end{equation}
-Hence an increase in temperature leads to an increase in the mean free path of a particle because it decreases the collision frequency. In general, a higher collision rate simplifies calculations~\cite{Hazeltine}. This is because collisions push particles towards the Maxwell-Boltzmann (or Maxwellian) distribution of thermal equilibrium. Ideal MHD assumes a Maxwellian distribution (see Section~\ref{sec:idealMHD}). It is departures from this equilibrium that complicate calculations: for example when the collisional frequency is different along magnetic field lines and across magnetic field lines, the result is Braginskii MHD (Section~\ref{sec:bragMHD}).
+Hence an increase in temperature leads to an increase in the mean free path of a particle because it decreases the collision frequency. In general, a higher collision rate simplifies calculations~\cite{Hazeltine2004}. This is because collisions push particles towards the Maxwell-Boltzmann (or Maxwellian) distribution of thermal equilibrium. Ideal MHD assumes a Maxwellian distribution (see Section~\ref{sec:idealMHD}). It is departures from this equilibrium that complicate calculations: for example when the collisional frequency is different along magnetic field lines and across magnetic field lines, the result is Braginskii MHD (Section~\ref{sec:bragMHD}).
 
 \subsection{Magnetized Plasma Parameters}
 For a magnetized plasma, we can also define the gyrofrequency of a species $\Omega_s$ by looking at the equation of motion of a particle in a magnetic field, resulting in $\Omega_s=q_sB/m_s$ (Gaussian units). From the gyrofrequency we define the thermal gyroradius $\rho_s$ as the radius of the circle of a particle traveling at the thermal velocity: $\rho_s\equiv v_{T_s}/\Omega_s$. Note this is a factor of 2 different from the standard Larmor radius $\rho=v_{\perp}/\Omega_s$. \\
@@ -63,52 +63,11 @@ Having established some basic properties of a plasma, we can now investigate som
 %-------------------------------------------------------------------------------------%
 
 \section{Vlasov Kinetic Theory} \label{sec:vlasov}
-Kinetic theory generalizes the brute-force method of applying Maxwell's equations (and the Lorentz Force Law) to many particles. Following~\citet{Nicholson1983}, we consider first a single particle. Its density in phase space $N(\vec x,\vec v,t)$ is given by
-\begin{equation*}
-  N(\vec x,\vec v,t)=\delta(\vec x-\vec x_1(t))\delta(\vec v-\vec v_1(t))
-\end{equation*}
-Here, $\vec x$ and $\vec v$ are the coordinates themselves, while $\vec x_1$ and $\vec v_1$ are the locations of the particle (particle 1) at time $t$. It is straightforward to generalize this to many particles:
-\begin{equation*}
-  N(\vec x,\vec v,t)=\sum_{i=1}^{N_0} \left[\delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i(t)\right]
-\end{equation*}
-where $N_0$ is the total number of particles (of one species, or summing over species if there is more than one). Remembering the chain rule, the time derivative of this phase density is given by
+Kinetic theory generalizes the brute-force method of applying Maxwell's equations (and the Lorentz Force Law) to many particles. A derivation of the resulting equation is given in Appendix~\ref{ssec:vlasovderivation}: for now we simply accept the result. The Vlasov equation is:
 \begin{align}
-  \frac{\partial N(\vec x,\vec v,t)}{\partial t}&=-\sum_{i=1}^{N_0} \dot{\vec x}_{ik} \frac{\partial}{\partial x_k}\delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i(t)\nonumber\\
-  &-\sum_{i=1}^{N_0} \dot{\vec v}_{ik}\frac{\partial}{\partial v_k}\delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i(t))\label{eq:Neq}
+  \frac{\partial f_s(\vec x,\vec v,t)}{\partial t}+\vec v_k\frac{\partial f_s}{\partial x_k}+\frac qm (\vec E+\frac{\vec v}{c}\times\vec B)_k\frac{\partial f_s}{\partial v_k}=C[f_s] \label{eq:vlasov}
 \end{align}
-with the sum over the index $k$ for the three spatial directions. This equation shows that the plasma is not only changing in time but also spatially. Since we know that
-\begin{equation*}
-  \dot{\vec x}_i(t)=\vec v_i(t)
-\end{equation*}
-and, from the Lorentz force law, that
-\begin{equation*}
-  m_i\dot{\vec v}_i=q_i \vec{\mathrm{E}}_i(\vec x(t),t)+\frac{q_i}{c}\vec v_i(t)\times\vec{\mathrm{B}}(\vec x_i(t),t)
-\end{equation*}
-where $\mathrm{E}$ and $\mathrm{B}$ are the electric charges produced by the other point particles that is acting on the particle of mass $m_i$ and charge $q_i$, the phase density~\ref{eq:Neq} becomes
-\begin{align*}
-  \frac{\partial N(\vec x,\vec v,t)}{\partial t}&=-\sum_{i=1}^{N_0} \vec v_{ik}\frac{\partial}{\partial x_k} \delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i)\\
-  &-\sum_{i=1}^{N_0} \left[\frac{q_i}{m_i}\vec{\mathrm{E}}_{ik}+\frac{q_i}{m_i c}(\vec v_i\times\vec{\mathrm{B}})_k\right]\frac{\partial}{\partial v_k}\delta(\vec x-\vec x_i)\delta(\vec v-\vec v_i)
-\end{align*}
-However, due to the delta function property $a\delta(a-b)=b\delta(a-b)$, we can replace the $\vec v_{ik}$ in the first term of the sum with $\vec v_k$, which is independent of the sum. The $\mathrm{E}$ and $\mathrm{B}$ in the second term similarly simplify. We then notice that the sum is just the phase density again:
-\begin{align}
-  \frac{\partial N(\vec x,\vec v,t)}{\partial t}&=-\vec v_k\frac{\partial}{\partial x_k}\sum_{i=1}^{N_0} \delta(\vec x-\vec x_i(t))\delta(\vec v-\vec v_i)\nonumber\\
-  &- \left[\frac{q}{m}\vec{\mathrm{E}_k}+\frac{q}{m c}(\vec v\times\vec{\mathrm{B}})_k\right]\frac{\partial}{\partial v_k}\sum_{i=1}^{N_0}\delta(\vec x-\vec x_i)\delta(\vec v-\vec v_i)\nonumber\\
-  &=-\vec v_k\frac{\partial N(\vec x,\vec v,t)}{\partial x_k}-\frac qm\left(\vec{\mathrm{ E}}+\frac{\vec v}c\times\vec B\right)_k\frac{\partial N(\vec x,\vec v,t)}{\partial v_k}\label{eq:klimontovich}
-\end{align}
-Here the mass $m$ and charge $q$ are the mass and charge of each particle in a certain species; for multiple species just sum over the species. Equation~\ref{eq:klimontovich} is known as the Klimontovich equation. It is completely deterministic, given appropriate initial conditions and sufficient computing power. \\
-\\
-Again, we are interested in the average properties of the plasma and not so much the orbits of each individual particle. Therefore we write the distribution function of a species $s$ as $f_S=<N>$, where the brackets denote an ensemble average over position and velocity space. This is equivalent to averaging over a length scale $L$ such that the separation between particles is much less than $L$, but $L$ is much less than the Debye length (Eq.~\ref{eq:debye}). We then have that the phase density is the distribution function plus some fluctuations $\delta N$ whose average is zero. Similarly breaking up the electric field and magnetic field into their average and fluctuating pieces, we have
-\begin{align*}
-  N(\vec x,\vec v,t)&=f(\vec x,\vec v,t)+\delta N\\
-  \mathrm{\vec E}(\vec x,\vec v,t)&=\vec E(\vec x,\vec v,t)+\delta E\\
-  \mathrm{\vec B}(\vec x,\vec v,t)&=\vec B(\vec x,\vec v,t)+\delta B
-\end{align*}
-With these definitions, the Klimontovich equation~\ref{eq:klimontovich} becomes:
-\begin{align}
-  \frac{\partial f_s(\vec x,\vec v,t)}{\partial t}+\vec v_k\frac{\partial f_s}{\partial x_k}+\frac qm (\vec E+\frac{\vec v}{c}\times\vec B)_k\frac{\partial f_s}{\partial v_k}&=-\frac qm<(\delta E+\frac{\vec v}{c}\times\delta B)_k\frac{\partial \delta N}{\partial v_k}>\nonumber\\
-  &=C[f_s] \label{eq:vlasov}
-\end{align}
-This is the Vlasov equation. The left side depends only smoothly-varying terms, whereas the right is spiky, being the average of products of delta functions. The righthand side represents the interactions between individuals particles, and we can lump all these effects into the so-called ``collision operator'' $C[f]$. Entire graduate courses can be taught on the collision operator so we will not delve too much into it here.\\
+where $f_s$ is the phase-space density, or distribution function, and $\vec v$ is the velocity of a particle with charge $q$ and mass $m$ in electric and magnetic fields $\vec E$ and $\vec B$. The left side depends only smoothly-varying terms, whereas the right is spiky, being the average of products of delta functions. The righthand side represents the interactions between individuals particles, and we can lump all these effects into the so-called ``collision operator'' $C[f]$. Entire graduate courses can be taught on the collision operator so we will not delve too much into it here.\\
 \\
 Important properties of the collision operator can be found in introductory plasma physics texts such as~\citet{Nicholson1983},~\citet{Hazeltine2004}, or~\citet{KunzLecture1}. Considering only collisions between two particles, the collision operator for a species $s$ can be written as the sum of collisions between particles of two species $s$ and $s'$. It then takes the form
 \begin{equation}
@@ -269,14 +228,12 @@ The new momentum equation is thus:
 \end{equation}
 We can see that a combination of the continuity and internal energy equation yields the adiabatic law for an ideal gas by eliminating $\nabla\cdot\vec v$:
 \begin{align}
-  0&=\frac{Dp}{Dt}+\frac53p\nabla\cdot\vec v\nonumber\\
-  &=\frac{Dp}{Dt}-\gamma\frac p\rho\frac{D\rho}{Dt}\nonumber\\
-  0&=\frac1p-\frac\gamma\rho\frac{D\rho}{Dt}\nonumber\\
-  &=\frac{D}{Dt}\ln p-\gamma\frac{D}{Dt}\ln\rho\nonumber\\
+  0&=\frac{Dp}{Dt}+\frac53p\nabla\cdot\vec v=\frac{Dp}{Dt}-\gamma\frac p\rho\frac{D\rho}{Dt}\nonumber\\
+  0&=\frac1p-\frac\gamma\rho\frac{D\rho}{Dt}=\frac{D}{Dt}\ln p-\gamma\frac{D}{Dt}\ln\rho\nonumber\\
   &=\frac{D}{Dt}\ln\left(\frac{P}{\rho^\gamma}\right)\nonumber\\
-  0&=\frac{D}{Dt}\left(p\rho^{-5/3}\right)&=0\label{eq:adiabaticgas}
-\end{align*}
-where $\gamma=5/3$ was taken in the second line. The evolution used in Chapter~\ref{chap:compMRI} uses such an adiabatic equation of state.\\
+  0&=\frac{D}{Dt}\left(p\rho^{-5/3}\right)\label{eq:adiabaticgas}
+\end{align}
+where $\gamma=5/3$ was taken in the first line. The evolution used in Chapter~\ref{chap:compMRI} uses such an adiabatic equation of state.\\
 \\
 Since the plasma is perfectly conducting, the magnetic field lines cannot diffuse (this will be changed below in Section~\ref{ssec:nimhd}). This means that the field lines are effectively frozen into the plasma: the phenomenon is appropriately called ``flux-freezing'', or alternatively as Alfven's Theorem (proof in Appendix~\ref{sec:fluxfreezing}). Flux-freezing has important consequences for turbulence, since if a fluid particle is perturbed slightly, it will drag the magnetic field line with it (see Chapter~\ref{chap:compMRI}.\ref{sec:compIdeal}).\\
 \\
@@ -289,8 +246,7 @@ We have now collected all of the equations of MHD. We can summarize the assumpti
   \item Isotropic pressure: the heat flux tensor disappears.
   \item \textit{Ideal} MHD: resistance is zero.
 \end{itemize}
-It is worth noting that, like hydrodynamics, magnetohydrodynamics has no characteristic length scale. This is what gives hydrodynamics the power to describe objects on the scales of hurricanes just as accurately as those on the scales of the water flushing down a toilet. In MHD, it means that simulations are not as affected by the choice of units, unlike in non-ideal MHD where there is a characteristic length scale. Removing this last assumption is the topic of Section~\ref{ssec:nimhd}.\\
-\\
+It is worth noting that, like hydrodynamics, magnetohydrodynamics has no characteristic length scale. This is what gives hydrodynamics the power to describe objects on the scales of hurricanes just as accurately as those on the scales of the water flushing down a toilet. In MHD, it means that simulations are not as affected by the choice of units, unlike in non-ideal MHD where there is a characteristic length scale. Removing this last assumption is the topic of Section~\ref{ssec:nimhd}.
 
 %-----------------------------------------------------------%
 \subsection{Non-ideal MHD} \label{ssec:nimhd}
@@ -359,48 +315,12 @@ Because the magnetic field is so strong and the gyromagnetic radius is so small 
 XX
 
 \subsection{Anisotropic Pressure Tensor}\label{ssec:anisopres}
-A pressure anisotropy is a source of free energy that will push the distribution function back to a Maxwellian; how then, does the anisotropy arise in the first place? We can imagine that a strong magnetic field would result in particles travelling closely along magnetic field lines and lead to an anisotropic pressure. We can see this explicitly by introducing a coordinate system like that in Figure~\ref{fig:bragCoord}:
-\begin{equation*}
-  \vec w=w_{\parallel}\hat b+w_{\perp}(\cos\theta\hat x\sin\theta\hat y)
-\end{equation*}
-Here, $\hat b=\vec B/|\vec B|$ and $\vec w=\vec v-\vec u$ where again $\vec v$ is the particle velocity, $\vec u$ is the bulk fluid flow, and $\vec w$ is the random thermal motion of the particle. $w_{\parallel}$ is the component of the relative velocity that is parallel to the magnetic field, and $\theta$ is the gyroangle or gyrophase as illustrated in Figure~\ref{fig:bragCoord}. What follows is an expansion of the distribution function about a Maxwellian. The lowest order results in a Maxwellian since the collision operator is zero, but the first order yields an anisotropic pressure tensor. \\
-\\
-Following~\citet{KunzBraginskii}, the pressure tensor $\vec P=\int d^3w~m\vec w\vec w f$ becomes a mess of sines and cosines:
-\begin{align*}
-  \vec P&=m\int2\pi w_{\perp}dw_{\perp}dw_{\parallel}~\frac{d\theta}{2\pi} f\left[w_{\parallel}w_{\parallel}\hat b\hat b\right.\\
-    &+w_{\parallel}w_{\perp}(\cos\theta\hat b\hat x+\sin\theta\hat b\hat y)+w_{\parallel}w_{\perp}(\cos\theta\hat x\hat b+\sin\theta\hat y\hat b)\\
-    &\left.+w_{\perp}w_{\perp}(\cos^2\theta\hat x\hat x+\cos\theta\sin\theta\hat x\hat y+\sin\theta\cos\theta\hat y\hat x+\sin^2\theta\hat y\hat y)\right]
-\end{align*}
-However, due to the Braginskii ordering in Eq.~\ref{eq:bragord}, we can use the kinetic equation to see that the distribution function is independent of the gyrophase. This is because the largest term in the equation is due to Larmor motion:
-\begin{equation*}
-  \frac qm\frac{\vec w\times\vec B}{c}\cdot\frac{\partial f}{\partial \vec w}=0
-\end{equation*}
-With the proper transformation
-\begin{equation}
-  \partial/\partial\vec w=\hat b\frac{\partial}{\partial w_\parallel}+\frac{\vec w_\perp}{w_\perp}\frac{\partial}{\partial w_\perp}+\frac{(\vec w\times\hat b)}{w_\perp}\frac{\partial}{\partial\theta}\label{eq:wder}
-\end{equation}
-we note that $\vec w\times\vec B$ is perpendicular to both $\vec B$ and $\vec w_\perp$, and so dotting with the $\hat b$ term in Eq.~\ref{eq:wder} will give zero. Similarly, the $\vec w_\perp$ term will dot into $\vec w\times\vec B$ to give zero and the only surviving term is
-\begin{equation*}
-  \frac qm\frac{\vec w\times\vec B}{c}\cdot\frac{(\vec w\times\hat b)}{w_\perp}\frac{\partial f}{\partial \theta}=0
-\end{equation*}
-This leads to
-\begin{equation*}
-  \frac{\partial f}{\partial\theta}=0
-\end{equation*}
-or a ``gyrotropic'' distribution function. The distribution $f$ can then be taken out of the $\theta$ integrals and the sines and cosines of the pressure tensor then collapse into a much nicer form:
-\begin{align*}
-  \vec P=,\int2\pi w_{\perp}dw_{\perp}dw_{\parallel}f(w_\parallel,w_\perp)\left[w_\parallel^2\hat b\hat b+\frac{w_\perp^2}2\hat x\hat x+\frac{w_\perp^2}2\hat y\hat y\right]
-\end{align*}
-Since $\hat x$ and $\hat y$ are perpendicular to the magnetic field by construction, we can write $\hat x\hat x+\hat y\hat y=\vec I-\hat b\hat b$, simplifying the pressure tensor into
-\begin{equation}
-  \vec P=p_\parallel\hat b\hat b+p_\perp(\vec I-\hat b\hat b)
-\end{equation}
-where
+A pressure anisotropy is a source of free energy that will push the distribution function back to a Maxwellian; how then, does the anisotropy arise in the first place? A more detailed derivation is given in Appendix~\cite{ssec:anisopres}, but it is intuitive enough to define 
 \begin{align}
   p_\parallel&\equiv m\int d^3w~w_\parallel^2f(w_\parallel,w_\perp)\\
   p_\perp &\equiv m\int d^3w~\frac{w_\perp^2}2f(w_\parallel,w_\perp)
 \end{align}
-In matrix form the pressure tensor is thus
+and the pressure tensor as
 \begin{equation}
   \begin{pmatrix}
   p_\parallel & 0 & 0\\
@@ -408,7 +328,7 @@ In matrix form the pressure tensor is thus
   0 & 0 & p_\perp
   \end{pmatrix}
 \end{equation}
-Note that the isotropic pressure $p=\frac23p_\perp+\frac13p_\parallel$ and hence $p_\perp=p+\frac13(p_\perp-p_\parallel)$ and $p_\parallel=p-\frac23(p_\perp-p_\parallel)$. \\
+if $\hat x=\hat b$ is along the magnetic field and $w_\parallel$ and $w_\perp$ are the velocity along and across the magnetic field lines, respectively. Note that the isotropic pressure $p=\frac23p_\perp+\frac13p_\parallel$ and hence $p_\perp=p+\frac13(p_\perp-p_\parallel)$ and $p_\parallel=p-\frac23(p_\perp-p_\parallel)$. \\
 \\
 Rigorously what follows is an expansion of the distribution function about a Maxwellian (see, e.g.,~\cite{Negulescu2016}). However, we take a more intuitive approach here and simply argue for adding collisional terms to the evolution equations for the pressures, as illustrated below. 
 
@@ -419,14 +339,17 @@ Although we have made progress in showing that the pressure tensor is anisotropi
 \end{align*}
 Now, however, we must find a relationship between the pressure perpendicular and parallel to the magnetic field lines. We achieve this by considering adiabatic invariants.\\
 \\
-Adiabatic Invariants are quantities that are ``conserved'' in the sense that they stay the same when changes in a system happen slowly enough. Two such quantities will be important in establishing the so-called ``double-adiabatic'' closure, which assumes pressure isotropy, and then its modification, leading to the Braginskii closure.\\
+Adiabatic Invariants are quantities that are ``conserved'' in the sense that they stay the same when changes in a system happen slowly enough. Two such quantities will be important in establishing the so-called ``double-adiabatic'' closure, which assumes pressure isotropy, and then its modification, leading to the Braginskii closure. Here we simply state the invariants; their conservation is derived in any number of plasma physics texts~\cite{Nicholson1983}.\\
 \\
-XX
-Magnetic moment
-XX
-J mirror
-\\
-We claimed earlier that adiabatic invariants were ``invariant'' as long as the system changed slowly enough: now we can quantify this statement. \\
+It turns out that the magnetic moment $\mu$ is conserved, where
+\begin{equation*}
+  \mu=\frac12m\frac{w_\perp^2}{B}
+\end{equation*}
+For this reason $\mu$ is also known as the first adiabatic invariant. The next quantity has to do with magnetic mirrors and is called either the second adiabatic invariant or the mirror constant. It is given by
+\begin{equation*}
+  J\equiv m\oint w_\parallel dl
+\end{equation*}
+We claimed that adiabatic invariants were ``invariant'' as long as the system changed slowly enough: now we can quantify this statement. \\
 \\
 Since the magnetic moment is based on the strength of the magnetic field in relation to the Larmor frequency $\Omega$, we need the spatial and temporal changes of the magnetic field to be slow relative to $\Omega$. In equation form, we require:
 \begin{equation*}
@@ -441,14 +364,13 @@ Following~\citet{KunzBraginskii}, we can now estimate the average values of thes
   <\mu>=\frac{\int d^3w~f\mu}{\int d^3w~f}=\frac{\frac1B\int d^3w~\frac12mw_\perp^2f}{\int d^3w~f}
 \end{equation*}
 Remembering that the perpendicular pressure is defined as the top integral and the bottom integral is defined to be the number density, we have
-\begin{equuation}
-  <\mu>=\frac{p_\perp}{Bn}=\frac{T_\perp}{B} \label{eq:muavg}
+\begin{equation}
+  \langle\mu\rangle=\frac{p_\perp}{Bn}=\frac{T_\perp}{B} \label{eq:muavg}
 \end{equation}
 after noting that $T_\perp=p_\perp/n$. Similarly, for the mirror constant we can define a length of the magnetic mirror to be $B/n$ since the flux is constant. The mirror constant average value then becomes
 \begin{align}
-  <J^2>&=\frac{\int d^3w~fJ^2}{\int d^3w~f}=\frac{m^2B^2}{n^2}\frac{\int d^3w~fw_\parallel^2}{\int d^3w~f} \nonumber\\
-  &=\frac{mB^2}{n^3}p_\parallel\nonumber\\
-  &\frac{B^2}{n^2}T_\parallel m\label{eq:javg}
+  \langle J^2\rangle&=\frac{\int d^3w~fJ^2}{\int d^3w~f}=\frac{m^2B^2}{n^2}\frac{\int d^3w~fw_\parallel^2}{\int d^3w~f} \nonumber\\
+  &=\frac{mB^2}{n^3}p_\parallel=\frac{B^2}{n^2}T_\parallel m\label{eq:javg}
 \end{align}
 with $T_\parallel=p_\parallel/n$. We have found now that a change in the magnetic field strength changes the pressure perpendicular to the magnetic field lines, while a change in the square of the magnetic field density $B^2/n^2$ results in a change of the pressure parallel to the magnetic field lines. The first equivalence is a rather good assumption, whereas the second is often violated, as evidenced by the rather sketchy approximation of the mirror length. However, we can still use these adiabatic invariants to close the moment equations. 
 
@@ -469,10 +391,10 @@ for the mirror constant. The pressure anisotropy is then given by
 \end{align*}
 The right hand side, the adiabatic invariance, produces the pressure anisotropy in the left hand side. We therefore conclude that, without collisions, anisotropy is produced uncontrollably. Alternative evolution equations are given in~\citet{Strumik2016}. \\
 \\
-This double-adiabatic or Chew-Goldberger-Low (CGL) closure was originally developed for fusion devices. Unfortunately, there are several problems with this result when applied to astrophysics, partly because the magnetic fields are more tangled and the magnetic fields are more tangled~\cite{Sharma2006}. First, it does not constrain collisions at all along magnetic field lines~\cite{CGL1956}. Many have argued that this means the closure is not physical, since in principle heat flow along magnetic field lines can be arbitrarily large~\cite{Mahajan2002,Hazeltine2002,Tenbarge2008}. As a result, the closure does not give the correct thresholds for kinetic instabilities like the mirror threshold (important later on), or the necessary stabilization at small scales~\cite{Passot2013}, which is particularly important for the present thesis.
+This double-adiabatic or Chew-Goldberger-Low (CGL) closure was originally developed for fusion devices. Unfortunately, there are several problems with this result when applied to astrophysics, partly because the magnetic fields are more tangled and the magnetic fields are more tangled~\cite{Sharma2006}. First, it does not constrain collisions at all along magnetic field lines~\cite{CGL1956}. Many have argued that this means the closure is not physical, since in principle heat flow along magnetic field lines can be arbitrarily large~\cite{Mahajan2002,Hazeltine2004,Tenbarge2008}. As a result, the closure does not give the correct thresholds for kinetic instabilities like the mirror threshold (important later on), or the necessary stabilization at small scales~\cite{Passot2013}, which is particularly important for the present thesis.
 
 %---------------------------------------------------%
-\subsection{Braginskii MHD Equations} \label{ssec:bragclos}
+\subsection{Braginskii MHD Equations} \label{ssec:bragclosure}
 XX standardize notation (n vs. rho), explain entropy to internal energy
 
 The above result for the pressure anisotropy closure was for a collisionless plasma. In the Braginskii closure, we now introduce collisions. Following~\citet{KunzBraginskii} however, we assume that the plasma is only weakly collsional and so in combination with Eq.~\ref{eq:bragord} we have
@@ -491,21 +413,21 @@ These equations lead to a pressure anisotropy evolution:
 \end{align*}
 With the Braginskii ordering, the derivative of the pressure anisotropy is effectively zero $\left(\frac{D(p_\perp-p_\parallel)}{Dt}\sim (p_\perp-p_\parallel)\frac1{t_{dyn}}\ll\nu_{coll}\right)$, leaving the final Braginskii closure for the pressure tensor:
 \begin{equation}
-  p_\perp-p_\parallel=\frac{3p}{\nu_{coll}}\frac D{Dt}\ln\frac B{n^{2/3}} \label{eq:bragclosure}
+  p_\perp-p_\parallel=\frac{3p}{\nu_{coll}}\frac{D}{Dt}\ln\frac{B}{n^{2/3}} \label{eq:bragclosure}
 \end{equation}
 This closure shows how the pressure anisotropy produced by adiabatic invariance as in the double adiabatic closure is decreased by collisions. \\
 \\
-We can now write the MHD equations in terms of this closure: the internal energy or entropy equation is staightforward:
+We can now write the MHD equations in terms of this closure. The internal energy or entropy equation is straightforward:
 \begin{align*}
   \frac{Dp}{Dt}&=\frac23\frac{Dp_\perp}{Dt}+\frac13\frac{Dp_\parallel}{Dt}\\
-  &=\frac23\left[p+\frac1e(p_\perp-p_\parallel)\right]\frac{D\ln Bn}{Dt}+\frac13\left[p-\frac23(p_\perp-p_\parallel)\right]\frac{D\ln B^{-2}n^3}{Dt}-\nu_{coll}\left(\frac23 p_\perp+\frac13p_\parallel-p\right)\\
+  &-\nu_{coll}\left(\frac23 p_\perp+\frac13p_\parallel-p\right)\\
   &=\frac{5p}{3}\frac{D\ln n}{Dt}+\frac23(p_\perp-p_\parallel)\frac{D\ln B^{-2}n^3}{Dt}\\
   \frac D{Dt}\ln\frac{P}{n^{5/3}}&=\frac23\left(\frac{p_\perp-p_\parallel}p\right)\frac D{Dt}\ln\frac{B}{n^{2/3}}\\
-  \frac p{\gamma-1}\frac D{Dt}\ln\frac P{n^\gamma}&=(p_\perp-p_\parallel)\frac D{Dt}\ln\frac B{n^{\gamma-1}}
+  \frac p{\gamma-1}\frac {D}{Dt}\ln\frac{P}{n^\gamma}&=(p_\perp-p_\parallel)\frac{D}{Dt}\ln\frac{B}{n^{\gamma-1}}
 \end{align*}
 where the last line takes $\gamma=5/3$. The Braginskii closure uses Eq.~\ref{eq:bragclosure} to make the right-hand side of the last equation into $(p_\perp-p_\parallel)^2\nu_{coll}/3p$. Note that this reduces to the adiabatic gas law when $\nu_{coll}\to0$.\\
 \\
-All this effort is more elucidating if we massage these equations into a better form: in particular, using the continuity equation and induction equation (where : contracts over 
+All this effort is more elucidating if we massage these equations into a better form: in particular, using the continuity equation and induction equation (where : contracts over an index) we have
 \begin{align*}
   \frac{D\ln n}{Dt}&=-\nabla\cdot\vec u\\
   \frac{D\ln B}{Dt}&=\hat b\hat b:\nabla\vec u-\nabla\cdot\vec u\\
@@ -513,21 +435,21 @@ All this effort is more elucidating if we massage these equations into a better 
 \end{align*}
 gives the Braginskii closure as
 \begin{align}
-  p_\perp-p_\parallel&=\frac{3p}{\nu_{coll}\frac{D}{Dt}\ln\frac{B}{n^{2/3}}\nonumber\\
-    &=\frac{3p}{\nu_{coll}}\left[(\hat b\hat b-\vec \mathrm{I})-\frac23(-\vec\mathrm{I})\right]:\nabla\vec u\nonumber\\
-    &=\frac{3p}{\nu_{coll}}\left(\hat b\hat b-\frac{\vec\mathrm{I}}3\right):\nabla\vec u \label{eq:bragclos2}
+  p_\perp-p_\parallel&=\frac{3p}{\nu_{coll}}\frac{D}{Dt}\ln\frac{B}{n^{2/3}}\nonumber\\
+  &=\frac{3p}{\nu_{coll}}\left[(\hat b\hat b-\vec{\mathbb{I}})-\frac23(-\vec{\mathbb{I}})\right]:\nabla\vec u\nonumber\\
+ &=\frac{3p}{\nu_{coll}}\left(\hat b\hat b-\frac{\vec{\mathbb{I}}}{3}\right):\nabla\vec u \label{eq:bragclos2}
 \end{align}
 Plugging this closure into the entropy equation yields
 \begin{equation*}
-  \frac32p\frac{D\ln pn^{-5/3}}{Dt}=\frac{3p}{\nu_{coll}}\left[\left(\hat b\hat b-\frac{\vec\mathrm{I}}3\right):\nabla\vec u\right]^2
+  \frac32p\frac{D\ln pn^{-5/3}}{Dt}=\frac{3p}{\nu_{coll}}\left[\left(\hat b\hat b-\frac{\vec{\mathbb{I}}}3\right):\nabla\vec u\right]^2
 \end{equation*}
-The right hand side of the entropy equation in the form of $|\nabla\vec u|^2$ represents viscous heating. Clearly, the viscous heating is anisotropic. But what does this mean? Examining the right hand side more closely, we see that the vector $\hat b\hat b-\vec\mathrm{I}/3$ selects out the direction perpendicular to the magnetic field. Therefore, velocity gradients perpendicular to the magnetic field are wiped out by the dot product, whereas velocity gradients parallel to the magnetic field survive to be viscously damped. We are led to conclude that there are no collisions across magnetic field lines, while there are collisions along magnetic field lines. We shall explore this idea more soon; first let us achieve the full set of Braginskii equations by considering the momentum equation. \\
+The right hand side of the entropy equation in the form of $|\nabla\vec u|^2$ represents viscous heating. Clearly, the viscous heating is anisotropic. But what does this mean? Examining the right hand side more closely, we see that the vector $\hat b\hat b-\vec{\mathbb{I}}/3$ selects out the direction perpendicular to the magnetic field. Therefore, velocity gradients perpendicular to the magnetic field are wiped out by the dot product, whereas velocity gradients parallel to the magnetic field survive to be viscously damped. We are led to conclude that there are no collisions across magnetic field lines, while there are collisions along magnetic field lines. We shall explore this idea more soon; first let us achieve the full set of Braginskii equations by considering the momentum equation. \\
 \\
-The momentum equation takes on a similar anisotropy. With the pressure tensor $\vec P=p_\perp\vec\mathrm{I}+(p_\parallel-p_\perp)\hat b\hat b$ and the current term $\frac1c\vec j\times\vec B=\nabla\cdot\left[B^2/(4\pi)\hat b\hat b-B^2/(8\pi)\vec\mathrm{I}\right]$, we have
+The momentum equation takes on a similar anisotropy. With the pressure tensor $\vec P=p_\perp\vec{\mathbb{I}}+(p_\parallel-p_\perp)\hat b\hat b$ and the current term $\frac1c\vec j\times\vec B=\nabla\cdot\left[B^2/(4\pi)\hat b\hat b-B^2/(8\pi)\vec{\mathbb{I}}\right]$, we have
 \begin{align*}
-  mn\frac{D\vec u}{Dt}=-\nabla\left(p_\perp+\frac{B^2}{8\pi}\right)+\nabla\cdot\left[\hat b\hat b\left(p_\perp-p_\parallel+\frac{B^2}{4\pi}\right)\right]\\
-  &=-\nabla\left(p_\perp+\frac{B^2}{8\pi}\right)+\frac{\vec B\cdot\nabla\vec B}{4\pi}+\nabla\cdot\left[\left(\hat b\hat b-\frac13\vec\mathrm{I}\right)(p_\perp-p_\parallel)\right]\\
-  &=-\nabla\left(p_\perp+\frac{B^2}{8\pi}\right)+\frac{\vec B\cdot\nabla\vec B}{4\pi}+\nabla\cdot\left[\frac{3p}{\nu_{coll}}\left(\hat b\hat b-\frac13\vec\mathrm{I}\right)\left(\hat b\hat b-\frac13\vec\mathrm{I}\right):\nabla\vec u\right]
+  mn\frac{D\vec u}{Dt}&=-\nabla\left(p_\perp+\frac{B^2}{8\pi}\right)+\nabla\cdot\left[\hat b\hat b\left(p_\perp-p_\parallel+\frac{B^2}{4\pi}\right)\right]\\
+  &=-\nabla\left(p_\perp+\frac{B^2}{8\pi}\right)+\frac{\vec B\cdot\nabla\vec B}{4\pi}+\nabla\cdot\left[\left(\hat b\hat b-\frac13\vec{\mathbb{I}}\right)(p_\perp-p_\parallel)\right]\\
+  &=-\nabla\left(p_\perp+\frac{B^2}{8\pi}\right)+\frac{\vec B\cdot\nabla\vec B}{4\pi}+\nabla\cdot\left[\frac{3p}{\nu_{coll}}\left(\hat b\hat b-\frac13\vec{\mathbb{I}}\right)\left(\hat b\hat b-\frac13\vec{\mathbb{I}}\right):\nabla\vec u\right]
 \end{align*}
 where the second line uses $p_\perp=p+\frac13(p_\perp-p_\parallel)$ and the third uses the Braginskii closure~\ref{eq:bragclos2}.\\
 \\
@@ -546,25 +468,25 @@ Extending this closure to the heat flux moment equation leads to anisotropic hea
 \subsection{Kinetic effects closure}\label{ssec:kinclosure}
 There are several approaches to modifying the fluid equations to capture kinetic effects.~\citet{Sharma2003} has studied the transition from collisionless theory to MHD theory and found that the key difference is anisotropic collisions. This same anisotropy was present in the Braginskii MHD equations in the previous section. Braginskii MHD thus seems like an appropriate starting point off of which we can build in additional modifications to attempt to replicate kinetic effects.\\
 \\
-Studies of kinetic theory over the years has shown that additional ``parasitic'' instabilities limit the growth of the pressure anisotropy~\cite{Sharma2008, Kunz2016}. The three most important instabilities are the firehose, mirror, and ion cyclotron instabilities. 
-
-Waves, firehose, mirror, ion cyclotron.
-
-Collisionless: based on wave-particle interactions, get effective collisions and resistivity! Kunz private communication. Waves tangle up magnetic field, which throws particles off their trajectory. We model this scattering off of larmor-scale magnetic field changes as collisions to get effective viscosity and resistivity parameters. 
-
-
- XX pressure anisotropy is free energy source. effectively enhance ``collision'' rate XX gary 1997?
-
-XXXSharma2008:
-p parallel>ppert unstable to firehose: gives dispersion relation. Alfven wave destabilized by pressure anisotropy. Gives growth rate (do this in compMRI section)
-p perp>pparallel: mirror and ion cyclotron instability. Can still have magnetic moment conserved after mirror instability (so closure ok). can't reproduce ion cyclotron behavior (growth rates). Double adiabatic limit gives wrong threshold/growth rate...must use proper heat flux models.
-
-
-%-------------------------------------------------%
+Studies of kinetic theory over the years has shown that additional ``parasitic'' instabilities limit the growth of the pressure anisotropy~\cite{Sharma2008, Kunz2016}. The three most important instabilities are the firehose, mirror, and ion cyclotron instabilities. The third will not be reproduced, as in~\citet{Sharma2008}. The first two, however, we can look at more closely. \\
+\\
+As in outlined in numerous articles, a plasma with the pressure anisotropy
+\begin{equation}
+  p_\perp-p_\parallel<-B^2/4\pi\label{eq:fhthresh}
+\end{equation}
+is unstable to the firehose instability, and a plasma with pressure anisotropy
+\begin{equation}
+  p_\perp-p_\parallel >B^2/8\pi \label{eq:mirrorthresh}
+\end{equation}
+falls prey to the mirror instability~\cite{Kunz2016,Kunz2014,Schekochihin2008,Sharma2008}. These instabilities are not collisions since the plasma is collisionless. They are rather Alfven waves destabilized by the pressure anisotropy~\cite{Sharma2008}. These waves tangle up the magnetic field of the plasma on the scale of the Larmor radius, which throws particles off of their trajectory. We can therefore model these instabilities as having an effective collision rate and thus a resistivity and viscosity~\cite{Schekochihin2008,Kunz2017p}.\\
+\\
+In light of the thresholds above, we manually cap the pressure anisotropy over the course of our simulations in Chapter~\ref{chap:kinBrag}. The hope is that such an anisotropy maximum will sufficiently capture the kinetic instabilities in a fluid closure, as discussed in Chapter~\ref{chap:kinBrag}.
 
 
-\section{Hybrid-kinetic equations} \label{sec:hkineq}
-Matt PEGASUS. Shearing sheet...
+
+
+
+
 
 
 

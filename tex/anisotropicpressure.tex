@@ -1,0 +1,50 @@
+\subsection{Derivation of the Vlasov Equation}\label{ssec:anisopres}
+We can imagine that a strong magnetic field would result in particles travelling closely along magnetic field lines and lead to an anisotropic pressure. We can see this explicitly by introducing a coordinate system like that in Figure~\ref{fig:bragCoord}:
+\begin{equation*}
+  \vec w=w_{\parallel}\hat b+w_{\perp}(\cos\theta\hat x\sin\theta\hat y)
+\end{equation*}
+Here, $\hat b=\vec B/|\vec B|$ and $\vec w=\vec v-\vec u$ where again $\vec v$ is the particle velocity, $\vec u$ is the bulk fluid flow, and $\vec w$ is the random thermal motion of the particle. $w_{\parallel}$ is the component of the relative velocity that is parallel to the magnetic field, and $\theta$ is the gyroangle or gyrophase as illustrated in Figure~\ref{fig:bragCoord}. What follows is an expansion of the distribution function about a Maxwellian. The lowest order results in a Maxwellian since the collision operator is zero, but the first order yields an anisotropic pressure tensor. \\
+\\
+Following~\citet{KunzBraginskii}, the pressure tensor $\vec P=\int d^3w~m\vec w\vec w f$ becomes a mess of sines and cosines:
+\begin{align*}
+  \vec P&=m\int2\pi w_{\perp}dw_{\perp}dw_{\parallel}~\frac{d\theta}{2\pi} f\left[w_{\parallel}w_{\parallel}\hat b\hat b\right.\\
+    &+w_{\parallel}w_{\perp}(\cos\theta\hat b\hat x+\sin\theta\hat b\hat y)+w_{\parallel}w_{\perp}(\cos\theta\hat x\hat b+\sin\theta\hat y\hat b)\\
+    &\left.+w_{\perp}w_{\perp}(\cos^2\theta\hat x\hat x+\cos\theta\sin\theta\hat x\hat y+\sin\theta\cos\theta\hat y\hat x+\sin^2\theta\hat y\hat y)\right]
+\end{align*}
+However, due to the Braginskii ordering in Eq.~\ref{eq:bragord}, we can use the kinetic equation to see that the distribution function is independent of the gyrophase. This is because the largest term in the equation is due to Larmor motion:
+\begin{equation*}
+  \frac qm\frac{\vec w\times\vec B}{c}\cdot\frac{\partial f}{\partial \vec w}=0
+\end{equation*}
+With the proper transformation
+\begin{equation}
+  \partial/\partial\vec w=\hat b\frac{\partial}{\partial w_\parallel}+\frac{\vec w_\perp}{w_\perp}\frac{\partial}{\partial w_\perp}+\frac{(\vec w\times\hat b)}{w_\perp}\frac{\partial}{\partial\theta}\label{eq:wder}
+\end{equation}
+we note that $\vec w\times\vec B$ is perpendicular to both $\vec B$ and $\vec w_\perp$, and so dotting with the $\hat b$ term in Eq.~\ref{eq:wder} will give zero. Similarly, the $\vec w_\perp$ term will dot into $\vec w\times\vec B$ to give zero and the only surviving term is
+\begin{equation*}
+  \frac qm\frac{\vec w\times\vec B}{c}\cdot\frac{(\vec w\times\hat b)}{w_\perp}\frac{\partial f}{\partial \theta}=0
+\end{equation*}
+This leads to
+\begin{equation*}
+  \frac{\partial f}{\partial\theta}=0
+\end{equation*}
+or a ``gyrotropic'' distribution function. The distribution $f$ can then be taken out of the $\theta$ integrals and the sines and cosines of the pressure tensor then collapse into a much nicer form:
+\begin{align*}
+  \vec P=,\int2\pi w_{\perp}dw_{\perp}dw_{\parallel}f(w_\parallel,w_\perp)\left[w_\parallel^2\hat b\hat b+\frac{w_\perp^2}2\hat x\hat x+\frac{w_\perp^2}2\hat y\hat y\right]
+\end{align*}
+Since $\hat x$ and $\hat y$ are perpendicular to the magnetic field by construction, we can write $\hat x\hat x+\hat y\hat y=\vec I-\hat b\hat b$, simplifying the pressure tensor into
+\begin{equation}
+  \vec P=p_\parallel\hat b\hat b+p_\perp(\vec I-\hat b\hat b)
+\end{equation}
+where
+\begin{align}
+  p_\parallel&\equiv m\int d^3w~w_\parallel^2f(w_\parallel,w_\perp)\\
+  p_\perp &\equiv m\int d^3w~\frac{w_\perp^2}2f(w_\parallel,w_\perp)
+\end{align}
+In matrix form the pressure tensor is thus
+\begin{equation}
+  \begin{pmatrix}
+  p_\parallel & 0 & 0\\
+  0 & p_\perp & 0\\
+  0 & 0 & p_\perp
+  \end{pmatrix}
+\end{equation}
