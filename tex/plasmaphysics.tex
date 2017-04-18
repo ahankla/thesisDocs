@@ -1,4 +1,4 @@
-\chapter{Plasma Physics: Context and Background}
+\chapter{Plasma Physics: Context and Background}\label{chap:plasmaphysics}
 %-----------outline--------------%
 %plasma properties
 %Vlasov Eq., 
@@ -7,7 +7,7 @@
 %---------------------------------%
 Understanding plasma physics is a topic worthy of a semester-long graduate class at least. This chapter briefly presents some basic plasma physics parameters and principles in Section~\ref{sec:plasmaproperties}, then examines the equations of motion and assumptions leading to the kinetic Vlasov equation and the so-called ``hierarchy problem'' in Section~\ref{sec:vlasov}. The next sections look at different methods of dealing with the hierarchy problem (overview in Section~\ref{sec:closures}), including more detailed examination of ideal MHD in Section~\ref{sec:idealMHD} and Braginskii MHD in Section~\ref{sec:bragMHD}. \\
 \\
-Remember, however, that the ultimate goal of this thesis is to study a particular phenomenon (the MagnetoRotational Instability, MRI) in a particular regime (anisotropic viscosity) of plasma physics. The link between the plasma physics discussed here and the astrophysics discussed in Chapter~\ref{chap:astrophysics} comes in Chapters~\ref{chap:compMRI} and~\ref{chap:kinBrag}.
+Remember, however, that the ultimate goal of this thesis is to study a particular phenomenon (the MagnetoRotational Instability, MRI) in a particular regime (anisotropic viscosity) of plasma physics. The link between the plasma physics discussed here and the astrophysics discussed in Chapter~\ref{chap:astrophysics} comes in Chapters~\ref{chap:compMRI} and~\ref{chap:kinbrag}.
 
 %------------------------------------------------------------------------%
 
@@ -235,7 +235,7 @@ We can see that a combination of the continuity and internal energy equation yie
 \end{align}
 where $\gamma=5/3$ was taken in the first line. The evolution used in Chapter~\ref{chap:compMRI} uses such an adiabatic equation of state.\\
 \\
-Since the plasma is perfectly conducting, the magnetic field lines cannot diffuse (this will be changed below in Section~\ref{ssec:nimhd}). This means that the field lines are effectively frozen into the plasma: the phenomenon is appropriately called ``flux-freezing'', or alternatively as Alfven's Theorem (proof in Appendix~\ref{sec:fluxfreezing}). Flux-freezing has important consequences for turbulence, since if a fluid particle is perturbed slightly, it will drag the magnetic field line with it (see Chapter~\ref{chap:compMRI}.\ref{sec:compIdeal}).\\
+Since the plasma is perfectly conducting, the magnetic field lines cannot diffuse (this will be changed below in Section~\ref{ssec:nimhd}). This means that the field lines are effectively frozen into the plasma: the phenomenon is appropriately called ``flux-freezing'', or alternatively as Alfven's Theorem (proof in Appendix~\ref{sec:fluxfreezing}). Flux-freezing has important consequences for turbulence, since if a fluid particle is perturbed slightly, it will drag the magnetic field line with it (see Chapter~\ref{sec:localideal}).\\
 \\
 We have now collected all of the equations of MHD. We can summarize the assumptions as follows:
 \begin{itemize}
@@ -258,7 +258,7 @@ where $\eta$ is the resistivity of the plasma. Basically, it provides a dissipat
 \begin{equation}
   \frac{D\vec B}{Dt}-\vec B\cdot\nabla\vec v+\vec B\nabla\cdot\vec v=\frac{\eta}{\mu_0}\nabla^2\vec B
 \end{equation}
-The last term takes the form of a diffusion operator. There is no longer such stringent flux-freezing; rather, the magnetic field lines slip with respect to the rest of the plasma. Forms of this phenomena, for example the Hall effect or ambipolar diffusion, help explain how stars forming from magnetized clouds end up with so little magnetic flux themselves~\cite{KunzHW4}.\\
+The last term takes the form of a diffusion operator. There is no longer such stringent flux-freezing; rather, the magnetic field lines slip with respect to the rest of the plasma. Forms of this phenomena, for example the Hall effect or ambipolar diffusion, help explain how stars forming from magnetized clouds end up with so little magnetic flux themselves~\cite{AST521HW4}.\\
 \\
 Notice that now the equations do have a characteristic length scale, unlike in ideal MHD. The magnetic field diffuses out on the time scale of
 \begin{equation}
@@ -274,9 +274,9 @@ where $\nu$ is the viscosity parameter. The more rigorous form enters as the div
 \begin{equation}
   T_{ik}=\rho\nu\left(\frac{\partial v_i}{\partial x_k}+\frac{\partial v_k}{\partial x_i}-\frac23\delta_{ik}\nabla\cdot\vec v\right)
 \end{equation}
-as in~\cite{Fromang2007,Landau1959}. However, since we are concerned only with isotropic viscous forces, the form reduces to that of Eq.~\ref{eq:momvisc}. \\
+as in~\cite{Fromang2007b}. However, since we are concerned only with isotropic viscous forces, the form reduces to that of Eq.~\ref{eq:momvisc}. \\
 \\
-The importance of resistivity and viscosity has been explored in a number of papers~\cite{Fromang2007,Lesur2007,Gammie1996} and plays an important role in the physics accretion, as will be discussed in Chapter~\ref{chap:astrophysics}. Resistivity in the MHD equations leads to various effects like ambipolar diffusion, the hall effect, and normal Ohmic dissipation. For an overview see~\citet{KunzNonIdeal}.
+The importance of resistivity and viscosity has been explored in a number of papers~\cite{Fromang2007b,Lesur2007,Gammie1996} and plays an important role in the physics accretion, as will be discussed in Chapter~\ref{chap:astrophysics}. Resistivity in the MHD equations leads to various effects like ambipolar diffusion, the hall effect, and normal Ohmic dissipation. For an overview see~\citet{KunzNonIdeal}.
 
 \subsection{Dimensionless Numbers in Non-ideal MHD}
 With the introduction of length scales comes the introduction of certain dimensionless numbers that characterize a fluid or plasma flow. For example, in hydrodynamics the Reynolds number is given by the ratio of inertial forces to viscous forces and can be written as
@@ -311,7 +311,7 @@ The Braginskii closure uses the assumptions that the time between collisions, wh
 \end{equation}
 Note that weakly collisional systems have mean free paths comparable to or larger than the length scales of the system: we therefore have no apparent reason to trust Braginskii MHD in a weakly collisional regime! Such is the motivation of this thesis: we shall investigate whether we can actually accomplish a meaningful approximation.\\
 \\
-Because the magnetic field is so strong and the gyromagnetic radius is so small compared to the mean free path, we can write the motion of particles as a sum of the guiding center motion and the gyrotropic motions about the field lines. Section~\ref{ssec:anisopres} will rigorously show how we can trace out the gyromotion of the particle to yield a pressure tensor purely in terms of the frame along and perpendicular to magnetic field lines. An explanation of why pressure anisotropy can arise is offered by the adiabatic invariants, explained in Section~\ref{ssec:adiabaticinvariants}. Writing everything in terms of this pressure anisotropy, we then explore two different closures and their impact on the MHD equations: the first, double adiabatic or Chew-Goldberger-Low for collisionless plasmas~\cite{CGL1956} in Section~\ref{ssec:cglclosure}, and the second, the Braginskii closure for weakly collisional plasmas~\cite{Braginskii1956} in Section~\ref{ssec:bragclosure}. After exploring the consequences of said pressure anisotropy in the MHD equations, we introduce the modified closure that attempts to capture certain kinetic physics (Section~\ref{ssec:kinclosure}).
+Because the magnetic field is so strong and the gyromagnetic radius is so small compared to the mean free path, we can write the motion of particles as a sum of the guiding center motion and the gyrotropic motions about the field lines. Section~\ref{ssec:anisopres} will rigorously show how we can trace out the gyromotion of the particle to yield a pressure tensor purely in terms of the frame along and perpendicular to magnetic field lines. An explanation of why pressure anisotropy can arise is offered by the adiabatic invariants, explained in Section~\ref{ssec:adiabaticinvariants}. Writing everything in terms of this pressure anisotropy, we then explore two different closures and their impact on the MHD equations: the first, double adiabatic or Chew-Goldberger-Low for collisionless plasmas~\cite{CGL1956} in Section~\ref{ssec:cglclosure}, and the second, the Braginskii closure for weakly collisional plasmas in Section~\ref{ssec:bragclosure}. After exploring the consequences of said pressure anisotropy in the MHD equations, we introduce the modified closure that attempts to capture certain kinetic physics (Section~\ref{ssec:kinclosure}).
 XX
 
 \subsection{Anisotropic Pressure Tensor}\label{ssec:anisopres}
@@ -361,7 +361,7 @@ The mirror constant depends on how fast particles bounce back and forth in the m
 \end{equation*}
 Following~\citet{KunzBraginskii}, we can now estimate the average values of these adiabatic invariants. The magnetic moment average value is defined as
 \begin{equation*}
-  <\mu>=\frac{\int d^3w~f\mu}{\int d^3w~f}=\frac{\frac1B\int d^3w~\frac12mw_\perp^2f}{\int d^3w~f}
+  \langle\mu\rangle=\frac{\int d^3w~f\mu}{\int d^3w~f}=\frac{\frac1B\int d^3w~\frac12mw_\perp^2f}{\int d^3w~f}
 \end{equation*}
 Remembering that the perpendicular pressure is defined as the top integral and the bottom integral is defined to be the number density, we have
 \begin{equation}
@@ -395,8 +395,8 @@ This double-adiabatic or Chew-Goldberger-Low (CGL) closure was originally develo
 
 %---------------------------------------------------%
 \subsection{Braginskii MHD Equations} \label{ssec:bragclosure}
-XX standardize notation (n vs. rho), explain entropy to internal energy
-
+XX standardize notation (n vs. rho), explain entropy to internal energy\\
+\\
 The above result for the pressure anisotropy closure was for a collisionless plasma. In the Braginskii closure, we now introduce collisions. Following~\citet{KunzBraginskii} however, we assume that the plasma is only weakly collsional and so in combination with Eq.~\ref{eq:bragord} we have
 \begin{equation*}
   \Omega\gg\nu_{coll}\gg \frac1{t_{dyn}}
@@ -468,7 +468,7 @@ Extending this closure to the heat flux moment equation leads to anisotropic hea
 \subsection{Kinetic effects closure}\label{ssec:kinclosure}
 There are several approaches to modifying the fluid equations to capture kinetic effects.~\citet{Sharma2003} has studied the transition from collisionless theory to MHD theory and found that the key difference is anisotropic collisions. This same anisotropy was present in the Braginskii MHD equations in the previous section. Braginskii MHD thus seems like an appropriate starting point off of which we can build in additional modifications to attempt to replicate kinetic effects.\\
 \\
-Studies of kinetic theory over the years has shown that additional ``parasitic'' instabilities limit the growth of the pressure anisotropy~\cite{Sharma2008, Kunz2016}. The three most important instabilities are the firehose, mirror, and ion cyclotron instabilities. The third will not be reproduced, as in~\citet{Sharma2008}. The first two, however, we can look at more closely. \\
+Studies of kinetic theory over the years has shown that additional ``parasitic'' instabilities limit the growth of the pressure anisotropy~\cite{Sharma2008, Kunz2016}. The three most important instabilities are the firehose, mirror, and ion cyclotron instabilities. The third will not be reproduced, as in~\citet{Sharma2008}. It is mostly relevant for plasmas with $\beta\lesssim100$ whereas the present context of RIAFs has much higher $\beta$~\cite{Sharma2007}. The first two instabilities, however, we can look at more closely. \\
 \\
 As in outlined in numerous articles, a plasma with the pressure anisotropy
 \begin{equation}
@@ -480,7 +480,7 @@ is unstable to the firehose instability, and a plasma with pressure anisotropy
 \end{equation}
 falls prey to the mirror instability~\cite{Kunz2016,Kunz2014,Schekochihin2008,Sharma2008}. These instabilities are not collisions since the plasma is collisionless. They are rather Alfven waves destabilized by the pressure anisotropy~\cite{Sharma2008}. These waves tangle up the magnetic field of the plasma on the scale of the Larmor radius, which throws particles off of their trajectory. We can therefore model these instabilities as having an effective collision rate and thus a resistivity and viscosity~\cite{Schekochihin2008,Kunz2017p}.\\
 \\
-In light of the thresholds above, we manually cap the pressure anisotropy over the course of our simulations in Chapter~\ref{chap:kinBrag}. The hope is that such an anisotropy maximum will sufficiently capture the kinetic instabilities in a fluid closure, as discussed in Chapter~\ref{chap:kinBrag}.
+In light of the thresholds above, we manually cap the pressure anisotropy over the course of our simulations in Chapter~\ref{chap:kinbrag}. The hope is that such an anisotropy maximum will sufficiently capture the kinetic instabilities in a fluid closure, as discussed in Chapter~\ref{chap:kinbrag}.
 
 
 

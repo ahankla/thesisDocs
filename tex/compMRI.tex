@@ -1,17 +1,21 @@
 \chapter{Computational Context Through the MRI} \label{chap:compMRI}
 This chapter examines the solution to the problem of accretion mentioned in the last section of Chapter~\ref{chap:astrophysics}: the MagnetoRotational Instability (MRI). In doing so, it also presents intuition on how the magnetic field interacts in a rotating flow and how the MHD equations outlined in Chapter~\ref{chap:plasmaphysics} actually manifest. Although some traction can be gained analytically (indeed, the instability itself arises from linear theory), this chapter will use simulations to illustrate the linear and nonlinear theory of the MRI and to introduce principles of using numerical simulations. \\
 \\
-The MRI is fundamentally a local instability; as such, we will look at a small patch of the overall accretion disk and examine the microphysics at work (see Figure~\ref{fig:global}). The local MHD equations as well as important characteristics such as which wavelengths grow the fastest (and how fast they grow) is outlined in Section~\ref{sec:localideal}. Non-ideal theory and simulations introduce important concepts such as numerical dissipation in Section~\ref{sec:localnonideal}, while Section~\ref{sec:localbrag} introduces the theory behind growth of the MRI with anisotropic viscosity as well as dispersion relations of the firehose and mirror instability. 
-
-XX insert global sim figure XX 
-
+The MRI is fundamentally a local instability; as such, we will zoom in closely to look at a small patch of the overall accretion disk and examine the microphysics at work (see Figure~\ref{fig:global}). The local MHD equations as well as important characteristics such as which wavelengths grow the fastest (and how fast they grow) is outlined in Section~\ref{sec:localideal}. Non-ideal theory and simulations introduce important concepts such as numerical dissipation in Section~\ref{sec:localnonideal}. 
+\begin{figure}[h]
+  \begin{center}  
+    \includegraphics[width=.9\textwidth, angle=0.]{img/global.png}
+  \end{center}
+  \caption{Global axisymmetric simulation of a hot accretion flow. Such simulations are expensive, so we zoom in to a small box (the ``shearing box'', see Section~\ref{ssec:shearingbox}) to look at the microphysics.}
+  \label{fig:global}
+\end{figure}
 
 \section{Local Ideal MHD Theory and Simulations} \label{sec:localideal}
 In the local approximation, we consider an unperturbed patch of accretion disk with a Keplerian rotation profile at radius $r_0$ threaded by a uniform vertical magnetic field. On such small scales, the patch looks like a cube. We can write the equations in Cartesian form with the radial direction as $x$ and the azimuthal direction as $y$. The Keplerian differential rotation in this frame looks like a combination of background shear $\vec u_0=2A_0x\hat y$ where $A_0=-3\Omega_0/4$ for Keplerian flow as discussed in Chapter~\ref{chap:astrophysics}. The ideal MHD equations in this frame are:
 \begin{align}
-  \nabla\cdot\vec u=\nabla\cdot\vec B=0\\
+  \nabla\cdot\vec u&=\nabla\cdot\vec B=0\\
   \frac{\partial\vec u}{\partial t}&=-\vec u\cdot\nabla\vec u-\frac1\rho\nabla P+\frac{1}{c\rho}\vec J\times\vec B-2\Omega_0\hat z\times\vec u-4A_0\Omega_0x\hat x\\
-  \frac{\partial B}{\partial t}=\nabla\times\left(\vec u\times\vec B\right)
+  \frac{\partial B}{\partial t}&=\nabla\times\left(\vec u\times\vec B\right)
 \end{align}
 The second equation incorporates the Coriolis force $-2\Omega_0\hat z\times\vec u$ and the background linear shear~\cite{AST521HW4}. \\
 \\
@@ -20,11 +24,11 @@ The ultimate goal here is to obtain a relationship between the frequency $\omega
   \vec u&=2A_0x\hat y+\delta\vec ue^{-i(\omega t-kz)}\\
   \vec B&=B_0\hat z+\delta\vec Be^{-i(\omega t-kz)}
 \end{align}
-This form of linear theory is the corner stone of linear instability analysis in plasma physics~\cite{AST521HW4,BH1998,HB1,Quataert2008}. Plugging in this form and eliminating variables, we attain the dispersion relation
+This form of linear theory is the corner stone of linear instability analysis in plasma physics~\cite{AST521HW4,BH1998,BH1991a,Quataert2008}. Plugging in this form and eliminating variables, we attain the dispersion relation
 \begin{equation}
   \omega^4-\omega^2[\kappa^2+2(\vec k\cdot \vec v_A)^2]+(\vec k\cdot\vec v_A)^2\left((\vec k\cdot \vec v_A)^2+\frac{d\Omega^2}{d\ln R}\right)\label{eq:idealdispersion}
 \end{equation}
-where $\vec v_A=\vec B/\sqrt{4\pi\rho}$ is the Alfven velocity. This equation is also in the Boussinesq limit that the sound speed goes to infinity, which filters out unimportant sound waves~\cite{BH1998,KunzBoussinesq}. This schematic derivation is done more rigorously in the appendix (\ref{ssec:mriLinear}) and a number of sources~\ref{BH1998, HB1,HB2,HB3}.
+where $\vec v_A=\vec B/\sqrt{4\pi\rho}$ is the Alfven velocity. This equation is also in the Boussinesq limit that the sound speed goes to infinity, which filters out unimportant sound waves~\cite{BH1998,KunzBoussinesq}. This schematic derivation is done more rigorously in the appendix (\ref{ssec:mriLinear}) and a number of sources~\cite{BH1998, BH1991a,BH1991b,BH1991c}.
 
 \subsection{Ideal MRI Condition for Stability}
 From the dispersion relation Eq.~\ref{eq:idealdispersion}, we can see the condition for stability (that is, real frequency) is
@@ -33,7 +37,7 @@ From the dispersion relation Eq.~\ref{eq:idealdispersion}, we can see the condit
 \end{equation}
 It is interesting to note that it is always possible to find a wavenumber $k$ such that the system is unstable unless $\frac{d\Omega^2}{d\ln R}>0$, which would be very uncommon in astrophysical disks~\cite{BH1998}. Thus the MRI is always present in weakly magnetized disks with a Keplerian rotation profile.\\
 \\
-Also note that if the magnetic field $B=0$, then the Alfven velocity is also zero and Eq.~\ref{eq:mriStable} would have us believe that the hydrodynamic criterion for disk stability is $\frac{d\Omega^2}{d\ln R}>0$. We know however that the Rayleigh linear stability criterion $\kappa^2>0$ says that $4\Omega^2+\frac{d\Omega^2}{d\ln R}>0$. The disagreement is due to the assumptions made in using the MHD equations, namely, that the mean free path of particles was much less than the length scales of interest. As $k$ increases, we get down to such small scales that the scales of interest become comparable to the mean free path and thus this assumption is no longer valid. The conflict must be resolved through kinetic theory. This is another incentive to see if we can get the MHD equations to somehow approximate kinetic theory in Chapter~\ref{ch:kinBrag}.
+Also note that if the magnetic field $B=0$, then the Alfven velocity is also zero and Eq.~\ref{eq:mriStable} would have us believe that the hydrodynamic criterion for disk stability is $\frac{d\Omega^2}{d\ln R}>0$. We know however that the Rayleigh linear stability criterion $\kappa^2>0$ says that $4\Omega^2+\frac{d\Omega^2}{d\ln R}>0$. The disagreement is due to the assumptions made in using the MHD equations, namely, that the mean free path of particles was much less than the length scales of interest. As $k$ increases, we get down to such small scales that the scales of interest become comparable to the mean free path and thus this assumption is no longer valid. The conflict must be resolved through kinetic theory. This is another incentive to see if we can get the MHD equations to somehow approximate kinetic theory in Chapter~\ref{ch:kinbrag}.
 
 \subsection{Ideal MRI Maximum Growth Rate}
 One of the most important questions for simulations is making sure that the wavelengths that are growing the fastest are resolved on the numerical grid. For this we need the wavelength of the fastest-growing mode. \\
@@ -46,20 +50,41 @@ with the Keplerian values on the right. Plugging this back into the dispersion r
 \begin{equation}
   (\vec k\cdot\vec v_A)^2_{max}=-\left(\frac14+\frac{\kappa^2}{16\Omega^2}\right)\frac{d\Omega^2}{d\ln R}=\frac{\sqrt{15}}{4}\Omega \label{eq:idealmaxk}
 \end{equation}
-There are several interesting things to note here. First, the maximum growth rate is independent of the magnetic field strength. It is also very large and apparently can grow without bound (although as we will show in Section~\ref{sec:bragtheory}, other instabilities keep it in check). In fact,~\citet{BH1992a} suggest that this growth rate is the fastest possible for a linear instability that is powered by the free energy of differential rotation. \\
+There are several interesting things to note here. First, the maximum growth rate is independent of the magnetic field strength. It is also very large and apparently can grow without bound (although as we will show in Section~\ref{sec:localbrag}, other instabilities keep it in check). In fact,~\citet{Balbus1992} suggest that this growth rate is the fastest possible for a linear instability that is powered by the free energy of differential rotation. \\
 \\
+\begin{figure}
+  \begin{center}  
+    \includegraphics[width=\textwidth, angle=0.]{img/ideal-R1L1-dVy-xz-t30-contpseudo.png}
+  \end{center}
+  \caption{Slice at $t=3.0$ orbits. Central body is on the left; z-direction is up. Left: Contour plot of angular momentum perturbations. Black is a perturbation in the negative y-direction, while red is in the positive y-direction. XX do this XX. Right: Pseudocolor plot of angular momentum perturbations. Plot is normalized to XX do this XX. The growth of the x-direction mode with wavelength .5H is clear.}
+  \label{fig:idealgrowth}
+\end{figure}
+\begin{figure}
+  \begin{center}  
+    \includegraphics [width=\textwidth, angle=0.]{img/ideal-R1L1-01-dVy-xz-t49.png}
+  \end{center}
+  \caption{Slice at $t=4.9$ orbits of angular momentum perturbations with same description as Fig.~\ref{fig:idealgrowth}. The system has proceeded to the nonlinear turbulence phase as evidenced by the lack of structure.}
+  \label{fig:idealturb}
+\end{figure}
 We can see this growth in action by examining Figure~\ref{fig:idealgrowth}, which plots perturbations in azimuthal angular momentum. There is clearly a periodic structure which in the x-direction has a wavelength of about half of the box size. This is what we expect from Eq.~\ref{eq:idealmaxk}:
 \begin{align*}
   (\vec k_{max}\cdot \vec v_A)^2&=k_{max}^2\frac{B^2}{4\pi\rho}=\frac{k_{max}^2}{4\pi\rho}\frac{8\pi P}{\beta}=\frac{2P}{\beta\rho}k_{max}^2\\
   &=\frac{15}{16}\Omega^2
 \end{align*}
-With the parameters of the simulation having been chosen to set $\Omega=1$, $P/\rho=1$, and $\beta=400$, we have $k_{max}=13.7~H^{-1}$ in units of the box size $H$. The wavelength $\lambda_{max}$ of the fastest growing mode is then $\lambda_{max}=2\pi/k_{max}=.46H$, which is what the figure shows. \\
+With the parameters of the simulation having been chosen to set $\Omega=1$, $P/\rho=1$, and $\beta=400$, we have $k_{max}=13.7~H^{-1}$ in units of the box size $H$. The wavelength $\lambda_{max}$ of the fastest growing mode is then $\lambda_{max}=2\pi/k_{max}=.46H$. The figure shows this and its orientation along the x-direction. The z-direction mode has a different growth rate and wavelength. In this simulation, the magnetic field is given as $\vec B=B_0\sin\left(\frac xH\right)\hat z$. This choice is significant only in that it has zero net flux; the actual form as a sine wave is somewhat arbitrary as it is just a simple way to achieve the zero net flux condition.\\
 \\
-More detailed analysis of the instability can be found in~\citet{HB1} and~\citet{BH1998}. Basically, XXXXXXX\\
+More detailed analysis of the instability can be found in~\citet{BH1991a} and~\citet{BH1998}. The instability is different given different initial configurations of the magnetic field, the most important being the aforementioned zero net-flux condition. A radial magnetic field component will yield a time dependent azimuthal magnetic field component; however, this dependency does not really affect the MRI evolution because the axisymmetric instability is independent of $B_\phi$~\cite{BH1998}. \\
 \\
-We can see that the MRI is working because over time the magnetic energy increases, shown in Figure~\ref{fig:idealME}. Some of the (in this case, unlimited) energy from differential rotation is going into turbulence and is sustaining the magnetic field. The linear phase of the MRI in Figure~\ref{fig:idealgrowth} gives way to turbulence shortly thereafter, as shown in Figure~\ref{fig:idealturb}. The nonlinear regime is the steady-state solution and is what we are most interested in for this thesis. This is the regime that is difficult to describe analytically. Note that references such as~\citet{HB1} that perform two-dimensional calculations see the rise of a ``channel mode'' between the linear and nonlinear evolution. In three-dimensional calculations the channel mode is harder to see because it breaks down much faster into turbulence~\cite{hgb}.
+We can see that the MRI is working because over time the magnetic energy and kinetic energy increase, shown in Figure~\ref{fig:idealME}. Some of the (in this case, unlimited) energy from differential rotation is going into turbulence, sustaining the magnetic field and churning around particles (hence increasing their kinetic energy). The linear phase of the MRI in Figure~\ref{fig:idealgrowth} gives way to turbulence shortly thereafter, as shown in Figure~\ref{fig:idealturb}. The nonlinear regime is the steady-state solution and is what we are most interested in for this thesis. This is the regime that is difficult to describe analytically. Note that references such as~\citet{BH1991a} that perform two-dimensional calculations see the rise of a ``channel mode'' between the linear and nonlinear evolution. In three-dimensional calculations the channel mode is harder to see because it breaks down much faster into turbulence~\cite{HGB1995,HGB1996}.\\
 \\
 Details of the method used to produce Figures~\ref{fig:idealgrowth} and~\ref{fig:idealME} are explained in Section~\ref{ssec:shearingbox}.
+\begin{figure}[h]
+    \begin{center}
+      \includegraphics [width=.9\textwidth, angle=0.]{img/ideal-R1L1_KEME.pdf}
+    \end{center}
+    \caption{Left: Magnetic energy increases due to MRI turbulence. Total magnetic energy has been normalized to initial pressure. Right: Kinetic energy, also normalized to initial pressure. The large bump around $t=3$ orbits is due to the channel mode (see text). Resolution is $(64,128,64)$ zones for the $(H,4H,H$) box.}
+      \label{fig:idealME}
+\end{figure}
 
 %---------------------------------------------------------------------%
 \subsection{Spring Interpretation}
@@ -67,18 +92,26 @@ It turns out that the local equations are also those of two orbiting masses coup
 \\
 The situation is illustrated in Figure~\ref{fig:springs}. One mass (call it $m_o$) is orbiting at a slightly higher-radius orbit $r_o$ thanks to a perturbation. Due to the Keplerian rotation law, this mass orbits slower than the mass $m_i$ at lower radius $r_i$. This means that $m_i$ pulls ahead of $m_o$, thus stretching the spring. Hooke's law exerts a force pulling the springs back together, causing the inner mass to lose angular momentum and the outer mass to gain angular momentum. This means that $m_i$ drops down to a lower orbit while $m_o$ pulls away, thereby stretching the spring even more. The process runs away and $m_i$ falls inward while $m_o$ falls outward, producing outward angular momentum transport. \\
 \\
-Obviously there is not an actual spring connecting the two masses. The job of the spring's restoring force is done by magnetic tension $\left(\frac{1}{4\pi}(\vec B\cdot\nabla)\vec B\right)$, which tries to unfurl magnetic field lines. The magnetic field is perturbed when the fluid elements are due to the flux-freezing explained earlier. The field line is drawn in XX in Figure~\ref{fig:springs}.
+Obviously there is not an actual spring connecting the two masses. The job of the spring's restoring force is done by magnetic tension $\left(\frac{1}{4\pi}(\vec B\cdot\nabla)\vec B\right)$, which tries to unfurl magnetic field lines. The magnetic field is perturbed when the fluid elements are due to the flux-freezing explained earlier. The field line is drawn as a dotted orange line in Figure~\ref{fig:springs}.
+\begin{figure}
+  \begin{center}  
+    \includegraphics[width=.8\textwidth, angle=0.]{img/mriSpring.pdf}
+  \end{center}
+  \caption{Illustration of the MRI with the magnetic tension $T$ working in the same way as the restoring force of a spring. Adapted from~\citet{BH1998}.}
+  \label{fig:springs}
+\end{figure}
+
 
 \subsection{Shearing Box Method}\label{ssec:shearingbox}
 Simulations of the MRI are often achieved by solving the Cartesian set of MHD equations described above with periodic boundary conditions. The model's linear shear means that if a particle moves outward with radius, it also moves azimuthally. The boundary conditions for a function $f$ are expressed as
-\begin{align*}
-  f(x,y,z)&=f(x+H_x,y-q\Omega_0H_xt,z)\\
-  f(x,y,z)&=f(x,y+H_y,z)\\
-  f(x,y,z)&=f(x,y,z+H_z)
-\end{align*}
-where the first line is for the x boundary, the second for the y boundary, and the third for the z boundary. The size of the computational regime is $H_x$ in the x-direction, $H_y$ in the y-direction, and $H_z$ in the z-direction. In these equations the shear has been Taylor-expanded about the relative velocity $w_y=v_y-R\Omega_0=R(\Omega-\Omega_0)\sim x\left(R\frac{d\Omega}{dR}\right)_0=-\frac32\Omega_0x$ for a Keplerian disk. These boundary conditions are visually explained in Figure~\ref{fig:shearingbox}. More details can be found in~\citet{BH1998} or in the first paper simulating the MRI~\cite{HB3}. \\
+\begin{align}
+  f(x,y,z)&=f(x+H_x,y+\frac32\Omega_0H_xt,z)\label{eq:bcx}\\
+  f(x,y,z)&=f(x,y+H_y,z)\label{eq:bcy}\\
+  f(x,y,z)&=f(x,y,z+H_z)\label{eq:bcz}
+\end{align}
+where the first line is for the x boundary, the second for the y boundary, and the third for the z boundary. The size of the computational regime is $H_x$ in the x-direction, $H_y$ in the y-direction, and $H_z$ in the z-direction. In these equations the shear has been Taylor-expanded about the relative velocity $w_y=v_y-R\Omega_0=R(\Omega-\Omega_0)\sim x\left(R\frac{d\Omega}{dR}\right)_0=-\frac32\Omega_0x$ for a Keplerian disk. These boundary conditions are visually explained in Figure~\ref{fig:shearingbox}. More details can be found in~\citet{BH1998} or in the first paper simulating the MRI~\cite{BH1991c}. \\
 \\
-Since the box is in the local approximation, we can take the density and pressure to be initially constant. In this thesis, we evolve the system adiabatically (Eq.~\ref{eq:adiabatic}), as opposed to isothermally ($P=\rho c^2$, where $c$ is the sound speed). We also choose units such that the fiducial angular velocity of the shearing box as it goes around the central body is 1: $\Omega_0=1$. Also choosing $P=\rho=1$, we have that the sound speed $c=1$ and thus that the disk height introduced in Section~\ref{ssec:diskheight} $H=1$. \\
+Since the box is in the local approximation, we can take the density and pressure to be initially constant. In this thesis, we evolve the system adiabatically (Eq.~\ref{eq:adiabatic}), as opposed to isothermally ($P=\rho c^2$, where $c$ is the sound speed). We also choose units such that the fiducial angular velocity of the shearing box as it goes around the central body is 1: $\Omega_0=1$. Also choosing $P=\rho=1$, we have that the sound speed $c=1$ and thus that the disk height (introduced in Section~\ref{ssec:diskheight}) $H=1$. \\
 \\
 Finally, note the importance of resolution: if the fastest growing MRI mode is smaller than the size of each zone, then the simulation will not resolve the mode and the set-up will appear stable. Calling the size of each zone $(\Delta x,\Delta y,\Delta z)$, the smallest resolvable wavelength in the x-direction is
 \begin{equation*}
@@ -87,20 +120,29 @@ Finally, note the importance of resolution: if the fastest growing MRI mode is s
 With a resolution of 64 zones per scale height H (the size of the entire computational regime), each zone has a size $\Delta x=1/64~[H]$ so the smallest wavelength we can see corresponds to $\lambda_{min}=1/32~[H]\approx.03~[H]$. We need the fastest growing wavelength to be bigger than this in order to see turbulence. This sets a limit on what $\beta$ can be. We know that the fastest growing wavelength is
 \begin{align*}
   \frac{15}{16}\Omega^2&=k^2_{fast}v_A^2=\frac2\beta\frac{(2\pi)^2}{\lambda_{fast}^2}\\
-  \lambda_{fast}^2=\frac{32(2\pi)^2}{15\beta}
+  \lambda_{fast}^2&=\frac{32(2\pi)^2}{15\beta}
 \end{align*}
 Requiring that $\lambda_{fast}\ge\lambda_{min}$ yields an upper limit on $\beta$, which luckily is in the $10^4$ range and thus well above the $\beta=400$ case we are considering. Thus in the figures above, we are resolving the fastest-growing wavelength.
+\begin{figure}[h]
+  \begin{center}  
+    \includegraphics [width=\textwidth, angle=0.]{img/ShearingBox.pdf}
+  \end{center}
+  \caption{Illustration of the shearing box method. The computational regime itself is outlined in thick blue (``shearing box computational regime'') and has dimensions of $H_x=H$, $H_y=4H$, and $H_z=H$ (z dimension not shown). The azimuthal direction needs a larger computational domain because the shear stretches the modes out. The linear shear $\vec u_0=2A_0x\hat y$ is illustrated by arrows that vary in size with the x-location. The boundary conditions of Eqns.~\ref{eq:bcx}-\ref{eq:bcz} are shown by the orange and black triangle and star. A particle that travels off the right (y) boundary (orange triangle) reappears on the left y boundary at the same x-position, represented by the black triangle. The x boundary condition takes into account the linear shear, such that the orange star leaving through the x boundary reappars displaced as though by a shear at the top of the regime (black star). Adapted from~\citet{BH1998}.}
+  \label{fig:shearingbox}
+\end{figure}
 
 %--------------------------------------------------------------%
 
-\section{Local Non-ideal MHD Theory and Simulations}
- This section is particularly relevant for the next chapter and understanding the effects of changing resistivity and viscosity in a fluid model. When we introduce non-ideal MHD components such as resistivity and viscosity, the resolution of simulations becomes even more important. This is because certain length scales are damped faster than others. As a rough estimate, resistivity has a characteristic wavelength $k^2\eta\sim\Omega$ that is damped by $1/e$ over the time it takes for a sound wave to traverse the disk. Viscosity similarly damps wave numbers $k^2\nu\sim\Omega$. The balance between these two competing scales means that there is a limited parameter space in magnetic Prandtl number that can be explored.~\citet{Fromang2007} for example found that the magnetic Prandtl number needs to be greater than 4 in order to sustain turbulence.
+\section{Local Non-ideal MHD Theory and Simulations} \label{sec:localnonideal}
+This section is particularly relevant for the next chapter and understanding the effects of changing resistivity and viscosity in a fluid model. When we introduce non-ideal MHD components such as resistivity and viscosity, the resolution of simulations becomes even more important. This is because certain length scales are damped faster than others. A problem in the literature involving the lack of convergence for zero net-flux simulations such as these was recently resolved~\cite{Fromang2007a,Shi2016}.\\
+\\
+As a rough estimate, resistivity has a characteristic wavelength $k^2\eta\sim\Omega$ that is damped by $1/e$ over the time it takes for a sound wave to traverse the disk. Too big a value will damp the MRI and stabilize the disk~\cite{Fleming2000}. Viscosity similarly damps wave numbers $k^2\nu\sim\Omega$. The balance between these two competing scales means that there is a limited parameter space in magnetic Prandtl number that can be explored.~\citet{Fromang2007b} for example found that the magnetic Prandtl number needs to be greater than 4 in order to sustain turbulence, an issue also addressed by~\citet{Simon2009a} (the case is different for net-flux simulations~\cite{Simon2009b}). This issue was confirmed across several different code suites~\citet{Fromang2007b}. The growth rate of resistive MHD is examined more rigorously in~\citet{BH1998}.\\
 \\
 However, the magnetic Reynolds number is also important, since if it is too small then numerical dissipation will dominate over physical dissipation and the magnetic Prandtl number will mean nothing. To figure out what regimes of the transport coefficients $\eta$ and $\nu$ to look at, we must find values that are both physically meaningful and that do not overdamp the fastest growing modes (which would lead to stability). \\
 \\
 We begin by requiring that the smallest resolvable wavelength be damped by physical resistivity: this sets
 \begin{equation*}
-  \eta\sim\frac{\Omega\lambda_{min}^2}{(2\pi)^2}\gtrsim\frac{(1/32)^2}{(2\pi)^2}=2.5e-5
+  \eta\sim\frac{\lambda_{min}^2\Omega}{(2\pi)^2}\gtrsim\frac{(1/32)^2}{(2\pi)^2}=2.5e-5
 \end{equation*}
 For good measure we will take $\eta=1e-4$ or above in our simulations. Also note that the value of $\eta$ that corresponds to damping the fastest growing mode is
 \begin{equation*}
@@ -108,49 +150,33 @@ For good measure we will take $\eta=1e-4$ or above in our simulations. Also note
 \end{equation*}
 With a resistivity lower than 5e-3 we ensure that the MRI will still be able to grow.\\
 \\
-A set of simulations with $\eta=1e-4$ is shown in Figure~\ref{fig:nstokesPm1} with varying magnetic Prandtl number. We can see that magnetic energy increases with increasing mPrandtl number. However, Figure~\ref{fig:nstokesPm2} shows increasing mPrandtl that does not lead to monotonically. To explain this, we will look at how the viscosity affects the fastest growing mode. The characteristic viscously damped wavenumber $k_\nu$ is
+A set of simulations with $\eta=1e-4$ is shown in Figure~\ref{fig:nstokesPm}a) with varying magnetic Prandtl number. We can see that magnetic energy increases with increasing mPrandtl number. However, Figure~\ref{fig:nstokesPm}b) shows increasing mPrandtl that does not lead to monotonically. To explain this, look at how the viscosity affects the fastest growing mode. The characteristic viscously damped wavenumber $k_\nu$ is
 \begin{equation*}
   k_\nu^2=\frac\Omega\nu=\frac\Omega\eta\frac\eta\nu=k_\eta^2\frac1{Pm}
 \end{equation*}
 For $\eta=1e-4$, we have $k_\eta=10^2$ and $k_\nu=\frac1210^2=50$ for $Pm=4$ or $k_\nu=\frac1410^2=25$ for $Pm=16$. However, for $eta=2e-4$, low mPrandtl such as $Pm=4$ gives $k_\nu=\frac1{\sqrt{8}}10^2\approx35$, but higher mPrandlt like $Pm=16$ gives $k_\nu=\frac1{\sqrt{32}}10^2\approx17$. The fastest growing mode is $k_{fast}\approx 14$, so for higher resistivities the higher mPrandtl numbers start to significantly damp modes that are most important to the MRI. In such cases, the flow will not be turbulent and so the magnetic energy will decay. A schematic portrayal of the scales involved is shown in Figure~\ref{fig:scales}.
-
-\section{Local Braginskii MHD Theory}
-Sharma dispersion relation, firehose, mirror. Max growth rates
-
-
-
-
-
-\section{Simulating the MRI: Global and Local Approaches} \label{sec:mrisbideal}
-XX re-write this to include global. Stick global sim here! XX
-In simulating accretion disks, it is much more computationally expensive to describe the disk as a whole, including pressure gradients and the overall global structure. A smaller-scale, local simulation is also effective at demonstrating the physics involved. As noted in Chapter~\ref{sec:introXXXXX}, the series of simulations in this chapter and the next zoom in to a typical region of the accretion disk and consider the MHD equations in that blown-up portion. We now explore exactly how such local simulations work and the relevant quantities.\\
-\\
-The so-called ``shearing-box'' approximation has been in use since XXXXXX in studies examining the solar corona XXXXXXX etc. It was also used by Balbus and Hawley in their seminal 1991 papers showing the existence of the MRI instability~\cite{BH1991a, BH1991b, BH1991c}. 
-
-
-XXXX use HGB here!! Also talk about 2D sims with BH3. Actual reproduction: 
-
-\section{The MRI in Ideal MHD: Simulations} \label{sec:mrisimideal}
-The simulations in this section were modelled after~\cite{XXXXXXBH1991c}, hereafter called HB3. Although the techniques used in that paper were slightly different (periodic radial conditions, for example, instead of periodic plus shear), it is instructive to replicate the results with the code that will be used
-**briefly 2D (just show dynamo decay), then HGB
-
-XX do HB illustrative figures, but slice 3D into 2D. Has beta=4000, 256x256 zones. Angular momentum perturbations. Compare t=2.7 (see radial modes), 6 (nonlinear) 
-
-XX Have Fig. 8 time evolution of dvy, also discuss power spectra (their fig. 4)..
-HGB: vertical field: 2D channel mode dominates. 3D, breaks up into turbulence with due to secondary parasitic instabilities (GoodmanXu), one is Kelvin-Helmholtz, but only if wavelength is resolved.
-
-XXFromang2007a show fig. 4, increasing resolution effects, run for long orbit times, calculate $\alpha$
-
-Shi2015: zero-net flux. solves problem of seeing saturation amplitude decrease with increasing resolution (bigger box size, small cuts off dynamo)
-
-\section{The MRI in Non-Ideal MHD: Simulations}
-Length scales!
-Must see about wavelengths fitting in box.
-
-
-
-Fleming2000: 3D resistivity (shearing-box) reduces growth rate and stabilizes MRI at large enough values. 
-
-Fromang2007b: test different codes. Find effects of Pm, need Pm>4. (isotropic)
-Simon2009: below Pm 2-4, no turbulence.
-
+%
+\begin{figure}[h]
+  \begin{subfigure}{.5\textwidth}
+    \begin{center}
+      \includegraphics [width=\textwidth, angle=0.]{img/nstokes-eta1R1L1_MExyz_TE-0.pdf}
+    \end{center}
+    \label{fig:nstokesPm1}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \begin{center}
+      \includegraphics [width=\textwidth, angle=0.]{img/nstokes-eta2R1L1_MExyz_TE-0.pdf}
+    \end{center}
+    \label{fig:nstokesPm2}
+  \end{subfigure}
+  \label{fig:nstokes}
+  \caption{Plots of magnetic energy with increasing magnetic Prandlt number. The left panel has $\eta=1e-4$ and the right has $\eta=2e-4$. For the lower resistivity, magnetic energy increases monotonically up to a magnetic Prandtl number of 16. For a higher resistivity however, viscous damping begins to stabilize the MRI and higher magnetic Prandlt numbers decrease in magnetic energy.}
+\end{figure}
+%
+\begin{figure}[h]
+  \begin{center}  
+    \includegraphics [width=.9\textwidth, angle=0.]{img/kscales.pdf}
+  \end{center}
+  \caption{Rough illustration of scales involved in a shearing box simulation. The fastest-growing mode is labelled $k_{fast}$; the lowest resolvable wavenumber has a wavelength twice the disk scale height and is labelled as $k_{min}$. Numerical dissipation cuts off wavenumbers above $k_{num}$, while resistivity damps wavenumbers above $k_\eta$. Two values for $k_\nu$ are shown, one for $Pm=4$, the other for $Pm=16$. The lower mPrandtl number resolves a much wider range of wavenumbers than the higher value, as shown by the horizontal arrows. Shape of power spectrum comes from dispersion relation. }
+  \label{fig:scales}
+\end{figure}

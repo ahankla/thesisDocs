@@ -1,7 +1,17 @@
-\chapter{Fluid Closure of a Collisionless System}
-Here is joining of background!
+\chapter{Modified Fluid Closure of a Collisionless Plasma}\label{chap:kinbrag}
+This chapter puts together the pieces of the previous chapters in order to approximate a collisionless plasma with a modified fluid closure. 
+\section{Anisotropic Viscosity}
+Here, get a sense of what anisotropic viscosity does. This provides a control for the next section where the anisotropy will be capped.
 
+\section{Pressure Anisotropy Maximum}
+Following the suggestion by~\citet{Kunz2016}, we implement a maximum pressure anisotropy to mimic the mirror and firehose instabilities. Explained in Section~\ref{ssec:kinclosure}, we reproduce these thresholds here for completeness. The firehose instability threshold is given as
+\begin{equation}
+  p_\perp-p_\parallel<-B^2/4\pi
+\end{equation}
+and the mirror instability threshold is
+\begin{equation}
+  p_\perp-p_\parallel >B^2/8\pi \label{eq:mirrorthresh}
+\end{equation}
 
+XX Sharma 2008: dispersion relation? predict growth rates?
 
-XXXSharma2008:
-p parallel>ppert unstable to firehose: gives dispersion relation. Alfven wave destabilized by pressure anisotropy. XX Gives growth rate (do this in compMRI section)
