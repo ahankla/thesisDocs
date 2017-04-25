@@ -1,25 +1,18 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
-The style file: plainnat.bst
+The style file: unsrtnat.bst
 Database file #1: ./library.bib
-Repeated entry---line 329 of file ./library.bib
+Repeated entry---line 1896 of file ./library.bib
  : @article{Kunz2014
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4371 of file ./library.bib
+Repeated entry---line 2222 of file ./library.bib
  : @article{Sadowski2016
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4859 of file ./library.bib
+Repeated entry---line 3437 of file ./library.bib
  : @article{Ressler2015
  :                     ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "GurnettBhatt"
-Warning--I didn't find a database entry for "XXXXGammieHARM"
-Warning--I didn't find a database entry for "XX"
-Warning--I didn't find a database entry for "StoneLecture16.9.28"
-Warning--I didn't find a database entry for "ssec:anisopres"
-Warning--I didn't find a database entry for "Bondi?XX"
 Warning--empty journal in Kunz2010
-Warning--there's a number but no volume in Schwartz1980
 Warning--there's a number but no volume in SharmaThesis
 (There were 3 error messages)

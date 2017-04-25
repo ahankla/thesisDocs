@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.24)  18 APR 2017 03:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.24)  24 APR 2017 13:15
 entering extended mode
 **thesis.tex
 (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\thesis.tex
@@ -503,7 +503,7 @@ Package caption Info: hyperref package is loaded.
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count116
 \c@subtable=\count117
-))
+)
 (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\wrapfig.sty
 \wrapoverhang=\dimen127
 \WF@size=\dimen128
@@ -512,11 +512,14 @@ Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \WF@everypar=\toks23
 Package: wrapfig 2003/01/31  v 3.6
 )
-(C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\thesis.aux
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
 
-LaTeX Warning: Label `eq:mirrorthresh' multiply defined.
 
-)
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+)) (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\thesis.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
@@ -533,7 +536,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 \AtBeginShipoutBox=\box29
 Package hyperref Info: Link coloring OFF on input line 9.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -578,539 +582,296 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\abstract.tex) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\thesis.toc [2
+(C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\thesis.toc
+Overfull \hbox (10.70256pt too wide) in paragraph at lines 16--16
+ [][] [][]\OT1/cmr/m/n/10.95 Ideal MRI Con-di-tion for Sta-bil-ity and Max-i-mu
+m Growth 
+ []
 
-])
+)
 \tf@toc=\write4
-
-(C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\introduction.tex
-[3]
-Chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--14
-
- []
-
-[4
+ (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\introduction.tex
+[2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
+Underfull \hbox (badness 10000) in paragraph at lines 3--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
+Underfull \hbox (badness 10000) in paragraph at lines 3--10
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 17--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
+Underfull \hbox (badness 10000) in paragraph at lines 17--23
+
+ []
+
+[4] <img/binaryaccretion.jpg, id=167, 607.26875pt x 373.395pt>
+File: img/binaryaccretion.jpg Graphic file (type jpg)
+
+<use img/binaryaccretion.jpg>
+Package pdftex.def Info: img/binaryaccretion.jpg used on input line 27.
+(pdftex.def)             Requested size: 180.0pt x 110.67474pt.
+
+<img/gb1508.pdf, id=168, 545.63847pt x 419.166pt>
+File: img/gb1508.pdf Graphic file (type pdf)
+ <use img/gb1508.pdf>
+Package pdftex.def Info: img/gb1508.pdf used on input line 32.
+(pdftex.def)             Requested size: 180.0pt x 138.28043pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 25--35
+[]$[]$ $[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
+Underfull \hbox (badness 10000) in paragraph at lines 55--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
+Underfull \hbox (badness 10000) in paragraph at lines 55--62
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--41
-
- []
-
-[5] [6] [7]
-Overfull \hbox (64.52295pt too wide) in paragraph at lines 43--51
-[][] 
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 56--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--61
-
- []
-
-[9]) (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\plasmaphysics.tex
-[10]
+[5] [6 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/binaryaccretion.
+jpg> <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/gb1508.pdf>])
+(C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\background.tex [7]
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
-
- []
-
-[11
+[8
 
 ]
-
-Package natbib Warning: Citation `GurnettBhatt' on page 12 undefined on input l
-ine 29.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--32
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
 
  []
 
-[12]
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+
+ []
+
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 41--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 47--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 47--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--55
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 67--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--79
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 81--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--89
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 58--62
+Underfull \hbox (badness 10000) in paragraph at lines 96--100
 
  []
 
 
-LaTeX Warning: Reference `ssec:vlasovderivation' on page 14 undefined on input 
-line 66.
+Underfull \hbox (badness 10000) in paragraph at lines 106--112
+
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--73
+Underfull \hbox (badness 10000) in paragraph at lines 106--112
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 79--83
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 119--123
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 133--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--156
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 158--169
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--169
-
- []
-
-
-Overfull \hbox (4.04733pt too wide) in paragraph at lines 158--169
-\OT1/cmr/m/n/10.95 Special cases al-low the mo-ment equa-tions to close. For ex
--am-ple, a Maxwellian
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--169
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--169
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--169
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 171--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--184
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--190
-
- []
-
-
-Package natbib Warning: Citation `XXXXGammieHARM' on page 19 undefined on input
- line 193.
-
-
-Package natbib Warning: Citation `XX' on page 19 undefined on input line 193.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--196
-
- []
-
-[19]
-
-LaTeX Warning: Reference `eq:nrl10' on page 20 undefined on input line 212.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--213
-
- []
-
-[20]
-
-LaTeX Warning: Reference `sec:fluxfreezing' on page 21 undefined on input line 
-238.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--241
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 242.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 242.
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 260--264
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--270
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 276--280
-
- []
-
-[23]
-
-Package natbib Warning: Citation `StoneLecture16.9.28' on page 24 undefined on 
-input line 298.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--301
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--309
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 311--316
-
- []
-
-
-Package natbib Warning: Citation `ssec:anisopres' on page 25 undefined on input
- line 318.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 330--334
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 339--345
-
- []
-
-
-Overfull \hbox (17.50168pt too wide) in paragraph at lines 339--345
-\OT1/cmr/m/n/10.95 such quan-ti-ties will be im-por-tant in es-tab-lish-ing the
- so-called ``double-adiabatic''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--345
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--355
-
- []
-
-[26] [27]
-Overfull \hbox (8.40712pt too wide) in paragraph at lines 391--395
+Overfull \hbox (8.40712pt too wide) in paragraph at lines 127--133
 \OT1/cmr/m/n/10.95 The right hand side, the adi-a-batic in-vari-ance, pro-duces
  the pres-sure anisotropy
  []
 
 
-Overfull \hbox (9.06616pt too wide) in paragraph at lines 391--395
-\OT1/cmr/m/n/10.95 in the left hand side. We there-fore con-clude that, with-ou
-t col-li-sions, anisotropy
+Overfull \hbox (1.09702pt too wide) in paragraph at lines 127--133
+\OT1/cmr/m/n/10.95 on the left hand side. One might con-clude that, with-out co
+l-li-sions, anisotropy
  []
 
 
-Overfull \hbox (2.4353pt too wide) in paragraph at lines 391--395
-\OT1/cmr/m/n/10.95 is pro-duced un-con-trol-lably. Al-ter-na-tive evo-lu-tion e
-qua-tions are given in Stru-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--395
+Underfull \hbox (badness 10000) in paragraph at lines 127--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--401
+Underfull \hbox (badness 10000) in paragraph at lines 127--133
 
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 417--421
+[15]
 
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 427--431
-
- []
+LaTeX Warning: Reference `fig:bragviscosity' on page 16 undefined on input line
+ 139.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--449
-
- []
-
-[30]
-Overfull \hbox (10.52652pt too wide) in paragraph at lines 453--453
-[] 
- []
-
-
-LaTeX Warning: Reference `fig:bragviscosity' on page 31 undefined on input line
- 456.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 453--459
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--459
+Underfull \hbox (badness 10000) in paragraph at lines 144--149
 
  []
 
 
-Overfull \hbox (12.7234pt too wide) in paragraph at lines 466--467
-[]\OT1/cmr/m/n/10.95 Extending this clo-sure to the heat flux mo-ment equa-tion
- leads to anisotropic
- []
-
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 469--474
+Underfull \hbox (badness 10000) in paragraph at lines 144--149
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 469--474
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 155--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--484
+Underfull \hbox (badness 10000) in paragraph at lines 163--168
 
  []
 
-[32]) (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\astrophysics.tex
-[33]
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--168
+
+ []
+
+[17])
+Underfull \hbox (badness 10000) in paragraph at lines 172--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--21
+
+ []
+
+[18] [19] (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\compMRI.tex
+[20]
 Chapter 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
-
- []
-
-[34
-
-]
-
-Package natbib Warning: Citation `Bondi?XX' on page 35 undefined on input line 
-19.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--24
-
- []
-
-[35] [36]
-Underfull \hbox (badness 10000) in paragraph at lines 44--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--59
-
- []
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 61--65
-
- []
-
-
-LaTeX Warning: Reference `fig:stratDisk' on page 38 undefined on input line 69.
-
-
-[38]
-
-LaTeX Warning: Reference `sec:rayleighext' on page 39 undefined on input line 9
-0.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--108
-
- []
-
-[39]
-
-LaTeX Warning: Reference `ssec:rayleighstability' on page 40 undefined on input
- line 114.
-
-
-LaTeX Warning: Reference `sec:rayleighstability' on page 40 undefined on input 
-line 114.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--125
-
- []
-
-[40] [41]) (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\compMRI.tex
-[42]
-Chapter 4.
-<img/global.png, id=840, 643.40375pt x 417.56pt>
+<img/global.png, id=424, 643.40375pt x 417.56pt>
 File: img/global.png Graphic file (type png)
  <use img/global.png>
 Package pdftex.def Info: img/global.png used on input line 7.
@@ -1123,1030 +884,414 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--12
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[43
+[21
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 19--23
 
  []
 
-[44 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/global.png>]
-
-LaTeX Warning: Reference `ssec:mriLinear' on page 45 undefined on input line 31
-.
-
-
-LaTeX Warning: Reference `eq:mriStable' on page 45 undefined on input line 40.
+[22 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/global.png>]
+Overfull \hbox (10.5333pt too wide) in paragraph at lines 33--33
+[]\OT1/cmr/bx/n/12 Ideal MRI Con-di-tion for Sta-bil-ity and Max-i-mum Growth
+ []
 
 
-LaTeX Warning: Reference `ch:kinbrag' on page 45 undefined on input line 40.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
+Underfull \hbox (badness 10000) in paragraph at lines 37--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--46
+Underfull \hbox (badness 10000) in paragraph at lines 37--45
 
  []
 
-[45]
 
-LaTeX Warning: Reference `sec:localbrag' on page 46 undefined on input line 53.
+Underfull \hbox (badness 10000) in paragraph at lines 37--45
 
+ []
 
-<img/ideal-R1L1-dVy-xz-t30-contpseudo.png, id=882, 1027.84pt x 513.92pt>
+[23] <img/ideal-R1L1-dVy-xz-t30-contpseudo.png, id=463, 1027.84pt x 513.92pt>
 File: img/ideal-R1L1-dVy-xz-t30-contpseudo.png Graphic file (type png)
 
 <use img/ideal-R1L1-dVy-xz-t30-contpseudo.png>
 Package pdftex.def Info: img/ideal-R1L1-dVy-xz-t30-contpseudo.png used on input
- line 57.
+ line 56.
 (pdftex.def)             Requested size: 360.0pt x 180.00015pt.
 
-<img/ideal-R1L1-01-dVy-xz-t49.png, id=883, 1027.84pt x 513.92pt>
+<img/ideal-R1L1-01-dVy-xz-t49.png, id=464, 1027.84pt x 513.92pt>
 File: img/ideal-R1L1-01-dVy-xz-t49.png Graphic file (type png)
 
 <use img/ideal-R1L1-01-dVy-xz-t49.png>
-Package pdftex.def Info: img/ideal-R1L1-01-dVy-xz-t49.png used on input line 64
+Package pdftex.def Info: img/ideal-R1L1-01-dVy-xz-t49.png used on input line 63
 .
 (pdftex.def)             Requested size: 360.0pt x 180.00015pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--70
+Underfull \hbox (badness 10000) in paragraph at lines 51--69
 
  []
 
-<img/ideal-R1L1_KEME.pdf, id=900, 1045.0242pt x 420.6114pt>
+<img/ideal-R1L1_KEME.pdf, id=483, 1045.0242pt x 420.6114pt>
 File: img/ideal-R1L1_KEME.pdf Graphic file (type pdf)
 
 <use img/ideal-R1L1_KEME.pdf>
-Package pdftex.def Info: img/ideal-R1L1_KEME.pdf used on input line 83.
+Package pdftex.def Info: img/ideal-R1L1_KEME.pdf used on input line 81.
 (pdftex.def)             Requested size: 323.9978pt x 130.40744pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--88
+Underfull \hbox (badness 10000) in paragraph at lines 71--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--88
+Underfull \hbox (badness 10000) in paragraph at lines 71--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--88
+Underfull \hbox (badness 10000) in paragraph at lines 71--86
 
  []
 
-[46] [47 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/ideal-R1L1-dVy
+[24] [25 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/ideal-R1L1-dVy
 -xz-t30-contpseudo.png (PNG copy)> <C:/Users/Amelia/Documents/TeX/thesisTeX/the
 sisDocs/img/ideal-R1L1-01-dVy-xz-t49.png (PNG copy)>]
-
-LaTeX Warning: Reference `ssec:mrispring' on page 48 undefined on input line 91
-.
-
-<img/mriSpring.pdf, id=917, 480.59549pt x 243.5499pt>
+<img/mriSpring.pdf, id=501, 480.59549pt x 243.5499pt>
 File: img/mriSpring.pdf Graphic file (type pdf)
  <use img/mriSpring.pdf>
-Package pdftex.def Info: img/mriSpring.pdf used on input line 98.
+Package pdftex.def Info: img/mriSpring.pdf used on input line 96.
 (pdftex.def)             Requested size: 288.0011pt x 145.94896pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--103
+Underfull \hbox (badness 10000) in paragraph at lines 89--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--103
+Underfull \hbox (badness 10000) in paragraph at lines 89--103
 
  []
 
-[48 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/ideal-R1L1_KEME.pdf
->] [49 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/mriSpring.pdf>]
-
-LaTeX Warning: Reference `eq:adiabatic' on page 50 undefined on input line 114.
-
-
-
-LaTeX Warning: Reference `ssec:diskheight' on page 50 undefined on input line 1
-14.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--117
+[26 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/ideal-R1L1_KEME.pdf
+>] [27 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/mriSpring.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 109--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--117
+Underfull \hbox (badness 10000) in paragraph at lines 109--115
 
  []
 
-[50] <img/ShearingBox.pdf, id=968, 530.46178pt x 178.5069pt>
+[28] <img/ShearingBox.pdf, id=552, 530.46178pt x 178.5069pt>
 File: img/ShearingBox.pdf Graphic file (type pdf)
 
 <use img/ShearingBox.pdf>
-Package pdftex.def Info: img/ShearingBox.pdf used on input line 128.
+Package pdftex.def Info: img/ShearingBox.pdf used on input line 126.
 (pdftex.def)             Requested size: 360.0pt x 121.14882pt.
 
-Overfull \hbox (0.65446pt too wide) in paragraph at lines 136--136
+Overfull \hbox (0.65446pt too wide) in paragraph at lines 134--134
 []\OT1/cmr/bx/n/14.4 Local Non-ideal MHD The-ory and Sim-u-la-tions 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--144
+Underfull \hbox (badness 10000) in paragraph at lines 135--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--144
+Underfull \hbox (badness 10000) in paragraph at lines 135--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--144
+Underfull \hbox (badness 10000) in paragraph at lines 135--142
 
  []
 
-[51 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/ShearingBox.pdf>]
-
-LaTeX Warning: Reference `fig:nstokesPm' on page 52 undefined on input line 153
-.
-
-
-LaTeX Warning: Reference `fig:nstokesPm' on page 52 undefined on input line 153
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--154
+[29 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/ShearingBox.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 148--152
 
  []
 
-[52] <img/nstokes-eta1R1L1_MExyz_TE-0.pdf, id=1004, 536.96613pt x 427.11569pt>
+[30] <img/nstokes-eta1R1L1_MExyz_TE-0.pdf, id=590, 536.96613pt x 427.11569pt>
 File: img/nstokes-eta1R1L1_MExyz_TE-0.pdf Graphic file (type pdf)
 
 <use img/nstokes-eta1R1L1_MExyz_TE-0.pdf>
 Package pdftex.def Info: img/nstokes-eta1R1L1_MExyz_TE-0.pdf used on input line
- 162.
+ 160.
 (pdftex.def)             Requested size: 180.0pt x 143.1775pt.
 
-<img/nstokes-eta2R1L1_MExyz_TE-0.pdf, id=1005, 540.5796pt x 435.7881pt>
+<img/nstokes-eta2R1L1_MExyz_TE-0.pdf, id=591, 540.5796pt x 435.7881pt>
 File: img/nstokes-eta2R1L1_MExyz_TE-0.pdf Graphic file (type pdf)
 
 <use img/nstokes-eta2R1L1_MExyz_TE-0.pdf>
 Package pdftex.def Info: img/nstokes-eta2R1L1_MExyz_TE-0.pdf used on input line
- 168.
+ 165.
 (pdftex.def)             Requested size: 180.0pt x 145.10052pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 160--173
-[]$[]$ $[]$
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 158--168
+[]$[]$ $[]$ 
  []
 
-<img/kscales.pdf, id=1006, 464.69609pt x 234.1548pt>
+<img/kscales.pdf, id=592, 464.69609pt x 234.1548pt>
 File: img/kscales.pdf Graphic file (type pdf)
  <use img/kscales.pdf>
-Package pdftex.def Info: img/kscales.pdf used on input line 178.
+Package pdftex.def Info: img/kscales.pdf used on input line 174.
 (pdftex.def)             Requested size: 323.9978pt x 163.26053pt.
 )
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\kinBrag.tex [53]
-[54 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/nstokes-eta1R1L1_ME
-xyz_TE-0.pdf> <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/nstokes-e
-ta2R1L1_MExyz_TE-0.pdf
+(C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\tex\kinBrag.tex [31 <C:/Use
+rs/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/nstokes-eta1R1L1_MExyz_TE-0.pd
+f> <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/nstokes-eta2R1L1_MEx
+yz_TE-0.pdf
 
 pdfTeX warning: pdflatex.exe (file C:/Users/Amelia/Documents/TeX/thesisTeX/thes
 isDocs/img/nstokes-eta2R1L1_MExyz_TE-0.pdf): PDF inclusion: multiple pdfs with 
 page group included in a single page
->] [55 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/kscales.pdf>]
-Chapter 5.
-) [56
+>] [32 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/kscales.pdf>]
+Chapter 4.
 
-] (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\thesis.bbl
-Underfull \hbox (badness 6316) in paragraph at lines 35--43
-[]\OT1/cmr/m/n/10.95 Steven A Bal-bus and John F Haw-ley.  In-sta-bil-ity, tur-
+Package natbib Warning: Alias undefined for citation `BH1991c' 
+(natbib)                on page 33 on input line 9.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
 
  []
 
 
-Underfull \hbox (badness 5504) in paragraph at lines 35--43
-\OT1/cmr/m/n/10.95 bu-lence, and en-hanced trans-port in ac-cre-tion disks.  \O
-T1/cmr/m/it/10.95 Re-
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+<img/pLimiter-eta3-PmSel1_Sharma.pdf, id=633, 589.72322pt x 470.4777pt>
+File: img/pLimiter-eta3-PmSel1_Sharma.pdf Graphic file (type pdf)
+
+<use img/pLimiter-eta3-PmSel1_Sharma.pdf>
+Package pdftex.def Info: img/pLimiter-eta3-PmSel1_Sharma.pdf used on input line
+ 13.
+(pdftex.def)             Requested size: 323.9978pt x 258.48355pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/npLimiter-eta2-PmSel1_Sharma.pdf, id=634, 572.37839pt x 396.7623pt>
+File: img/npLimiter-eta2-PmSel1_Sharma.pdf Graphic file (type pdf)
+
+<use img/npLimiter-eta2-PmSel1_Sharma.pdf>
+Package pdftex.def Info: img/npLimiter-eta2-PmSel1_Sharma.pdf used on input lin
+e 21.
+(pdftex.def)             Requested size: 323.9978pt x 224.58884pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/npLimiter-eta3-PmSel1_Sharma.pdf, id=635, 550.69742pt x 403.26662pt>
+File: img/npLimiter-eta3-PmSel1_Sharma.pdf Graphic file (type pdf)
+
+<use img/npLimiter-eta3-PmSel1_Sharma.pdf>
+Package pdftex.def Info: img/npLimiter-eta3-PmSel1_Sharma.pdf used on input lin
+e 30.
+(pdftex.def)             Requested size: 323.9978pt x 237.26067pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/npLimiter-eta4-PmSel1_Sharma.pdf, id=636, 565.15138pt x 396.7623pt>
+File: img/npLimiter-eta4-PmSel1_Sharma.pdf Graphic file (type pdf)
+
+<use img/npLimiter-eta4-PmSel1_Sharma.pdf>
+Package pdftex.def Info: img/npLimiter-eta4-PmSel1_Sharma.pdf used on input lin
+e 39.
+(pdftex.def)             Requested size: 323.9978pt x 227.4706pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<img/pLimiter-eta3-Pm11-13_StressesZoom_reversed.pdf, id=637, 561.5379pt x 658.
+37968pt>
+File: img/pLimiter-eta3-Pm11-13_StressesZoom_reversed.pdf Graphic file (type pd
+f)
+ <use img/pLimiter-eta3-Pm11-13_StressesZoom_reversed.pdf>
+Package pdftex.def Info: img/pLimiter-eta3-Pm11-13_StressesZoom_reversed.pdf us
+ed on input line 48.
+(pdftex.def)             Requested size: 323.9978pt x 379.87135pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<img/npLimiter-eta3-Pm11-13_StressesZoom.pdf, id=638, 533.35258pt x 534.79799pt
+>
+File: img/npLimiter-eta3-Pm11-13_StressesZoom.pdf Graphic file (type pdf)
+ <use img/npLimiter-eta3-Pm11-13_StressesZoom.pdf>
+Package pdftex.def Info: img/npLimiter-eta3-Pm11-13_StressesZoom.pdf used on in
+put line 55.
+(pdftex.def)             Requested size: 323.9978pt x 324.87984pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/eta4_slice_dVy_t31.png, id=639, 1027.84pt x 1027.84pt>
+File: img/eta4_slice_dVy_t31.png Graphic file (type png)
+
+<use img/eta4_slice_dVy_t31.png>
+Package pdftex.def Info: img/eta4_slice_dVy_t31.png used on input line 64.
+(pdftex.def)             Requested size: 323.9978pt x 323.99088pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/eta4_slice_dVy_t44.png, id=640, 1027.84pt x 1027.84pt>
+File: img/eta4_slice_dVy_t44.png Graphic file (type png)
+
+<use img/eta4_slice_dVy_t44.png>
+Package pdftex.def Info: img/eta4_slice_dVy_t44.png used on input line 71.
+(pdftex.def)             Requested size: 323.9978pt x 323.99088pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [33
+
+] [34 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/pLimiter-eta3-PmS
+el1_Sharma.pdf>] [35 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/np
+Limiter-eta2-PmSel1_Sharma.pdf>] [36 <C:/Users/Amelia/Documents/TeX/thesisTeX/t
+hesisDocs/img/npLimiter-eta3-PmSel1_Sharma.pdf>] [37 <C:/Users/Amelia/Documents
+/TeX/thesisTeX/thesisDocs/img/npLimiter-eta4-PmSel1_Sharma.pdf>] [38 <C:/Users/
+Amelia/Documents/TeX/thesisTeX/thesisDocs/img/pLimiter-eta3-Pm11-13_StressesZoo
+m_reversed.pdf>] [39 <C:/Users/Amelia/Documents/TeX/thesisTeX/thesisDocs/img/np
+Limiter-eta3-Pm11-13_StressesZoom.pdf>] [40 <C:/Users/Amelia/Documents/TeX/thes
+isTeX/thesisDocs/img/eta4_slice_dVy_t31.png (PNG copy)>] [41 <C:/Users/Amelia/D
+ocuments/TeX/thesisTeX/thesisDocs/img/eta4_slice_dVy_t44.png (PNG copy)>]
+(C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\thesis.bbl
+Underfull \hbox (badness 1867) in paragraph at lines 35--41
+[]\OT1/cmr/m/n/6 M I Pu-dovkin and Andv S Se-menov.  MAG-NETIC FIELD RE-CON-NEC
+-TION THE-ORY AND
  []
 
 
-Underfull \hbox (badness 6428) in paragraph at lines 35--43
-\OT1/cmr/m/it/10.95 views of Mod-ern Physics\OT1/cmr/m/n/10.95 , 70(1):1--53, 1
-998.  ISSN 0034-
+Underfull \hbox (badness 1478) in paragraph at lines 35--41
+\OT1/cmr/m/n/6 THE SO-LAR WIND -MAGNETOSPHERE IN-TER-AC-TION: A RE-VIEW.  \OT1/
+cmr/m/it/6 Sci. Rev.\OT1/cmr/m/n/6 , 41(1):1--89,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--43
-\OT1/cmr/m/n/10.95 6861.  doi: $10 . 1103 / RevModPhys . 70 . 1$.  URL []$\OT1/
-cmtt/m/n/10.95 http :
+Underfull \hbox (badness 10000) in paragraph at lines 35--41
+\OT1/cmtt/m/n/6 http{%}253A{%}252F{%}252Flink . springer . com{%}252Farticle{%}
+252F10 . 1007{%}252FBF00241346{&}token2 = exp =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--43
-\OT1/cmtt/m/n/10.95 / / adsabs . harvard . edu / cgi-[]bin / nph-[]data{_}query
- ? bibcode =
+Underfull \hbox (badness 10000) in paragraph at lines 35--41
+\OT1/cmtt/m/n/6 1492120748{[]}acl = {%}252Fstatic{%}252Fpdf{%}252F528{%}252Fart
+{%}2525253A10 . 1007{%}2525252FBF00241346 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--43
-\OT1/cmtt/m/n/10.95 1998RvMP . . . 70 . . . .1B{&}link{_}type = ABSTRACT{%}5Cnp
-apers :
+Underfull \hbox (badness 1142) in paragraph at lines 80--88
+[]\OT1/cmr/m/n/6 John F Haw-ley, Steven A Bal-bus, and James M Stone.  A Mag-ne
+-to-hy-dro-dy-namic Non-ra-dia-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--43
-\OT1/cmtt/m/n/10.95 / / 0be24a46-[]325a-[]4116-[]a3c6-[]fd8a3b614472 / Paper /
+Underfull \hbox (badness 1072) in paragraph at lines 80--88
+\OT1/cmr/m/n/6 Ac-cre-tion Flow in Three Di-men-sions.  \OT1/cmr/m/it/6 As-tro-
+phys. J. Lett.\OT1/cmr/m/n/6 , 554(1):49--52, 2001.  ISSN 0004637X.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--43
-\OT1/cmtt/m/n/10.95 p9932{%}5Cnhttp : / / link . aps . org / doi / 10 . 1103 / 
-RevModPhys .
+Underfull \hbox (badness 10000) in paragraph at lines 90--98
+\OT1/cmtt/m/n/6 bibcode = 1996ApJ . . . 463 . .656S{&}link{_}type = ABSTRACT{%}
+5Cnpapers2 : / / publication / doi / 10 . 1086 / 177280{%}5Cnhttp :
  []
 
-[57
+[42
 
 
 ]
-Underfull \hbox (badness 1418) in paragraph at lines 103--111
-\OT1/cmr/m/n/10.95 799 / 1 / 1$.  URL []$\OT1/cmtt/m/n/10.95 http : / / iopscie
-nce . iop . org / article / 10 . 1088 /
+Underfull \hbox (badness 4981) in paragraph at lines 193--200
+\OT1/cmr/m/n/6 Disks and Jets Grav-ity, Ro-ta-tion and Mag-netic Fields.  \OT1/
+cmr/m/it/6 Sp. Sci Rev\OT1/cmr/m/n/6 , 191:441--469, 2015.
  []
 
-[58]
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no î in font cmr10!
 
-Underfull \hbox (badness 3557) in paragraph at lines 137--144
-\OT1/cmr/m/it/10.95 MN-RAS\OT1/cmr/m/n/10.95 , 435:2431--2444, 2013.  doi: $10 
-. 1093 / mnras / stt1452$.
+Underfull \hbox (badness 10000) in paragraph at lines 193--200
+\OT1/cmr/m/n/6 doi: $10 . 1007 / s11214-[]015-[]0174-[]7$.  URL []$\OT1/cmtt/m/
+n/6 http : / / download . springer . com / static / pdf / 328 / art{%}253A10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--144
-\OT1/cmr/m/n/10.95 URL []$\OT1/cmtt/m/n/10.95 https : / / oup . silverchair-[]c
-dn . com / oup / backfile /
+Underfull \hbox (badness 10000) in paragraph at lines 193--200
+\OT1/cmtt/m/n/6 1007{%}252Fs11214-[]015-[]0174-[]7 . pdf ? originUrl = http{%}3
+A{%}2F{%}2Flink . springer . com{%}2Farticle{%}2F10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--144
-\OT1/cmtt/m/n/10.95 Content{_}public / Journal / mnras / 435 / 3 / 10 . 1093 / 
-mnras /
+Underfull \hbox (badness 10000) in paragraph at lines 193--200
+\OT1/cmtt/m/n/6 1007{%}2Fs11214-[]015-[]0174-[]7{&}token2 = exp = 1492185262{[]
+}acl = {%}2Fstatic{%}2Fpdf{%}2F328{%}2Fart{%}25253A10 .
  []
 
+[43] [44]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 414.
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--144
-\OT1/cmtt/m/n/10.95 stt1452 / 2 / stt1452 . pdf ? Expires = 1489244484{&}Signat
-ure =
- []
-
-
-Overfull \hbox (303.38069pt too wide) in paragraph at lines 137--144
-\OT1/cmtt/m/n/10.95 U0dGDsRQU7sqmasAjawlZqXmoWV56t26VdoqVwPhLVdgBnTP4wRMCP6AFVr
-hVcvR4LeRB9Okugp5oEsCIwwCkq9BjrG7BlY2sTGp0TKzNJJvKk$[]\OT1/cmr/m/n/10.95 . 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--167
-\OT1/cmr/m/n/10.95 URL []$\OT1/cmtt/m/n/10.95 https : / / oup . silverchair-[]c
-dn . com / oup / backfile /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--167
-\OT1/cmtt/m/n/10.95 Content{_}public / Journal / mnras / 432 / 3 / 10 . 1093 / 
-mnras /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--167
-\OT1/cmtt/m/n/10.95 stt583 / 3 / stt583 . pdf ? Expires = 1490824579{&}Signatur
-e =
- []
-
-
-Overfull \hbox (327.87544pt too wide) in paragraph at lines 160--167
-\OT1/cmtt/m/n/10.95 eHMpnogDQWMSVkVFaJludDUYoRcFDblIOmCBpJ6tqRu2kpLaTbEn-[]Couv
-LXhz16h9Yi6gX4fuavh9Zacix8Hg7RkAr65j3L9F-[]5-[]mBwmxH1xbv{[]}Y$[]\OT1/cmr/m/n/1
-0.95 . 
- []
-
-[59]
-Underfull \hbox (badness 1092) in paragraph at lines 181--186
-[]\OT1/cmr/m/n/10.95 A. Fabian.  COOL-ING FLOWS IN CLUS-TERS OF GALAX-
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 181--186
-\OT1/cmr/m/n/10.95 IES.  \OT1/cmr/m/it/10.95 Annu. Rev. As-tron ASlro-phys\OT1/
-cmr/m/n/10.95 , 32:277--318, 1994.  URL
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--186
-[]$\OT1/cmtt/m/n/10.95 http : / / www . annualreviews . org / doi / pdf / 10 . 
-1146 / annurev . aa .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--231
-\OT1/cmtt/m/n/10.95 harvard . edu / cgi-[]bin / nph-[]iarticle{_}query ? 1996Ap
-J . . . 457 .
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 234--239
-[]\OT1/cmr/m/n/10.95 M L Gold-stein, D A Roberts, and W H Matthaeus.  MAG-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
-\OT1/cmr/m/n/10.95 NE-TO-HY-DRO-DY-NAMIC TUR-BU-LENCE IN THE SO-LAR
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--239
-[]$\OT1/cmtt/m/n/10.95 http : / / www . annualreviews . org / doi / pdf / 10 . 
-1146 / annurev . aa .
- []
-
-[60]
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 251.
-
-Underfull \hbox (badness 10000) in paragraph at lines 248--253
-[]\OT1/cmr/m/n/10.95 G Grieger and I Milch.  \OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/
-10.95 D\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95 as \OMS/cmsy/m/n/10.95 f\OT1/cmr
-/m/n/10.95 F\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95 usionsexperiment
- []
-
-
-Underfull \hbox (badness 1112) in paragraph at lines 261--267
-\OT1/cmr/m/n/10.95 Sim-u-la-tions of an ac-cre-tion disk hy-dro-mag-netic dy-na
-mo.  \OT1/cmr/m/it/10.95 The
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--267
-\OT1/cmtt/m/n/10.95 adsabs . harvard . edu / cgi-[]bin / nph-[]iarticle{_}query
- ? 1996ApJ .
- []
-
-
-Underfull \hbox (badness 2050) in paragraph at lines 277--286
-\OT1/cmr/m/it/10.95 The As-tro-phys-i-cal Jour-nal Let-ters\OT1/cmr/m/n/10.95 ,
- 554(1):49--52, 2001.  ISSN
- []
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 277--286
-\OT1/cmr/m/n/10.95 0004637X.  doi: $10 . 1086 / 320931$.  URL []$\OT1/cmtt/m/n/
-10.95 http : / / iopscience .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--286
-\OT1/cmtt/m/n/10.95 iop . org / 1538-[]4357 / 554 / 1 / L49{%}5Cnpapers2 : / / 
-publication /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--286
-\OT1/cmtt/m/n/10.95 uuid / 2C3A60D4-[]41E8-[]4DE1-[]B690-[]3CB8AF0B7406{%}5Cnht
-tp :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--296
-[]\OT1/cmr/m/n/10.95 John F Haw-ley, Chris-tian Fendt, Mar-tin Hard-cas-tle,
- []
-
-
-Underfull \hbox (badness 5064) in paragraph at lines 289--296
-\OT1/cmr/m/n/10.95 Elena Nokh-rina, and Alexan-der Tchekhovskoy.  Disks and
- []
-
-
-Underfull \hbox (badness 7649) in paragraph at lines 289--296
-\OT1/cmr/m/n/10.95 Jets Grav-ity, Ro-ta-tion and Mag-netic Fields.  \OT1/cmr/m/
-it/10.95 Space Sci
- []
-
-
-Underfull \hbox (badness 7925) in paragraph at lines 289--296
-\OT1/cmr/m/it/10.95 Rev\OT1/cmr/m/n/10.95 , 191:441--469, 2015.  doi: $10 . 100
-7 / s11214-[]015-[]0174-[]7$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--296
-\OT1/cmr/m/n/10.95 URL []$\OT1/cmtt/m/n/10.95 http : / / download . springer . 
-com / static / pdf / 328 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--296
-\OT1/cmtt/m/n/10.95 art{%}253A10 . 1007{%}252Fs11214-[]015-[]0174-[]7 . pdf ? o
-riginUrl =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--296
-\OT1/cmtt/m/n/10.95 http{%}3A{%}2F{%}2Flink . springer . com{%}2Farticle{%}2F10
- .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--296
-\OT1/cmtt/m/n/10.95 1007{%}2Fs11214-[]015-[]0174-[]7{&}token2 = exp = 149218526
-2{[]}acl =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--296
-\OT1/cmtt/m/n/10.95 {%}2Fstatic{%}2Fpdf{%}2F328{%}2Fart{%}25253A10 .
- []
-
-[61]
-Underfull \hbox (badness 1642) in paragraph at lines 321--329
-[]\OT1/cmr/m/n/10.95 Yan-Fei Jiang, James M. Stone, and Shane W. Davis.  ON
- []
-
-
-Underfull \hbox (badness 3250) in paragraph at lines 321--329
-\OT1/cmr/m/n/10.95 THE THER-MAL STA-BIL-ITY OF RADIATION-DOMINATED
- []
-
-
-Underfull \hbox (badness 2903) in paragraph at lines 321--329
-\OT1/cmr/m/n/10.95 AC-CRE-TION DISKS.  \OT1/cmr/m/it/10.95 The As-tro-phys-i-ca
-l Jour-nal\OT1/cmr/m/n/10.95 , 778(1):65,
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 321--329
-\OT1/cmr/m/n/10.95 nov 2013.  ISSN 0004-637X.  doi: $10 . 1088 / 0004-[]637X / 
-778 / 1 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--357
-\OT1/cmtt/m/n/10.95 adsabs . harvard . edu / cgi-[]bin / nph-[]iarticle{_}query
- ? 1989ApJ .
- []
-
-[62]
-Underfull \hbox (badness 1237) in paragraph at lines 391--398
-[]\OT1/cmr/m/n/10.95 Matthew W Kunz.  Dy-nam-i-cal sta-bil-ity of a ther-mally 
-strat-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--398
-\OT1/cmr/m/n/10.95 i-fied in-tr-a-clus-ter medium with anisotropic mo-men-tum a
-nd
- []
-
-
-Underfull \hbox (badness 5832) in paragraph at lines 391--398
-\OT1/cmr/m/n/10.95 heat trans-port.  \OT1/cmr/m/it/10.95 Mon. Not. R. As-tron. 
-Soc\OT1/cmr/m/n/10.95 , 417:602--616,
- []
-
-
-Underfull \hbox (badness 2970) in paragraph at lines 391--398
-\OT1/cmr/m/n/10.95 2011.  doi: $10 . 1111 / j . 1365-[]2966 . 2011 . 19303 . x$
-.  URL []$\OT1/cmtt/m/n/10.95 https :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--398
-\OT1/cmtt/m/n/10.95 / / oup . silverchair-[]cdn . com / oup / backfile / Conten
-t{_}public /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--398
-\OT1/cmtt/m/n/10.95 Journal / mnras / 417 / 1 / 10 . 1111 / j . 1365-[]2966 . 2
-011 . 19303 . x /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--398
-\OT1/cmtt/m/n/10.95 2 / mnras0417-[]0602 . pdf ? Expires = 1492705308{&}Signatu
-re =
- []
-
-
-Overfull \hbox (212.90169pt too wide) in paragraph at lines 391--398
-\OT1/cmtt/m/n/10.95 dj6-[]sZp2Ngrr-[]6XcmLv4GylnuOueY3I2BCqQ5khkIc{[]}Gcw-[]fG0
-DNXipJlCrGyZ21lqoGRA4334KD7puWW0DGH7NP8Hr3$[]\OT1/cmr/m/n/10.95 . 
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 415--422
-[]\OT1/cmr/m/n/10.95 G Lesur and P.-Y Lon-garetti.  Im-pact of di-men-sion-less
- num-
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 415--422
-\OT1/cmr/m/n/10.95 bers on the ef-fi-ciency of mag-ne-toro-ta-tional in-sta-bil
--ity in-duced
- []
-
-
-Underfull \hbox (badness 2970) in paragraph at lines 415--422
-\OT1/cmr/m/n/10.95 2007.  doi: $10 . 1111 / j . 1365-[]2966 . 2007 . 11888 . x$
-.  URL []$\OT1/cmtt/m/n/10.95 https :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--422
-\OT1/cmtt/m/n/10.95 / / oup . silverchair-[]cdn . com / oup / backfile / Conten
-t{_}public /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--422
-\OT1/cmtt/m/n/10.95 Journal / mnras / 378 / 4 / 10 . 1111 / j . 1365-[]2966 . 2
-007 . 11888 . x /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--422
-\OT1/cmtt/m/n/10.95 3 / mnras0378-[]1471 . pdf ? Expires = 1490726134{&}Signatu
-re =
- []
-
-
-Overfull \hbox (235.89644pt too wide) in paragraph at lines 415--422
-\OT1/cmtt/m/n/10.95 ItAaoeYsSoiYKNwbB{[]}vtXZgku-[]OMqnPO21s-[]g{[]}p-[]u0fgMTT
-XvLToagk6rZO{[]}NwUxkxm5mPZMXWP2o8bQTOALjhdM2fKs$[]\OT1/cmr/m/n/10.95 . 
- []
-
-[63]
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no î in font cmr10!
-
-Underfull \hbox (badness 3199) in paragraph at lines 442--449
-\OT1/cmr/m/it/10.95 MN-RAS\OT1/cmr/m/n/10.95 , 455:2187--2199, 2016.  doi: $10 
-. 1093 / mnras / stv2232$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 442--449
-\OT1/cmr/m/n/10.95 URL []$\OT1/cmtt/m/n/10.95 https : / / oup . silverchair-[]c
-dn . com / oup / backfile /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 442--449
-\OT1/cmtt/m/n/10.95 Content{_}public / Journal / mnras / 455 / 2 / 10 . 1093 / 
-mnras /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 442--449
-\OT1/cmtt/m/n/10.95 stv2232 / 2 / stv2232 . pdf ? Expires = 1490824057{&}Signat
-ure =
- []
-
-
-Overfull \hbox (327.87544pt too wide) in paragraph at lines 442--449
-\OT1/cmtt/m/n/10.95 PgUN{[]}CD16kMLRWYk-[]iCMACXX7VaC0N9FL6rncsPbjmDvAXHs{[]}6T
-DlG-[]A4USQjXUDfoAMFajWVQq654hhlXxal-[]38DnU6htfBVDPXS8d4ocaeSM$[]\OT1/cmr/m/n/
-10.95 . 
- []
-
-[64]
-Underfull \hbox (badness 1960) in paragraph at lines 484--491
-\OT1/cmr/m/n/10.95 15M1027309$.  URL []$\OT1/cmtt/m/n/10.95 http : / / epubs . 
-siam . org / doi / pdf / 10 . 1137 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 519--524
-\OT1/cmtt/m/n/10.95 harvard . edu / cgi-[]bin / nph-[]iarticle{_}query ? 1978Ac
-A . . . .28 . . .
- []
-
-[65]
-Underfull \hbox (badness 3872) in paragraph at lines 585--592
-[]\OT1/cmr/m/n/10.95 D S Plant, R P Fender, G Ponti, T Mu~noz-Darias, and
- []
-
-
-Underfull \hbox (badness 3746) in paragraph at lines 585--592
-\OT1/cmr/m/n/10.95 M Co-riat.  Re-veal-ing ac-cre-tion on to black holes: X-ray
-
- []
-
-
-Underfull \hbox (badness 5475) in paragraph at lines 585--592
-\OT1/cmr/m/n/10.95 re-flec-tion through-out three out-bursts of GX 339-4.  \OT1
-/cmr/m/it/10.95 MN-
- []
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 414.
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 416.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--592
-\OT1/cmr/m/it/10.95 RAS\OT1/cmr/m/n/10.95 , 442:1767--1785, 2014.  doi: $10 . 1
-093 / mnras / stu867$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--592
-\OT1/cmr/m/n/10.95 URL []$\OT1/cmtt/m/n/10.95 https : / / oup . silverchair-[]c
-dn . com / oup / backfile /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--592
-\OT1/cmtt/m/n/10.95 Content{_}public / Journal / mnras / 442 / 2 / 10 . 1093 / 
-mnras /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--592
-\OT1/cmtt/m/n/10.95 stu867 / 2 / stu867 . pdf ? Expires = 1492353626{&}Signatur
-e =
- []
-
-
-Overfull \hbox (350.3702pt too wide) in paragraph at lines 585--592
-\OT1/cmtt/m/n/10.95 LH3xW3BZE{[]}VEUeXCqWtkFENGrKurqR{[]}U8fPv3xoXDzZ3PG5H1ODqT
-e9rhsCYMQ0F8jihdYJ7I4YZF8e-[]rdCSdkfoCdMKEtCRzR{[]}mIijMi-[]OMdXY8$[]\OT1/cmr/m
-/n/10.95 . 
- []
-
-
-Underfull \hbox (badness 1168) in paragraph at lines 595--602
-[]\OT1/cmr/m/n/10.95 Dimitrios Psaltis, Fer-yal []Ozel, Chi-Kwan Chan, and Dani
-el P
- []
-
-
-Underfull \hbox (badness 2393) in paragraph at lines 595--602
-\OT1/cmr/m/n/10.95 Mar-rone.  A GEN-ERAL REL-A-TIVIS-TIC NULL HY-POTH-E-
- []
-
-
-Underfull \hbox (badness 2261) in paragraph at lines 604--610
-[]\OT1/cmr/m/n/10.95 M I Pu-dovkin and Andv S Se-menov.  MAG-NETIC FIELD
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--610
-\OT1/cmr/m/n/10.95 RE-CON-NEC-TION THE-ORY AND THE SO-LAR WIND -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--610
-\OT1/cmr/m/n/10.95 MAGNETOSPHERE IN-TER-AC-TION: A RE-VIEW.  \OT1/cmr/m/it/10.9
-5 Sci.
- []
-
-
-Underfull \hbox (badness 6510) in paragraph at lines 604--610
-\OT1/cmr/m/it/10.95 Rev.\OT1/cmr/m/n/10.95 , 41(1):1--89, 1985.  URL []$\OT1/cm
-tt/m/n/10.95 http : / / download . springer .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--610
-\OT1/cmtt/m/n/10.95 com / static / pdf / 528 / art{%}253A10 . 1007{%}252FBF0024
-1346 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--610
-\OT1/cmtt/m/n/10.95 pdf ? originUrl = http{%}253A{%}252F{%}252Flink .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--610
-\OT1/cmtt/m/n/10.95 springer . com{%}252Farticle{%}252F10 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--610
-\OT1/cmtt/m/n/10.95 1007{%}252FBF00241346{&}token2 = exp = 1492120748{[]}acl =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--610
-\OT1/cmtt/m/n/10.95 {%}252Fstatic{%}252Fpdf{%}252F528{%}252Fart{%}2525253A10 .
- []
-
-[66] [67]
-Underfull \hbox (badness 10000) in paragraph at lines 675--681
-[]\OT1/cmr/m/n/10.95 Greg Salvesen, Philip J Ar-mitage, Ja-cob B Si-mon,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 675--681
-\OT1/cmr/m/n/10.95 and Mitchell C Begel-man.  Strongly mag-ne-tized ac-cre-
- []
-
-
-Underfull \hbox (badness 7030) in paragraph at lines 675--681
-\OT1/cmr/m/n/10.95 tion discs re-quire poloidal flux.  \OT1/cmr/m/it/10.95 MN-R
-AS\OT1/cmr/m/n/10.95 , 460:3488--3493,
- []
-
-
-Underfull \hbox (badness 5403) in paragraph at lines 675--681
-\OT1/cmr/m/n/10.95 2016.  doi: $10 . 1093 / mnras / stw1231$.  URL []$\OT1/cmtt
-/m/n/10.95 https : / / oup .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 675--681
-\OT1/cmtt/m/n/10.95 silverchair-[]cdn . com / oup / backfile / Content{_}public
- /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 675--681
-\OT1/cmtt/m/n/10.95 Journal / mnras / 460 / 4 / 10 . 1093{_}mnras{_}stw1231 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 675--681
-\OT1/cmtt/m/n/10.95 2 / stw1231 . pdf ? Expires = 1492749004{&}Signature =
- []
-
-
-Overfull \hbox (326.87544pt too wide) in paragraph at lines 675--681
-\OT1/cmtt/m/n/10.95 YJnHMEOosBT4FRaZRRWsDVvsAcETw0{[]}Kb9KbybWh{[]}ZXtTTEOEObIZ
-KFNmro6VrZ88H4rLGCbpHz2DonRTwkYOEVnD-[]Q3ysEe7u1UwNB8EWeFaf$[]\OT1/cmr/m/n/10.9
-5 . 
- []
-
-
-Underfull \hbox (badness 3019) in paragraph at lines 705--710
-\OT1/cmr/m/n/10.95 Ob-ser-va-tional Ap-pear-ance.  \OT1/cmr/m/it/10.95 As-tron-
-omy and As-tro-physics\OT1/cmr/m/n/10.95 , 24:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 705--710
-\OT1/cmr/m/n/10.95 337--355, 1973.  URL []$\OT1/cmtt/m/n/10.95 http : / / artic
-les . adsabs . harvard .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 705--710
-\OT1/cmtt/m/n/10.95 edu / cgi-[]bin / nph-[]iarticle{_}query ? 1973A{%}26A . . 
-. .24 .
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 712--717
-[]\OT1/cmr/m/n/10.95 S. Shapiro.  Ac-cre-tion onto Black Holes: The Emer-gent R
-a-
- []
-
-
-Underfull \hbox (badness 5050) in paragraph at lines 712--717
-\OT1/cmr/m/n/10.95 di-a-tion Spec-trum.  \OT1/cmr/m/it/10.95 The As-tro-phys-i-
-cal Jour-nal\OT1/cmr/m/n/10.95 , 180:531--546,
- []
-
-
-Underfull \hbox (badness 5578) in paragraph at lines 712--717
-\OT1/cmr/m/n/10.95 1973.  URL []$\OT1/cmtt/m/n/10.95 http : / / articles . adsa
-bs . harvard . edu / cgi-[]bin /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 712--717
-\OT1/cmtt/m/n/10.95 nph-[]iarticle{_}query ? 1973ApJ . . . 180 . .531S{&}defaul
-tprint =
- []
-
-[68]
-Underfull \hbox (badness 1454) in paragraph at lines 758--765
-[]\OT1/cmr/m/n/10.95 Ji-Ming Shi, James M Stone, and Chelsea X Huang.  Sat-u-
- []
-
-
-Underfull \hbox (badness 2818) in paragraph at lines 758--765
-\OT1/cmr/m/n/10.95 ra-tion of the mag-ne-toro-ta-tional in-sta-bil-ity in the u
-n-strat-i-fied
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 758--765
-\OT1/cmr/m/n/10.95 shear-ing box with zero net flux: con-ver-gence in taller bo
-xes.
- []
-
-
-Underfull \hbox (badness 3199) in paragraph at lines 758--765
-\OT1/cmr/m/it/10.95 MN-RAS\OT1/cmr/m/n/10.95 , 456:2273--2289, 2016.  doi: $10 
-. 1093 / mnras / stv2815$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 758--765
-\OT1/cmr/m/n/10.95 URL []$\OT1/cmtt/m/n/10.95 https : / / oup . silverchair-[]c
-dn . com / oup / backfile /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 758--765
-\OT1/cmtt/m/n/10.95 Content{_}public / Journal / mnras / 456 / 3 / 10 . 1093 / 
-mnras /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 758--765
-\OT1/cmtt/m/n/10.95 stv2815 / 2 / stv2815 . pdf ? Expires = 1488995752{&}Signat
-ure =
- []
-
-
-Overfull \hbox (316.87807pt too wide) in paragraph at lines 758--765
-\OT1/cmtt/m/n/10.95 G1P6fLVscE2-[]UIFgxquzdc-[]0Y-[]11JchH7OKFpWA7dxa1Dt7cxlQI{
-[]}MlIoduHGi8mf50FNF-[]JXBq1U44WWC5pnStyoE3h7M45H25ZUfHhnufTVg$[]\OT1/cmr/m/n/1
-0.95 . 
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 781--788
-[]\OT1/cmr/m/n/10.95 Jacob B Si-mon, John F Haw-ley, and Kris Beck-with.  SIM-U
--
- []
-
-
-Underfull \hbox (badness 3240) in paragraph at lines 781--788
-\OT1/cmr/m/n/10.95 URL []$\OT1/cmtt/m/n/10.95 http : / / iopscience . iop . org
- / article / 10 . 1088 / 0004-[]637X /
- []
-
-[69]
-Underfull \hbox (badness 5578) in paragraph at lines 816--822
-\OT1/cmr/m/n/10.95 2009.  URL []$\OT1/cmtt/m/n/10.95 http : / / articles . adsa
-bs . harvard . edu / cgi-[]bin /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 816--822
-\OT1/cmtt/m/n/10.95 nph-[]iarticle{_}query ? db{_}key = AST{&}bibcode = 2009ASP
-C .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 816--822
-\OT1/cmtt/m/n/10.95 .406 . .277S{&}letter = 0{&}classic = YES{&}defaultprint =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 816--822
-\OT1/cmtt/m/n/10.95 YES{&}whole{_}paper = YES{&}page = 277{&}epage = 277{&}send
- =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 831--840
-\OT1/cmtt/m/n/10.95 / / adsabs . harvard . edu / cgi-[]bin / nph-[]data{_}query
- ? bibcode =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 831--840
-\OT1/cmtt/m/n/10.95 1996ApJ . . . 463 . .656S{&}link{_}type = ABSTRACT{%}5Cnpap
-ers2 :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 831--840
-\OT1/cmtt/m/n/10.95 / / publication / doi / 10 . 1086 / 177280{%}5Cnhttp : / / 
-adsabs .
- []
-
-
-Underfull \hbox (badness 5302) in paragraph at lines 842--849
-[]\OT1/cmr/m/n/10.95 Marek Stru-mik, Alexan-der Schekochi-hin, and Per He-lande
-r.
- []
-
-
-Underfull \hbox (badness 4582) in paragraph at lines 842--849
-\OT1/cmr/m/n/10.95 Phys-i-cal mech-a-nisms of reg-u-la-tion of pres-sure anisot
-ropy in
- []
-
-
-Underfull \hbox (badness 2503) in paragraph at lines 842--849
-\OT1/cmr/m/n/10.95 col-li-sion-less tur-bu-lent plas-mas within MHD-CGL regime.
-  In
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 842--849
-\OT1/cmr/m/it/10.95 Fifth In-ter-na-tional Work-shop on the The-ory and Ap-pli-
-ca-
- []
-
-
-Underfull \hbox (badness 2617) in paragraph at lines 842--849
-\OT1/cmr/m/it/10.95 tions of the Vlasov equa-tion\OT1/cmr/m/n/10.95 , Co-pan-el
-lo, Italy, 2016.  URL
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 842--849
-[]$\OT1/cmtt/m/n/10.95 http : / / www . fis . unical . it / astroplasmi / vlaso
-via2016 /
- []
-
-[70]
-Missing character: There is no Õ in font cmr10!
-Missing character: There is no î in font cmr10!
-
-
-! Package inputenc Error: Unicode char \u8:‚Äê not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.861   Radiation‚Äê
-                    dominated Accretion Disks}.
-? 
-
-Underfull \hbox (badness 1596) in paragraph at lines 859--868
-\OT1/cmr/m/n/10.95 u-la-tions of Mag-ne-toro-ta-tional In-sta-bil-ity in Ra-di-
-a-tion-dom-i-nated
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 859--868
-\OT1/cmr/m/n/10.95 Ac-cre-tion Disks.  \OT1/cmr/m/it/10.95 The As-tro-phys-i-ca
-l Jour-nal\OT1/cmr/m/n/10.95 , 566(1):148--163,
+Underfull \hbox (badness 10000) in paragraph at lines 561--567
+\OT1/cmtt/m/n/6 AST{&}bibcode = 2009ASPC . .406 . .277S{&}letter = 0{&}classic 
+= YES{&}defaultprint = YES{&}whole{_}paper = YES{&}page =
  []
 
-
-Underfull \hbox (badness 1331) in paragraph at lines 859--868
-\OT1/cmr/m/n/10.95 2002.  ISSN 0004-637X.  doi: $10 . 1086 / 338081$.  URL []$\
-OT1/cmtt/m/n/10.95 http :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 859--868
-\OT1/cmtt/m/n/10.95 / / adsabs . harvard . edu / cgi-[]bin / nph-[]data{_}query
- ? bibcode =
+[45]
+Underfull \hbox (badness 2126) in paragraph at lines 577--584
+[]\OT1/cmr/m/n/6 Christopher J White, James M Stone, and Charles F Gam-mie.  AN
+ EX-TEN-SION OF THE
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 859--868
-\OT1/cmtt/m/n/10.95 2002ApJ . . . 566 . .148T{&}link{_}type = ABSTRACT{%}5Cnpap
-ers2 :
+Underfull \hbox (badness 10000) in paragraph at lines 598--605
+\OT1/cmtt/m/n/6 adsabs . harvard . edu / cgi-[]bin / nph-[]data{_}query ? bibco
+de = 1998RvMP . . . 70 . . . .1B{&}link{_}type = ABSTRACT{%}5Cnpapers :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 859--868
-\OT1/cmtt/m/n/10.95 / / publication / doi / 10 . 1086 / 338081{%}5Cnhttp : / / 
-stacks . iop .
+Underfull \hbox (badness 10000) in paragraph at lines 607--612
+[]$\OT1/cmtt/m/n/6 http : / / articles . adsabs . harvard . edu / cgi-[]bin / n
+ph-[]iarticle{_}query ? 1978AcA . . . .28 . . . 91P{&}defaultprint =
  []
-
-[71])
-
-Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
-[72]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
+[46])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+ [47]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
  (C:\Users\Amelia\Documents\TeX\thesisTeX\thesisDocs\thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D67E3D9D6E0C068DB87F00320803BE85;3044.
+(rerunfilecheck)             Checksum: E3DFA83AE2C6B24E55688F4F2CA4AC11;1604.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 8528 strings out of 493921
- 127213 string characters out of 3144873
- 221957 words of memory out of 3000000
- 11395 multiletter control sequences out of 15000+200000
- 13386 words of font info for 50 fonts, out of 3000000 for 9000
+ 8453 strings out of 493921
+ 126915 string characters out of 3144873
+ 218562 words of memory out of 3000000
+ 11405 multiletter control sequences out of 15000+200000
+ 14034 words of font info for 53 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,12n,46p,1502b,644s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,13n,44p,1164b,632s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
@@ -2161,13 +1306,13 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (72 pages, 1089707 bytes).
+nts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on thesis.pdf (47 pages, 2056270 bytes).
 PDF statistics:
- 1422 PDF objects out of 1440 (max. 8388607)
- 315 named destinations out of 1000 (max. 500000)
- 366 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 940 PDF objects out of 1000 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
+ 272 words of extra memory for PDF output out of 10000 (max. 10000000)
 

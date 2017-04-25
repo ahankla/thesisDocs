@@ -1,40 +1,22 @@
-\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
-\contentsline {section}{\numberline {1.1}Overview}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Collisionless Plasmas}{5}{section.1.2}
-\contentsline {section}{\numberline {1.3}Codes: Athena4.2 and Pegasus}{9}{section.1.3}
-\contentsline {chapter}{\numberline {2}Plasma Physics: Context and Background}{11}{chapter.2}
-\contentsline {section}{\numberline {2.1}Properties of a Plasma}{11}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Debye Length and Shielding}{12}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Mean Free Path and Collisions}{13}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Magnetized Plasma Parameters}{13}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Vlasov Kinetic Theory}{14}{section.2.2}
-\contentsline {section}{\numberline {2.3}Overview of Moment Equation Closures}{18}{section.2.3}
-\contentsline {section}{\numberline {2.4}Single-fluid MHD}{19}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Non-ideal MHD}{22}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Dimensionless Numbers in Non-ideal MHD}{23}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Braginskii MHD}{24}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Anisotropic Pressure Tensor}{25}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Adiabatic Invariants}{26}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Double Adiabatic Closure}{28}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Braginskii MHD Equations}{28}{subsection.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}Kinetic effects closure}{32}{subsection.2.5.5}
-\contentsline {chapter}{\numberline {3}Astrophysics: Context and Background}{34}{chapter.3}
-\contentsline {section}{\numberline {3.1}Observations of Accretion Disks}{34}{section.3.1}
-\contentsline {section}{\numberline {3.2}Properties of Hot Accretion Flows}{35}{section.3.2}
-\contentsline {section}{\numberline {3.3}Mechanics of Accretion Disks}{36}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Differential Rotation}{36}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Eddington Luminosity}{37}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Disk Scale Height}{38}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Rayleigh Stability Criterion}{39}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Early Problems in Accretion}{39}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Potential Sources of Turbulence}{40}{subsection.3.4.1}
-\contentsline {chapter}{\numberline {4}Computational Context Through the MRI}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Local Ideal MHD Theory and Simulations}{43}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Ideal MRI Condition for Stability}{45}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Ideal MRI Maximum Growth Rate}{45}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Spring Interpretation}{49}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Shearing Box Method}{50}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Local Non-ideal MHD Theory and Simulations}{52}{section.4.2}
-\contentsline {chapter}{\numberline {5}Modified Fluid Closure of a Collisionless Plasma}{56}{chapter.5}
-\contentsline {section}{\numberline {5.1}Anisotropic Viscosity}{56}{section.5.1}
-\contentsline {section}{\numberline {5.2}Pressure Anisotropy Maximum}{56}{section.5.2}
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Overview}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Collisionless and Weakly Collisional Plasmas}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Motivation and Impacts}{6}{section.1.3}
+\contentsline {chapter}{\numberline {2}Background}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Plasma Physics}{8}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Characteristic Plasma Parameters}{9}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Vlasov Kinetic Theory}{10}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Single-fluid MHD}{11}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Braginskii MHD}{14}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Kinetic effects closure}{17}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}Codes: Athena4.2 and Pegasus}{17}{section.2.2}
+\contentsline {section}{\numberline {2.3}Early Problems in Accretion}{18}{section.2.3}
+\contentsline {chapter}{\numberline {3}Computational Context Through the MRI}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Local Ideal MHD Theory and Simulations}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Ideal MRI Condition for Stability and Maximum Growth Rate}{23}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Spring Interpretation}{27}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Shearing Box Method}{28}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Local Non-ideal MHD Theory and Simulations}{29}{section.3.2}
+\contentsline {chapter}{\numberline {4}Modified Fluid Closure of a Collisionless Plasma}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Progress}{33}{section.4.1}
+\contentsline {chapter}{Bibliography}{42}{appendix*.20}
