@@ -1,4 +1,4 @@
-\begin{thebibliography}{98}
+\begin{thebibliography}{104}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -18,16 +18,14 @@ Avery~E Broderick, Vincent~L Fish, Sheperd~S Doeleman, and Abraham Loeb.
 M~L Goldstein, D~A Roberts, and W~H Matthaeus.
 \newblock {MAGNETOHYDRODYNAMIC TURBULENCE IN THE SOLAR WINDl}.
 \newblock \emph{Annu. Rev. Astron. Astrophys}, 33:\penalty0 283--325, 1995.
-\newblock URL
-  \url{http://www.annualreviews.org/doi/pdf/10.1146/annurev.aa.33.090195.001435}.
 
-\bibitem[Pilipp et~al.(1987)Pilipp, Muehlhaeuser, Miggenrieder, Montgomery, and
-  Rosenbauer]{Pilipp1987}
-W.~G. Pilipp, K.-H. Muehlhaeuser, H.~Miggenrieder, M.~D. Montgomery, and
-  H.~Rosenbauer.
+\bibitem[Pilipp et~al.(1987)Pilipp, Miggenrieder, Montgomery, Muehlhaeuser,
+  Rosenbauer, and Schwenn]{Pilipp1987}
+W.~G. Pilipp, H.~Miggenrieder, M.~D. Montgomery, K.-H. Muehlhaeuser,
+  H.~Rosenbauer, and R.~Schwenn.
 \newblock {Characteristics of electron velocity distribution functions in the
   solar wind derived from the Helios plasma experiment}.
-\newblock \emph{J. Geophys. Res.}, 92\penalty0 (5):\penalty0 1075--1092, 1987.
+\newblock \emph{J. Geophys. Res.}, 92:\penalty0 1075--1092, 1987.
 \newblock ISSN 0148-0227.
 \newblock \doi{10.1029/JA092iA02p01075}.
 
@@ -36,8 +34,6 @@ M~I Pudovkin and Andv~S Semenov.
 \newblock {MAGNETIC FIELD RECONNECTION THEORY AND THE SOLAR WIND -MAGNETOSPHERE
   INTERACTION: A REVIEW}.
 \newblock \emph{Sci. Rev.}, 41\penalty0 (1):\penalty0 1--89, 1985.
-\newblock URL
-  \url{http://download.springer.com/static/pdf/528/art{\%}253A10.1007{\%}252FBF00241346.pdf?originUrl=http{\%}253A{\%}252F{\%}252Flink.springer.com{\%}252Farticle{\%}252F10.1007{\%}252FBF00241346{\&}token2=exp=1492120748{~}acl={\%}252Fstatic{\%}252Fpdf{\%}252F528{\%}252Fart{\%}2525253A10.1007{\%}2525252FBF00241346.pdf{\%}253ForiginUrl{\%}253}.
 
 \bibitem[Fabian(1994)]{Fabian1994}
 A.~Fabian.
@@ -93,8 +89,6 @@ James~M. Stone, John~F. Hawley, Charles~F. Gammie, and Steven~A. Balbus.
 \newblock \emph{Astrophys. J.}, 463\penalty0 (2):\penalty0 656, 1996.
 \newblock ISSN 0004-637X.
 \newblock \doi{10.1086/177280}.
-\newblock URL
-  \url{http://adsabs.harvard.edu/cgi-bin/nph-data{\_}query?bibcode=1996ApJ...463..656S{\&}link{\_}type=ABSTRACT{\%}5Cnpapers2://publication/doi/10.1086/177280{\%}5Cnhttp://adsabs.harvard.edu/doi/10.1086/177280}.
 
 \bibitem[Jiang et~al.(2013)Jiang, Stone, and Davis]{Jiang2013}
 Yan-Fei Jiang, James~M. Stone, and Shane~W. Davis.
@@ -110,8 +104,6 @@ Yan-Fei Jiang, James~M. Stone, and Shane~W. Davis.
 \newblock \emph{Astrophys. J.}, 796\penalty0 (2):\penalty0 106, 2014.
 \newblock ISSN 1538-4357.
 \newblock \doi{10.1088/0004-637X/796/2/106}.
-\newblock URL
-  \url{http://stacks.iop.org/0004-637X/796/i=2/a=106?key=crossref.3345a0b680e6eb3d7be5065544be0d95}.
 
 \bibitem[Stone and Norman(1994)]{Stone1994}
 James; Stone and Michael Norman.
@@ -156,13 +148,18 @@ Andrzej Niedzwiecki, Fu-Guo Xie, and Agnieszka Stpnik.
 \newblock \emph{MNRAS}, 443:\penalty0 1733--1747, 2014.
 \newblock \doi{10.1093/mnras/stu1262}.
 
-\bibitem[Sadowski et~al.(2016)Sadowski, Wielgus, Narayan, Abarca, and
-  McKinney]{Sadowski2016}
-Aleksander Sadowski, Maciek Wielgus, Ramesh Narayan, David Abarca, and
-  Jonathan~C McKinney.
-\newblock {Radiative, two-temperature simulations of low luminosity black hole
-  accretion flows in general relativity}.
-\newblock \emph{MNRAS}, 000\penalty0 (0000):\penalty0 0--0, 2016.
+\bibitem[Sadowski et~al.(2016)Sadowski, Lasota, Abramowicz, and
+  Narayan]{Sadowski2016}
+Aleksander Sadowski, Jean-Pierre Lasota, Marek~A. Abramowicz, and Ramesh
+  Narayan.
+\newblock {Energy flows in thick accretion discs and their consequences for
+  black hole feedback}.
+\newblock \emph{Mon. Not. R. Astron. Soc.}, 456\penalty0 (4):\penalty0
+  3915--3928, 2016.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stv2854}.
+\newblock URL
+  \url{http://mnras.oxfordjournals.org/lookup/doi/10.1093/mnras/stv2854}.
 
 \bibitem[Veledina et~al.(2013)Veledina, Poutanen, and Vurm]{Veledina2013}
 Alexandra Veledina, Juri Poutanen, and Indrek Vurm.
@@ -195,8 +192,6 @@ John~F Hawley, Christian Fendt, Martin Hardcastle, Elena Nokhrina, and
 \newblock {Disks and Jets Gravity, Rotation and Magnetic Fields}.
 \newblock \emph{Sp. Sci Rev}, 191:\penalty0 441--469, 2015.
 \newblock \doi{10.1007/s11214-015-0174-7}.
-\newblock URL
-  \url{http://download.springer.com/static/pdf/328/art{\%}253A10.1007{\%}252Fs11214-015-0174-7.pdf?originUrl=http{\%}3A{\%}2F{\%}2Flink.springer.com{\%}2Farticle{\%}2F10.1007{\%}2Fs11214-015-0174-7{\&}token2=exp=1492185262{~}acl={\%}2Fstatic{\%}2Fpdf{\%}2F328{\%}2Fart{\%}25253A10.1007{\%}25252Fs11214-015-017}.
 
 \bibitem[Ressler et~al.(2015)Ressler, Tchekhovskoy, Quataert, Chandra, and
   Gammie]{Ressler2015}
@@ -237,14 +232,12 @@ D~S Plant, R~P Fender, G~Ponti, T~Mu{\~{n}}oz-Darias, and M~Coriat.
 \newblock \emph{MNRAS}, 442:\penalty0 1767--1785, 2014.
 \newblock \doi{10.1093/mnras/stu867}.
 
-\bibitem[Rohan et~al.(1998)Rohan, Narayan, Ahadevan, Rindlay, And, Popham, and
-  Ammie]{Rohan1998}
-Ramesh Rohan, Jonathan~E Narayan, M~Ahadevan, G~Rindlay, Robert~G And, Charles
-  Popham, and G~Ammie.
+\bibitem[Narayan et~al.(1998)Narayan, Mahadevan, Grindlay, Popham, and
+  Gammie]{Narayan1998}
+R.~Narayan, R.~Mahadevan, J.~Grindlay, R.~Popham, and C.~Gammie.
 \newblock {ADVECTION-DOMINATED ACCRETION MODEL OF SAGITTARIUS A* : EVIDENCE FOR
   A BLACK HOLE AT THE GALACTIC CENTER}.
 \newblock \emph{Astrophys. J.}, 492:\penalty0 554--568, 1998.
-\newblock URL \url{http://iopscience.iop.org/article/10.1086/305070/pdf}.
 
 \bibitem[Broderick et~al.(2009)Broderick, Fish, Doeleman, and
   Loeb]{Broderick2009}
@@ -299,11 +292,6 @@ P.~Sharma, G.~Hammett, and E.~Quataert.
 \newblock {Collisional Effects on the Kinetic MRI}.
 \newblock \emph{ASP Conf. Ser.}, 311:\penalty0 139--140, 2004.
 
-\bibitem[Sharma et~al.(2006)Sharma, Hammett, Quataert, and Stone]{Sharma2006}
-Prateek Sharma, Gregory~W Hammett, Eliot Quataert, and James~M Stone.
-\newblock {SHEARING BOX SIMULATIONS OF THE MRI IN A COLLISIONLESS PLASMA}.
-\newblock \emph{Astrophys. J.}, 637:\penalty0 952--967, 2006.
-
 \bibitem[Sharma et~al.(2007)Sharma, Quataert, Hammett, and Stone]{Sharma2007}
 Prateek Sharma, Eliot Quataert, Gregory~W Hammett, and James~M Stone.
 \newblock {ELECTRON HEATING IN HOT ACCRETION FLOWS}.
@@ -321,6 +309,11 @@ Prateek Sharma.
 \newblock {Kinetic Effects on Turbulence Driven by the Magnetorotational
   Instability in Black Hole Accretion}.
 \newblock \emph{PhD Thesis, 2007}, \penalty0 (September), 2007.
+
+\bibitem[Sharma et~al.(2006)Sharma, Hammett, Quataert, and Stone]{Sharma2006}
+Prateek Sharma, Gregory~W Hammett, Eliot Quataert, and James~M Stone.
+\newblock {SHEARING BOX SIMULATIONS OF THE MRI IN A COLLISIONLESS PLASMA}.
+\newblock \emph{Astrophys. J.}, 637:\penalty0 952--967, 2006.
 
 \bibitem[Stone et~al.(2008)Stone, Gardiner, Teuben, Hawley, and
   Simon]{Stone2008}
@@ -350,14 +343,6 @@ Monika Moscibrodzka, Heino Falcke, Hotaka Shiokawa, and Charles~F. Gammie.
 Hotaka Shiokawa.
 \newblock {General Relativistic MHD Simulations of Black Hole Accretion Disks:
   Dynamics and Radiative Properties}, 2013.
-
-\bibitem[Narayan et~al.(1998)Narayan, Mahadevan, Grindlay, Popham, and
-  Gammie]{Narayan1998}
-Ramesh Narayan, Rohan Mahadevan, Jonathan~E Grindlay, Robert Popham, and
-  Charles Gammie.
-\newblock {ADVECTION-DOMINATED ACCRETION MODEL OF SAGITTARIUS A* : EVIDENCE FOR
-  A BLACK HOLE AT THE GALACTIC CENTER}.
-\newblock \emph{Astrophys. J.}, 492:\penalty0 554--568, 1998.
 
 \bibitem[Gammie et~al.(2003)Gammie, Mckinney, Bor, and Th]{Gammie2003}
 Charles~F Gammie, Jonathan~C Mckinney, G{\'{a}}~Bor, and T{\'{o}}~Th.
@@ -528,13 +513,12 @@ I.~Parrish and E.~Quataert.
   AND ITS IMPLICATIONS FOR GALAXY CLUSTERS}.
 \newblock \emph{Astrophys. J.}, 677:\penalty0 9--12, 2008.
 
-\bibitem[Sharma et~al.(2008)Sharma, Quataert, and Stone]{Sharma2008}
-P.~Sharma, E.~Quataert, and J.~M. Stone.
-\newblock {Spherical accretion with anisotropic thermal conduction}.
-\newblock \emph{Mon. Not. R. Astron. Soc.}, 389\penalty0 (4):\penalty0
-  1815--1827, 2008.
-\newblock ISSN 00358711.
-\newblock \doi{10.1111/j.1365-2966.2008.13686.x}.
+\bibitem[Riquelme et~al.(2015)Riquelme, Quataert, and Verscharen]{Riquelme2015}
+Mario~A Riquelme, Eliot Quataert, and Daniel Verscharen.
+\newblock {PARTICLE-IN-CELL SIMULATIONS OF CONTINUOUSLY DRIVEN MIRROR AND ION
+  CYCLOTRON INSTABILITIES IN HIGH BETA ASTROPHYSICAL AND HELIOSPHERIC PLASMAS}.
+\newblock \emph{Astrophys. J.}, 800:\penalty0 27 (17pp), 2015.
+\newblock \doi{10.1088/0004-637X/800/1/27}.
 
 \bibitem[Kunz et~al.(2014)Kunz, Stone, and Bai]{Kunz2014}
 Matthew~W Kunz, James~M Stone, and Xue-Ning Bai.
@@ -553,17 +537,11 @@ A~A Schekochihin, S~C Cowley, R~M Kulsrud, M~S Rosin, and T~Heinemann.
 \newblock URL
   \url{https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.100.081301}.
 
-\bibitem[Kunz(2017)]{Kunz2017p}
-M.~Kunz.
-\newblock {Private Communication}, 2017.
-
 \bibitem[Stone(2009)]{Stone2009}
 James~M Stone.
 \newblock {The Athena MHD Code: Extensions, Applications, and Comparisons to
   ZEUS}.
 \newblock \emph{ASP Conf. Ser.}, 406:\penalty0 277--286, 2009.
-\newblock URL
-  \url{http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle{\_}query?db{\_}key=AST{\&}bibcode=2009ASPC..406..277S{\&}letter=0{\&}classic=YES{\&}defaultprint=YES{\&}whole{\_}paper=YES{\&}page=277{\&}epage=277{\&}send=Send+PDF{\&}filetype=.pdf}.
 
 \bibitem[White and Stone(2016)]{White2016Thesis}
 C.~White and J.~Stone.
@@ -577,10 +555,8 @@ C.~White and J.~Stone.
 Christopher~J White, James~M Stone, and Charles~F Gammie.
 \newblock {AN EXTENSION OF THE ATHENA++ CODE FRAMEWORK FOR GRMHD BASED ON
   ADVANCED RIEMANN SOLVERS AND STAGGERED-MESH CONSTRAINED TRANSPORT}.
-\newblock \emph{Astrophys. J. Suppl. Ser.}, 225, 2016.
+\newblock \emph{Astrophys. J. Suppl. Ser.}, 225:\penalty0 22 (22pp), 2016.
 \newblock \doi{10.3847/0067-0049/225/2/22}.
-\newblock URL
-  \url{http://iopscience.iop.org.ezproxy.princeton.edu/article/10.3847/0067-0049/225/2/22/pdf}.
 
 \bibitem[Spruit(2014)]{Spruit2009}
 H~Spruit.
@@ -594,14 +570,20 @@ N.~Shakura and R.~Sunyaev.
 \newblock {Black Holes in Binary Systems. Observational Appearance}.
 \newblock \emph{Astron. Astrophys.}, 24:\penalty0 337--355, 1973.
 
+\bibitem[Penna et~al.(2013)Penna, Sadowski, Kulkarni, and Narayan]{Penna2013}
+R.~F. Penna, A.~Sadowski, A.~K. Kulkarni, and R.~Narayan.
+\newblock {The Shakura-Sunyaev viscosity prescription with variable}.
+\newblock \emph{Mon. Not. R. Astron. Soc.}, 428\penalty0 (3):\penalty0
+  2255--2274, jan 2013.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/sts185}.
+
 \bibitem[Balbus and Hawley(1998)]{BH1998}
 Steven~A Balbus and John~F Hawley.
 \newblock {Instability, turbulence, and enhanced transport in accretion disks}.
 \newblock \emph{Rev. Mod. Phys.}, 70\penalty0 (1):\penalty0 1--53, 1998.
 \newblock ISSN 0034-6861.
 \newblock \doi{10.1103/RevModPhys.70.1}.
-\newblock URL
-  \url{http://adsabs.harvard.edu/cgi-bin/nph-data{\_}query?bibcode=1998RvMP...70....1B{\&}link{\_}type=ABSTRACT{\%}5Cnpapers://0be24a46-325a-4116-a3c6-fd8a3b614472/Paper/p9932{\%}5Cnhttp://link.aps.org/doi/10.1103/RevModPhys.70.1}.
 
 \bibitem[Paczynski(1978)]{Paczynski1978}
 B~Paczynski.
@@ -630,8 +612,8 @@ S.~Shapiro.
 \newblock {Accretion onto Black Holes: The Emergent Radiation Spectrum}.
 \newblock \emph{Astrophys. J.}, 180:\penalty0 531--546, 1973.
 
-\bibitem[{Balbus, Steven; Hawley}(1991)]{BH1991a}
-John {Balbus, Steven; Hawley}.
+\bibitem[Balbus and Hawley(1991)]{BH1991a}
+Steven Balbus and John Hawley.
 \newblock {A Powerful Local Shear Instability in Weakly Magnetized Disks I.
   Linear Analysis}.
 \newblock \emph{Astrophys. J.}, 376:\penalty0 214--222, 1991.
@@ -647,6 +629,47 @@ J.~Hawley and S.~Balbus.
 \newblock {A Powerful Local shear instability in weakly magnetized Disks: III.
   Long-Term evolution in a shearing sheet}.
 \newblock \emph{Astrophys. J.}, 400:\penalty0 595--609, 1992.
+
+\bibitem[Balbus(2004)]{Balbus2004}
+Steven~A Balbus.
+\newblock {VISCOUS SHEAR INSTABILITY IN WEAKLY MAGNETIZED, DILUTE PLASMAS}.
+\newblock \emph{Astrophys. J.}, 616:\penalty0 857--864, 2004.
+
+\bibitem[Islam and Balbus(2005)]{Islam2005}
+Tanim Islam and Steven Balbus.
+\newblock {Dynamics of the Magnetoviscous Instability}.
+\newblock \emph{Astrophys. J.}, 633:\penalty0 328--333, 2005.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1086/447762}.
+
+\bibitem[Quataert et~al.(2015)Quataert, Heinemann, and
+  Spitkovsky]{Quataert2015}
+E~Quataert, T~Heinemann, and A~Spitkovsky.
+\newblock {Linear instabilities driven by differential rotation in very weakly
+  magnetized plasmas}.
+\newblock \emph{MNRAS}, 447:\penalty0 3328--3341, 2015.
+\newblock \doi{10.1093/mnras/stu2483}.
+
+\bibitem[Bu et~al.(2011)Bu, Yuan, and Stone]{Bu2011}
+De~Fu Bu, Feng Yuan, and James~M. Stone.
+\newblock {Magnetothermal and magnetorotational instabilities in hot accretion
+  flows}.
+\newblock \emph{Mon. Not. R. Astron. Soc.}, 413\penalty0 (4):\penalty0
+  2808--2814, 2011.
+\newblock ISSN 00358711.
+\newblock \doi{10.1111/j.1365-2966.2011.18354.x}.
+
+\bibitem[Hellinger and Matsumoto(2000)]{Hellinger2000}
+P~Hellinger and H~Matsumoto.
+\newblock {New kinetic instability: Oblique Alfv{\'{e}}n fire hose}.
+\newblock \emph{J. Geophys. Res.}, 105526\penalty0 (1):\penalty0 519--10, 2000.
+\newblock \doi{10.1029/1999JA000297}.
+
+\bibitem[Hellinger(2007)]{Hellinger2007}
+Petr Hellinger.
+\newblock {Comment on the linear mirror instability near the threshold}.
+\newblock \emph{Phys. Plasmas}, 14, 2007.
+\newblock \doi{10.1063/1.2768318͔}.
 
 \bibitem[Kunz(2016{\natexlab{b}})]{AST521HW4}
 M.~Kunz.
@@ -678,6 +701,11 @@ J.~Hawley, C.~Gammie, and S.~Balbus.
   hydromagnetic dynamo}.
 \newblock \emph{Astrophys. J.}, 464:\penalty0 690--703, 1996.
 
+\bibitem[Walker and Boldyrev(2017)]{Walker2017}
+Justin Walker and Stanislav Boldyrev.
+\newblock {Magnetorotational Dynamo Action in the Shearing Box}.
+\newblock \emph{MNRAS}, 000:\penalty0 0--0, 2017.
+
 \bibitem[Fromang and Papaloizou(2007)]{Fromang2007a}
 S~Fromang and J~Papaloizou.
 \newblock {Astrophysics MHD simulations of the magnetorotational instability in
@@ -690,13 +718,6 @@ Ji-Ming Shi, James~M Stone, and Chelsea~X Huang.
   shearing box with zero net flux: convergence in taller boxes}.
 \newblock \emph{MNRAS}, 456:\penalty0 2273--2289, 2016.
 \newblock \doi{10.1093/mnras/stv2815}.
-
-\bibitem[Fleming et~al.(2000)Fleming, Stone1, and Hawley]{Fleming2000}
-Timothy~P Fleming, James~M Stone1, and John~F Hawley.
-\newblock {THE EFFECT OF RESISTIVITY ON THE NONLINEAR STAGE OF THE
-  MAGNETOROTATIONAL INSTABILITY IN ACCRETION DISKS}.
-\newblock \emph{Astrophys. J.}, 530:\penalty0 464--477, 2000.
-\newblock URL \url{http://iopscience.iop.org/article/10.1086/308338/pdf}.
 
 \bibitem[Simon et~al.(2009)Simon, Hawley, and Beckwith]{Simon2009a}
 Jacob~B Simon, John~F Hawley, and Kris Beckwith.
@@ -711,5 +732,12 @@ Jacob~B Simon and John~F Hawley.
   WITH A NET TOROIDAL FIELD}.
 \newblock \emph{Astrophys. J.}, 707:\penalty0 833--843, 2009.
 \newblock \doi{10.1088/0004-637X/707/1/833}.
+
+\bibitem[Fleming et~al.(2000)Fleming, Stone1, and Hawley]{Fleming2000}
+Timothy~P Fleming, James~M Stone1, and John~F Hawley.
+\newblock {THE EFFECT OF RESISTIVITY ON THE NONLINEAR STAGE OF THE
+  MAGNETOROTATIONAL INSTABILITY IN ACCRETION DISKS}.
+\newblock \emph{Astrophys. J.}, 530:\penalty0 464--477, 2000.
+\newblock URL \url{http://iopscience.iop.org/article/10.1086/308338/pdf}.
 
 \end{thebibliography}

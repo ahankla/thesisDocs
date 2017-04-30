@@ -1,17 +1,17 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 The style file: unsrtnat.bst
 Database file #1: ./library.bib
-Repeated entry---line 1896 of file ./library.bib
+Repeated entry---line 1606 of file ./library.bib
+ : @article{Ressler2015
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4429 of file ./library.bib
  : @article{Kunz2014
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2222 of file ./library.bib
+Repeated entry---line 4681 of file ./library.bib
  : @article{Sadowski2016
  :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 3437 of file ./library.bib
- : @article{Ressler2015
- :                     ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in Kunz2010
 Warning--there's a number but no volume in SharmaThesis
